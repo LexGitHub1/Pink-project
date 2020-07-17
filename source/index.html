@@ -1,12 +1,135 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>Приложение "PINK"</title>
+</head>
 
-  </body>
+<body class="page__body">
+  <header class="page-header">
+
+    <a class="page-header__logo">
+      <img src="https://via.placeholder.com/150x150" width="74" height="23" alt="Логотип Pink">
+    </a>
+
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Приложение Pink</h1>
+
+    <section class="intro">
+      <h2 class="visually-hidden">Скачать приложение</h2>
+
+      <header class="intro__header">
+        <h2 class="visually-hidden">Главная Pink</h2>
+        <p class="intro__slogan">Взгляните на жизнь<br>иначе!</p>
+      </header>
+
+      <div class="intro__image-wrapper">
+        <img src="https://via.placeholder.com/150x150" width="320" height="286" alt="Изображение руки с телефоном">
+        <img src="https://via.placeholder.com/150x150" width="111" height="197" alt="Изображение экрана телефона">
+      </div>
+
+      <div class="intro__app-wrapper">
+        <button class="intro__download" type="button">Скачать приложение</button>
+
+        <ul class="intro__list logo-list">
+          <li class="logo-list__item">
+            <svg></svg>
+          </li>
+          <li class="logo-list__item">
+            <svg></svg>
+          </li>
+          <li class="logo-list__item">
+            <svg></svg>
+          </li>
+        </ul>
+
+        <p class="intro__OS-info">Доступно для iPhone, iPad, Android,<br>Windows Phone, OS X, Windows 8</p>
+      </div>
+    </section>
+
+    <section class="information">
+      <h2 class="visually-hidden">О приложении</h2>
+
+      <p class="information__slogan">Устали от серости мегаполиса?<br>Нам есть, что вам предложить!</p>
+
+      <ul class="information__list">
+        <li class="information__item">
+          <h3 class="information__title">Поднимает настроение</h3>
+          <p class="information__discription">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+            несколько кликов!</p>
+        </li>
+        <li class="information__item">
+          <h3 class="information__title">Меняет мир вокруг</h3>
+          <p class="information__discription">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+            усилить эффект</p>
+        </li>
+        <li class="information__item">
+          <h3 class="information__title">Заводит новых друзей</h3>
+          <p class="information__discription">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+            новых</p>
+        </li>
+      </ul>
+
+      <div class="information__image-wrapper">
+        <img src="https://via.placeholder.com/150x150" width="157" height="320" alt="Изображение телефона">
+        <img src="https://via.placeholder.com/150x150" width="136" height="245" alt="Изображение экрана телефона 1">
+        <img src="https://via.placeholder.com/150x150" width="136" height="245" alt="Изображение экрана телефона 2">
+        <img src="https://via.placeholder.com/150x150" width="136" height="245" alt="Изображение экрана телефона 3">
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+
+      <a class="page-footer__logo page-footer__logo--glasses">
+        <img src="https://via.placeholder.com/150x150" width="74" height="23" alt="Логотип Pink">
+      </a>
+
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com//htmlacademy">Мы в Twitter</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Мы на Youtube</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
