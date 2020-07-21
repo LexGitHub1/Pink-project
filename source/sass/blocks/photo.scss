@@ -1,0 +1,17 @@
+$top-background: url("../../img/bg-back-mobile@1x.jpg");
+$font-light: 300;
+
+.photo {
+  background-image: $top-background;
+  color: $text-color;
+  text-align: center;
+
+  border: 2px solid brown;
+}
+
+.photo__slogan {
+  font-weight: $font-light;
+  font-size: 24px;
+  line-height: 33px;
+}
+

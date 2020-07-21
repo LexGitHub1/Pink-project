@@ -1,0 +1,15 @@
+$menu-background: #283645;
+$text-color: #FFFFFF;
+$font-bold: 700;
+
+.page-header {
+  background-color: $menu-background;
+  color: $text-color;
+  font-weight: $font-bold;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: uppercase;
+
+  border: 2px solid green;
+}
+

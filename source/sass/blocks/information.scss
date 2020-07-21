@@ -1,0 +1,34 @@
+$main-background: #FFFFFF;
+$special-background: #F2F2F2;
+$font-light: 300;
+$font-normal: 400;
+$font-bold: 700;
+$special-text-color: #283645;
+
+.information {
+  background: $special-background;
+  text-align: center;
+
+  border: 2px solid purple;
+}
+
+.information__slogan {
+  font-weight: $font-light;
+  font-size: 24px;
+  line-height: 29px;
+  color: $special-text-color;
+  background-color: $main-background;
+}
+
+.information__title {
+  font-weight: $font-bold;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.information__discription {
+  font-weight: $font-normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $special-text-color;
+}

@@ -1,0 +1,60 @@
+$font-light: 300;
+$font-normal: 400;
+$font-bold: 700;
+$text-color: #FFFFFF;
+$special-text-color: #283645;
+$happy-text-color: #D22856;
+$special-background: #F2F2F2;
+
+.reviews {
+  border: 2px solid teal;
+}
+
+.reviews__description {
+  font-weight: $font-normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: $special-text-color;
+}
+
+.reviews__panorama {
+  font-weight: $font-bold;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $text-color;
+  background: #D22856;
+}
+
+.reviews__author-info {
+  background: $special-background;
+}
+
+.reviews__author-name {
+  font-style: normal;
+  font-weight: $font-bold;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.author-name__time {
+  font-weight: $font-light;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.reviews__text {
+  font-weight: $font-normal;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.reviews__likes {
+  font-weight: $font-normal;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $happy-text-color;
+}
