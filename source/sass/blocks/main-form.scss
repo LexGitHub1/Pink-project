@@ -30,7 +30,6 @@ $happy-text-color: #d22856;
   font-weight: $font-normal;
   font-size: 18px;
   line-height: 30px;
-
   &::placeholder {
     color: $special-text-color;
   }
@@ -61,7 +60,6 @@ $happy-text-color: #d22856;
 }
 
 .main-form__text-field {
-
   &::placeholder {
     font-weight: $font-normal;
     font-size: 18px;
