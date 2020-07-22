@@ -1,0 +1,30 @@
+$font-light: 300;
+$font-bold: 700;
+$special-text-color: #283645;
+$happy-text-color: #d22856;
+
+.contacts {
+  text-align: center;
+  border: 2px solid red;
+}
+
+.contacts__slogan {
+  font-weight: $font-light;
+  font-size: 24px;
+  line-height: 29px;
+  color: $special-text-color;
+}
+
+.contacts__title {
+  font-weight: $font-bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: $special-text-color;
+}
+
+.contacts__text {
+  font-weight: $font-light;
+  font-size: 24px;
+  line-height: 33px;
+  color: $happy-text-color;
+}
