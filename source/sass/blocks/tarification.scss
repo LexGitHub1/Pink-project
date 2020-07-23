@@ -1,0 +1,49 @@
+$menu-background: #283645;
+$special-background: #f2f2f2;
+$font-light: 300;
+$font-normal: 400;
+$font-bold: 700;
+$text-color: #ffffff;
+$special-text-color: #283645;
+
+.tarification {
+  background: $special-background;
+
+  border: 2px solid gold;
+}
+
+.tarification__header {
+  background: $menu-background;
+  text-align: center;
+}
+
+.tarification__title {
+  font-weight: $font-bold;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $text-color;
+}
+
+.tarification__price {
+  font-weight: $font-light;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $text-color;
+}
+
+.tarification__option {
+  font-weight: $font-normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $special-text-color;
+}
+
+.tarification__text {
+  font-weight: $font-normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: $text-color;
+}

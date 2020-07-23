@@ -1,0 +1,36 @@
+$special-background: #f2f2f2;
+$font-normal: 400;
+$font-bold: 700;
+$special-text-color: #283645;
+$happy-text-color: #d22856;
+
+.upload {
+  text-align: center;
+
+  border: 2px solid slateblue;
+}
+
+.upload__description {
+  font-weight: $font-normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: $special-text-color;
+}
+
+.upload__form {
+  background: $special-background;
+}
+
+.upload__button {
+  font-weight: $font-bold;
+  font-size: 18px;
+  line-height: 18px;
+
+  &--post {
+    color: $happy-text-color;
+  }
+
+  &--cancel {
+    color: $special-text-color;
+  }
+}

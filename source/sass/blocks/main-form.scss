@@ -1,0 +1,91 @@
+$special-background: #f2f2f2;
+$button-background: #2aab6d;
+$font-normal: 400;
+$font-bold: 700;
+$text-color: #ffffff;
+$special-text-color: #283645;
+$happy-text-color: #d22856;
+
+.main-form {
+  border: 2px solid blue;
+}
+
+.main-form__description {
+  font-weight: $font-normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: $special-text-color;
+}
+
+.main-form__label {
+  font-weight: $font-normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $happy-text-color;
+}
+
+.main-form__field {
+  font-weight: $font-normal;
+  font-size: 18px;
+  line-height: 30px;
+
+  &::placeholder {
+    color: $special-text-color;
+  }
+}
+
+.main-form__legend {
+  font-weight: $font-normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $happy-text-color;
+}
+
+.main-form__user-achievement {
+  background: $special-background;
+}
+
+.main-form__option {
+  font-weight: $font-normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: $special-text-color;
+}
+
+.main-form__user-app-choice {
+  background: $special-background;
+}
+
+.main-form__text-field {
+  &::placeholder {
+    font-weight: $font-normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: $special-text-color;
+  }
+}
+
+.main-form__button {
+  font-weight: $font-bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $text-color;
+  background-color: $button-background;
+}
+
+.main-form__note {
+  font-weight: $font-normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $special-text-color;
+}
+
+.main-form__star {
+  color: $happy-text-color;
+}

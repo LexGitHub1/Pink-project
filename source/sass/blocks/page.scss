@@ -1,5 +1,5 @@
 $main-font: "Open Sans", "Arial", sans-serif;
-$main-background: #FFFFFF;
+$main-background: #ffffff;
 $main-color: #000000;
 
 body {
@@ -36,7 +36,9 @@ img {
   src: url("../../fonts/opensansbold.woff2") format("woff2"), url("../../fonts/opensansbold.woff") format("woff");
 }
 
-.visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;

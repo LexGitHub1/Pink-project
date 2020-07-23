@@ -1,10 +1,10 @@
 $font-light: 300;
 $font-normal: 400;
 $font-bold: 700;
-$text-color: #FFFFFF;
+$text-color: #ffffff;
 $special-text-color: #283645;
-$happy-text-color: #D22856;
-$special-background: #F2F2F2;
+$happy-text-color: #d22856;
+$special-background: #f2f2f2;
 
 .reviews {
   border: 2px solid teal;
@@ -24,7 +24,7 @@ $special-background: #F2F2F2;
   line-height: 24px;
   text-transform: uppercase;
   color: $text-color;
-  background: #D22856;
+  background-color: $happy-text-color;
 }
 
 .reviews__author-info {

@@ -1,0 +1,34 @@
+$special-background: #f2f2f2;
+$button-background: #2aab6d;
+$font-normal: 400;
+$font-bold: 700;
+$text-color: #ffffff;
+$special-text-color: #283645;
+
+.page-modal__title {
+  font-weight: $font-bold;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.page-modal__description {
+  font-weight: $font-normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: $special-text-color;
+}
+
+.page-modal__button-wrapper {
+  background: $special-background;
+}
+
+.page-modal__button {
+  font-weight: $font-bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $text-color;
+  background-color: $button-background;
+}
