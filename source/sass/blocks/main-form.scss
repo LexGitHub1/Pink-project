@@ -30,6 +30,7 @@ $happy-text-color: #d22856;
   font-weight: $font-normal;
   font-size: 18px;
   line-height: 30px;
+
   &::placeholder {
     color: $special-text-color;
   }
@@ -60,6 +61,7 @@ $happy-text-color: #d22856;
 }
 
 .main-form__text-field {
+
   &::placeholder {
     font-weight: $font-normal;
     font-size: 18px;
@@ -85,6 +87,6 @@ $happy-text-color: #d22856;
   color: $special-text-color;
 }
 
-.note__star {
+.main-form__star {
   color: $happy-text-color;
 }

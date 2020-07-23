@@ -25,12 +25,12 @@ $happy-text-color: #d22856;
   font-weight: $font-bold;
   font-size: 18px;
   line-height: 18px;
-}
 
-.upload__button-post {
-  color: $happy-text-color;
-}
+  &--post {
+    color: $happy-text-color;
+  }
 
-.upload__button-cancel {
-  color: $special-text-color;
+  &--cancel {
+    color: $special-text-color;
+  }
 }
