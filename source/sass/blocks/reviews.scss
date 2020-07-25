@@ -17,7 +17,7 @@ $special-background: #f2f2f2;
 }
 
 .reviews__item {
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
 .reviews__author-image {
@@ -30,8 +30,8 @@ $special-background: #f2f2f2;
   line-height: 30px;
   text-align: center;
   color: $special-text-color;
-  margin: 0px;
-  padding: 54px 20px 0px 20px;
+  margin: 0;
+  padding: 54px 20px 0 20px;
 }
 
 .reviews__panorama {
@@ -56,7 +56,7 @@ $special-background: #f2f2f2;
 }
 
 .reviews__author-info {
-  padding: 25px 0px 26px 17px;
+  padding: 25px 0 26px 17px;
   background: $special-background;
 }
 
@@ -78,7 +78,7 @@ $special-background: #f2f2f2;
   font-weight: $font-normal;
   font-size: 14px;
   line-height: 24px;
-  margin: 0px;
+  margin: 0;
   padding-bottom: 20px;
 }
 
@@ -88,7 +88,7 @@ $special-background: #f2f2f2;
   line-height: 24px;
   text-transform: uppercase;
   color: $happy-text-color;
-  margin: 0px;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -113,7 +113,7 @@ $special-background: #f2f2f2;
   .reviews__item {
     &--today {
       width: 620px;
-      padding: 0px 20px;
+      padding: 0 20px;
       grid-area: panorama;
     }
   }
@@ -139,7 +139,7 @@ $special-background: #f2f2f2;
     &--move {
       grid-area: like;
       margin-left: 300px;
-      margin-right: 0px;
+      margin-right: 0;
     }
   }
 }
@@ -166,7 +166,7 @@ $special-background: #f2f2f2;
   .reviews__item {
     &--today {
       width: 1200px;
-      padding: 0px 0px;
+      padding: 0 0;
       grid-area: panorama;
     }
   }
@@ -174,7 +174,7 @@ $special-background: #f2f2f2;
   .reviews__author-info {
     &--post {
       width: 940px;
-      margin: 0px 130px;
+      margin: 0 130px;
       display: grid;
       grid-template-columns: repeat(2, auto);
       grid-template-rows: repeat(2, auto);
@@ -194,7 +194,7 @@ $special-background: #f2f2f2;
     &--move {
       grid-area: like;
       margin-left: 300px;
-      margin-right: 0px;
+      margin-right: 0;
     }
   }
 }

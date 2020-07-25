@@ -20,7 +20,7 @@ $special-text-color: #283645;
 
 .social {
   width: 172px;
-  margin: 0px 74px;
+  margin: 0 74px;
 }
 
 .social__list {
@@ -28,13 +28,13 @@ $special-text-color: #283645;
   justify-content: space-between;
 
   list-style: none;
-  padding: 0px;
+  padding: 0;
 }
 
 .copyright {
   width: 130px;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
