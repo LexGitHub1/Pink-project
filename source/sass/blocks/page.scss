@@ -2,10 +2,35 @@ $main-font: "Open Sans", "Arial", sans-serif;
 $main-background: #ffffff;
 $main-color: #000000;
 
+$tablet-width: 768px;
+$desktop-width: 1200px;
+$mobile-width-only: 767px;
+
 body {
+  min-width: 320px;
   font-family: $main-font;
   background-color: $main-background;
   color: $main-color;
+}
+
+.container {
+  width: 280px;
+  padding: 0 20px;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 640px;
+    padding: 0 64px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 960px;
+    padding: 0 120px;
+  }
 }
 
 a {
@@ -49,4 +74,8 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.page {
+  height: 100%;
 }

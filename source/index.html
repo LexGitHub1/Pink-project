@@ -3,11 +3,13 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Приложение "PINK"</title>
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
 </head>
 
-<body class="page-body">
+<body class="page-body container">
   <header class="page-header">
 
     <a class="page-header__logo">
@@ -42,32 +44,34 @@
 
     <section class="intro">
       <h2 class="visually-hidden">Скачать приложение</h2>
+      <div class="intro__wrapper">
+        <header class="intro__header">
+          <h2 class="visually-hidden">Главная Pink</h2>
+          <p class="intro__slogan">Взгляните на жизнь<br>иначе!</p>
+        </header>
 
-      <header class="intro__header">
-        <h2 class="visually-hidden">Главная Pink</h2>
-        <p class="intro__slogan">Взгляните на жизнь<br>иначе!</p>
-      </header>
+        <div class="intro__image-wrapper">
+          <img src="img/iphone-hand-mobile@1x.png" width="320" height="286" alt="Изображение руки с телефоном">
+        </div>
 
-      <div class="intro__image-wrapper">
-        <img src="img/iphone-hand-mobile@1x.png" width="320" height="286" alt="Изображение руки с телефоном">
-      </div>
+        <div class="intro__app-wrapper">
+          <button class="intro__download" type="button">Скачать приложение</button>
 
-      <div class="intro__app-wrapper">
-        <button class="intro__download" type="button">Скачать приложение</button>
+          <ul class="intro__list logo-list">
+            <li class="logo-list__item">
+              <img src="img/logo-apple.svg" width="47" height="56" alt="Логотип Apple">
+            </li>
+            <li class="logo-list__item">
+              <img src="img/logo-android.svg" width="43" height="47" alt="Логотип Android">
+            </li>
+            <li class="logo-list__item">
+              <img src="img/logo-microsoft.svg" width="44" height="41" alt="Логотип Microsoft">
+            </li>
+          </ul>
 
-        <ul class="intro__list logo-list">
-          <li class="logo-list__item">
-            <img src="img/logo-apple.svg" width="47" height="56" alt="Логотип Apple">
-          </li>
-          <li class="logo-list__item">
-            <img src="img/logo-android.svg" width="43" height="47" alt="Логотип Android">
-          </li>
-          <li class="logo-list__item">
-            <img src="img/logo-microsoft.svg" width="44" height="41" alt="Логотип Microsoft">
-          </li>
-        </ul>
+          <p class="intro__OS-info">Доступно для iPhone, iPad, Android,<br>Windows Phone, OS X, Windows 8</p>
+        </div>
 
-        <p class="intro__OS-info">Доступно для iPhone, iPad, Android,<br>Windows Phone, OS X, Windows 8</p>
       </div>
     </section>
 
@@ -95,7 +99,7 @@
       </ul>
 
       <div class="information__image-wrapper">
-        <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Изображение телефона">
+        <img class="information__screen" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Изображение телефона">
       </div>
     </section>
 
@@ -242,6 +246,15 @@
       </div>
     </div>
   </footer>
+
+  <section class="round-diagram">
+    <h2 class="visually-hidden">Эффект от приложения</h2>
+
+    <img class="round-diagram__timer" src="img/icon-timer.svg" width="238" height="276" alt="Изображение таймера">24
+    <p class="round-diagram__slogan">Эффект на 24 часа!</p>
+    <p class="round-diagram__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+    <a class="round-diagram__more-about" href="blank.html">Узнать больше об исследовании</a>
+  </section>
 </body>
 
 </html>

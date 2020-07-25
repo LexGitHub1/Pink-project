@@ -89,3 +89,21 @@ $happy-text-color: #d22856;
 .main-form__star {
   color: $happy-text-color;
 }
+
+@media (min-width: $tablet-width) {
+  .competition__slogan {
+    width: 660px;
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .competition__slogan {
+    width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 50px;
+    line-height: 68px;
+  }
+}

@@ -10,12 +10,28 @@ $special-background: #f2f2f2;
   border: 2px solid teal;
 }
 
+.reviews__list {
+  display: grid;
+  grid-template-rows: 1fr;
+  row-gap: 20px;
+}
+
+.reviews__item {
+  margin: 0px auto;
+}
+
+.reviews__author-image {
+  margin-bottom: -3px;
+}
+
 .reviews__description {
   font-weight: $font-normal;
   font-size: 14px;
   line-height: 30px;
   text-align: center;
   color: $special-text-color;
+  margin: 0px;
+  padding: 54px 20px 0px 20px;
 }
 
 .reviews__panorama {
@@ -27,7 +43,20 @@ $special-background: #f2f2f2;
   background-color: $happy-text-color;
 }
 
+.panorama {
+  position: relative;
+  right: 20px;
+  bottom: -48px;
+  width: 140px;
+  height: 36px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+}
+
 .reviews__author-info {
+  padding: 25px 0px 26px 17px;
   background: $special-background;
 }
 
@@ -49,6 +78,8 @@ $special-background: #f2f2f2;
   font-weight: $font-normal;
   font-size: 14px;
   line-height: 24px;
+  margin: 0px;
+  padding-bottom: 20px;
 }
 
 .reviews__likes {
@@ -57,4 +88,113 @@ $special-background: #f2f2f2;
   line-height: 24px;
   text-transform: uppercase;
   color: $happy-text-color;
+  margin: 0px;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__author-image {
+    &--big {
+      width: 660px;
+      height: 509px;
+    }
+  }
+
+  .reviews__description {
+    font-size: 18px;
+  }
+
+  .reviews__list {
+    min-width: 660px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: "panorama panorama";
+  }
+
+  .reviews__item {
+    &--today {
+      width: 620px;
+      padding: 0px 20px;
+      grid-area: panorama;
+    }
+  }
+
+  .reviews__author-info {
+    &--post {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: repeat(2, auto);
+      grid-template-areas:
+        "user like"
+        "comment comment";
+    }
+  }
+
+  .reviews__text {
+    &--text {
+      grid-area: comment;
+    }
+  }
+
+  .reviews__likes {
+    &--move {
+      grid-area: like;
+      margin-left: 300px;
+      margin-right: 0px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__author-image {
+    &--big {
+      width: 1200px;
+      height: 506px;
+    }
+  }
+
+  .reviews__description {
+    font-size: 18px;
+  }
+
+  .reviews__list {
+    min-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-areas: "panorama panorama panorama";
+  }
+
+  .reviews__item {
+    &--today {
+      width: 1200px;
+      padding: 0px 0px;
+      grid-area: panorama;
+    }
+  }
+
+  .reviews__author-info {
+    &--post {
+      width: 940px;
+      margin: 0px 130px;
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      grid-template-rows: repeat(2, auto);
+      grid-template-areas:
+        "user like"
+        "comment comment";
+    }
+  }
+
+  .reviews__text {
+    &--text {
+      grid-area: comment;
+    }
+  }
+
+  .reviews__likes {
+    &--move {
+      grid-area: like;
+      margin-left: 300px;
+      margin-right: 0px;
+    }
+  }
 }

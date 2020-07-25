@@ -1,25 +1,36 @@
 $top-background: url("../../img/bg-back-mobile@1x.jpg");
 $app-background: #1d2631;
 $text-color: #ffffff;
+$special-text-color: #283645;
+$happy-text-color: #d22856;
 $font-light: 300;
+$font-normal: 400;
 $font-bold: 700;
 
 .intro {
   font-weight: $font-light;
-  text-align: center;
   color: $text-color;
-  background-image: $top-background;
+  text-align: center;
 
   border: 2px solid blue;
+}
+
+.intro__wrapper {
+  background-image: $top-background;
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .intro__slogan {
   font-weight: $font-light;
   font-size: 24px;
   line-height: 29px;
+  margin: 0px;
+  padding: 29px 0px 34px 0px;
 }
 
 .intro__app-wrapper {
+  padding: 28px 0px 38px 0px;
   background: $app-background;
 }
 
@@ -34,4 +45,168 @@ $font-bold: 700;
   font-weight: $font-light;
   font-size: 14px;
   line-height: 24px;
+}
+
+.logo-list {
+  display: flex;
+  list-style: none;
+  margin: auto;
+  padding: 0px;
+  align-items: baseline;
+  justify-content: space-between;
+  max-width: 204px;
+}
+
+@media (min-width: $tablet-width) {
+  .intro__wrapper {
+    display: grid;
+    width: 660px;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "slogan img"
+      "button img"
+      "applogo img"
+      "apptext img";
+  }
+
+  .intro__image-wrapper {
+    grid-area: img;
+  }
+
+  .intro__slogan {
+    grid-area: slogan;
+    width: 240px;
+    text-emphasis: wrap;
+    margin-left: 66px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .intro__download {
+    grid-area: button;
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+
+  .intro__app-wrapper {
+    background: none;
+  }
+
+  .intro__list {
+    grid-area: applogo;
+    margin-top: 30px;
+    margin-left: 66px;
+  }
+
+  .intro__OS-info {
+    grid-area: apptext;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro__wrapper {
+    display: grid;
+    width: 1200px;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "slogan img"
+      "button img"
+      "applogo img"
+      "apptext img";
+  }
+
+  .intro__image-wrapper {
+    grid-area: img;
+  }
+
+  .intro__slogan {
+    grid-area: slogan;
+    width: 240px;
+    text-emphasis: wrap;
+    margin-left: 220px;
+    font-weight: $font-light;
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  .intro__download {
+    grid-area: button;
+    width: 300px;
+  }
+
+  .intro__app-wrapper {
+    background: none;
+  }
+
+  .intro__list {
+    grid-area: applogo;
+    margin-top: 30px;
+    margin-left: 177px;
+  }
+
+  .intro__OS-info {
+    grid-area: apptext;
+    margin-top: 30px;
+    margin-left: 10px;
+  }
+}
+
+.round-diagram {
+  display: grid;
+  width: 660px;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "img slogan"
+    "img read"
+    "img about";
+}
+
+.round-diagram__timer {
+  grid-area: img;
+  margin-top: 17px;
+  margin-bottom: 3px;
+  // margin-left: 89px;
+  width: 238px;
+}
+
+.round-diagram__slogan {
+  grid-area: slogan;
+  margin-bottom: 3px;
+  margin-left: 72px;
+  width: 168px;
+
+  font-weight: $font-bold;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.round-diagram__text {
+  grid-area: read;
+  margin-top: 24px;
+  margin-bottom: 3px;
+  margin-left: 72px;
+
+  font-weight: $font-normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $special-text-color;
+}
+
+.round-diagram__more-about {
+  grid-area: about;
+  margin-top: 24px;
+  margin-bottom: 3px;
+  margin-left: 72px;
+
+  font-weight: $font-normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration-line: underline;
+  color: $happy-text-color;
 }
