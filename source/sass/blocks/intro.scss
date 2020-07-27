@@ -1,12 +1,3 @@
-$top-background: url("../../img/bg-back-mobile@1x.jpg");
-$app-background: #1d2631;
-$text-color: #ffffff;
-$special-text-color: #283645;
-$happy-text-color: #d22856;
-$font-light: 300;
-$font-normal: 400;
-$font-bold: 700;
-
 .intro {
   font-weight: $font-light;
   color: $text-color;
@@ -154,59 +145,4 @@ $font-bold: 700;
     margin-top: 30px;
     margin-left: 10px;
   }
-}
-
-.round-diagram {
-  display: grid;
-  width: 660px;
-  grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(3, auto);
-  grid-template-areas:
-    "img slogan"
-    "img read"
-    "img about";
-}
-
-.round-diagram__timer {
-  grid-area: img;
-  margin-top: 17px;
-  margin-bottom: 3px;
-  // margin-left: 89px;
-  width: 238px;
-}
-
-.round-diagram__slogan {
-  grid-area: slogan;
-  margin-bottom: 3px;
-  margin-left: 72px;
-  width: 168px;
-
-  font-weight: $font-bold;
-  font-size: 30px;
-  line-height: 36px;
-}
-
-.round-diagram__text {
-  grid-area: read;
-  margin-top: 24px;
-  margin-bottom: 3px;
-  margin-left: 72px;
-
-  font-weight: $font-normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: $special-text-color;
-}
-
-.round-diagram__more-about {
-  grid-area: about;
-  margin-top: 24px;
-  margin-bottom: 3px;
-  margin-left: 72px;
-
-  font-weight: $font-normal;
-  font-size: 14px;
-  line-height: 24px;
-  text-decoration-line: underline;
-  color: $happy-text-color;
 }

@@ -9,8 +9,8 @@
   <link href="css/normalize.css" rel="stylesheet">
 </head>
 
-<body class="page-body container">
-  <header class="page-header">
+<body class="page-body">
+  <header class="page-header container">
 
     <a class="page-header__logo">
       <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Pink">
@@ -39,11 +39,12 @@
     </nav>
   </header>
 
-  <main class="page-main">
+  <main class="page-main container">
     <h1 class="visually-hidden">Приложение Pink</h1>
 
     <section class="intro">
       <h2 class="visually-hidden">Скачать приложение</h2>
+
       <div class="intro__wrapper">
         <header class="intro__header">
           <h2 class="visually-hidden">Главная Pink</h2>
@@ -125,6 +126,15 @@
           </button>
         </p>
       </div>
+    </section>
+
+    <section class="round-diagram">
+      <h2 class="visually-hidden">Эффект от приложения</h2>
+
+      <img class="round-diagram__timer" src="img/icon-timer.svg" width="238" height="276" alt="Изображение таймера">24
+      <p class="round-diagram__slogan">Эффект на 24 часа!</p>
+      <p class="round-diagram__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+      <a class="round-diagram__more-about" href="blank.html">Узнать больше об исследовании</a>
     </section>
 
     <section class="tarification">
@@ -212,12 +222,12 @@
 
       <a class="contacts__map" href="blank.html">
         <svg></svg>
-        <img src="img/bg-map-mobile@1x.png" width="320" height="200" alt="Как до нас добраться">
+        <img class="contacts__map-image" src="img/bg-map-mobile@1x.png" width="320" height="200" alt="Как до нас добраться">
       </a>
     </section>
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer container">
     <div class="page-footer__wrapper">
 
       <a class="page-footer__logo page-footer__logo--glasses">
@@ -246,15 +256,6 @@
       </div>
     </div>
   </footer>
-
-  <section class="round-diagram">
-    <h2 class="visually-hidden">Эффект от приложения</h2>
-
-    <img class="round-diagram__timer" src="img/icon-timer.svg" width="238" height="276" alt="Изображение таймера">24
-    <p class="round-diagram__slogan">Эффект на 24 часа!</p>
-    <p class="round-diagram__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-    <a class="round-diagram__more-about" href="blank.html">Узнать больше об исследовании</a>
-  </section>
 </body>
 
 </html>
