@@ -1,11 +1,3 @@
-$special-background: #f2f2f2;
-$button-background: #2aab6d;
-$font-normal: 400;
-$font-bold: 700;
-$text-color: #ffffff;
-$special-text-color: #283645;
-$happy-text-color: #d22856;
-
 .main-form {
   border: 2px solid blue;
 }
@@ -88,4 +80,22 @@ $happy-text-color: #d22856;
 
 .main-form__star {
   color: $happy-text-color;
+}
+
+@media (min-width: $tablet-width) {
+  .competition__slogan {
+    width: 660px;
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .competition__slogan {
+    width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 50px;
+    line-height: 68px;
+  }
 }

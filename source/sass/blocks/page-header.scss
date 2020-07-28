@@ -1,14 +1,33 @@
-$menu-background: #283645;
-$text-color: #ffffff;
-$font-bold: 700;
-
 .page-header {
   background-color: $menu-background;
   color: $text-color;
   font-weight: $font-bold;
   font-size: 18px;
   line-height: 32px;
+  align-items: center;
   text-transform: uppercase;
-
   border: 2px solid green;
+}
+
+.page-header__logo {
+  height: 23px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    display: flex;
+    flex-direction: row;
+    height: 110px;
+    font-weight: $font-normal;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: none;
+  }
 }

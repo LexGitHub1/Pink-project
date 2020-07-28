@@ -1,10 +1,3 @@
-$main-background: #ffffff;
-$special-background: #f2f2f2;
-$font-light: 300;
-$font-normal: 400;
-$font-bold: 700;
-$special-text-color: #283645;
-
 .information {
   background: $special-background;
   text-align: center;
@@ -18,6 +11,16 @@ $special-text-color: #283645;
   line-height: 29px;
   color: $special-text-color;
   background-color: $main-background;
+  margin: 0;
+  padding: 46px 0 70px 0;
+}
+
+.information__list {
+  display: flex;
+  flex-direction: column;
+
+  list-style: none;
+  padding: 0;
 }
 
 .information__title {
@@ -31,4 +34,59 @@ $special-text-color: #283645;
   font-size: 14px;
   line-height: 24px;
   color: $special-text-color;
+}
+
+@media (min-width: $tablet-width) {
+  .information {
+    display: grid;
+    width: 660px;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "title title"
+      "img item"
+      "img item"
+      "img item";
+  }
+
+  .information__slogan {
+    grid-area: title;
+  }
+
+  .information__image-wrapper {
+    grid-area: img;
+  }
+
+  .information__item {
+    grid-area: item;
+    width: 310px;
+    margin-left: 42px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .information {
+    display: grid;
+    width: 1200px;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "title title title"
+      "img img img"
+      "item item item";
+  }
+
+  .information__slogan {
+    grid-area: title;
+  }
+
+  .information__image-wrapper {
+    grid-area: img;
+  }
+
+  .information__list {
+    grid-area: item;
+    display: flex;
+    flex-direction: row;
+  }
 }

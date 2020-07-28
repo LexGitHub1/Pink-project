@@ -1,0 +1,86 @@
+.round-diagram {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "img slogan"
+    "img read"
+    "img about";
+
+  border: 2px solid darkgreen;
+}
+
+.round-diagram__timer {
+  grid-area: img;
+  margin-top: 17px;
+  margin-bottom: 3px;
+  width: 238px;
+}
+
+.round-diagram__slogan {
+  grid-area: slogan;
+  margin-bottom: 3px;
+  margin-left: 72px;
+  width: 168px;
+
+  font-weight: $font-bold;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.round-diagram__text {
+  grid-area: read;
+  margin-top: 24px;
+  margin-bottom: 3px;
+  margin-left: 72px;
+
+  font-weight: $font-normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: $special-text-color;
+}
+
+.round-diagram__more-about {
+  grid-area: about;
+  margin-top: 24px;
+  margin-bottom: 3px;
+  margin-left: 72px;
+
+  font-weight: $font-normal;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration-line: underline;
+  color: $happy-text-color;
+}
+
+@media (max-width: $mobile-width-only) {
+  .round-diagram {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .round-diagram__timer {
+    width: 298px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .round-diagram__slogan {
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .round-diagram__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .round-diagram__more-about {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

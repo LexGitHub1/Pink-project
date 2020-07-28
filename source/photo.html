@@ -3,12 +3,14 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Приложение "PINK"</title>
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
-  <header class="page-header">
+  <header class="page-header container">
 
     <a class="page-header__logo" href="index.html">
       <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Pink">
@@ -37,7 +39,7 @@
     </nav>
   </header>
 
-  <main class="page-main">
+  <main class="page-main container">
     <h1 class="visually-hidden">Приложение Pink</h1>
 
     <section class="photo">
@@ -52,19 +54,17 @@
     <section class="reviews">
       <h2 class="visually-hidden">Отзывы пользователей</h2>
 
-      <p class="reviews__description">Взгляните на фотографии, которые<br>выкладывают пользователи!<br>Видите, как не
-        хватает ваших?</p>
+      <p class="reviews__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
 
       <div class="reviews__list">
-        <blockquote class="reviews__item">
-          <p class="reviews__panorama">Панорама дня</p>
-          <img class="reviews__author-image" src="img/panorama-mobile@1x.jpg" width="320" height="137"
+        <blockquote class="reviews__item reviews__item--today">
+          <p class="reviews__panorama panorama">Панорама дня</p>
+          <img class="reviews__author-image reviews__author-image--big" src="img/panorama-mobile@1x.jpg" width="320" height="137"
             alt="Фото панорамы дня">
-          <div class="reviews__author-info">
+          <div class="reviews__author-info reviews__author-info--post">
             <cite class="reviews__author-name">Анна<span class="author-name__time">(5 минут назад)</span></cite>
-            <p class="reviews__text">Прыгать или нет? Напишите в<br>комментарии свой совет и<br>смотрите прямую
-              трансляцию в<br>перископе, задавайте свои вопросы!</p>
-            <p class="reviews__likes">Нравится: 215</p>
+            <p class="reviews__text reviews__text--text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <p class="reviews__likes reviews__likes--move">Нравится: 215</p>
           </div>
         </blockquote>
 
@@ -159,7 +159,7 @@
     </section>
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer container">
     <div class="page-footer__wrapper">
 
       <a class="page-footer__logo page-footer__logo--glasses">

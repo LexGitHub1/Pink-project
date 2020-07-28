@@ -1,6 +1,3 @@
-$top-background: url("../../img/bg-back-mobile@1x.jpg");
-$font-light: 300;
-
 .photo {
   background-image: $top-background;
   color: $text-color;
@@ -13,4 +10,18 @@ $font-light: 300;
   font-weight: $font-light;
   font-size: 24px;
   line-height: 33px;
+}
+
+@media (min-width: $tablet-width) {
+  .photo__slogan {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo__slogan {
+    font-size: 50px;
+    line-height: 68px;
+  }
 }

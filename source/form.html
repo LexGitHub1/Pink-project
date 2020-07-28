@@ -3,12 +3,14 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Приложение "PINK"</title>
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
-  <header class="page-header">
+  <header class="page-header container">
 
     <a class="page-header__logo" href="index.html">
       <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Pink">
@@ -37,7 +39,7 @@
     </nav>
   </header>
 
-  <main class="page-main">
+  <main class="page-main container">
     <h1 class="visually-hidden">Приложение Pink</h1>
 
     <section class="competition">
@@ -137,8 +139,7 @@
 
         <fieldset class="main-form__user-comment">
           <legend class="main-form__legend">Опишите свои эмоции</legend>
-          <textarea class="main-form__text-field" cols="35" rows="15"
-            placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <textarea class="main-form__text-field" cols="30" rows="15" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
 
         <button class="main-form__button button" type="submit">Отправить форму</button>
@@ -148,7 +149,7 @@
     </section>
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer container">
     <div class="page-footer__wrapper">
 
       <a class="page-footer__logo page-footer__logo--glasses">

@@ -1,8 +1,5 @@
-$main-font: "Open Sans", "Arial", sans-serif;
-$main-background: #ffffff;
-$main-color: #000000;
-
 body {
+  min-width: 320px;
   font-family: $main-font;
   background-color: $main-background;
   color: $main-color;
@@ -34,6 +31,32 @@ img {
   font-family: "Open Sans";
   font-weight: 700;
   src: url("../../fonts/opensansbold.woff2") format("woff2"), url("../../fonts/opensansbold.woff") format("woff");
+}
+
+.page {
+  height: 100%;
+}
+
+.container {
+  width: 320px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) and (max-width: 1200px) {
+  .container {
+    width: 660px;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    width: 1200px;
+    padding: 0;
+    margin: 0 auto;
+  }
 }
 
 .visually-hidden:not(:focus):not(:active),
