@@ -43,7 +43,7 @@ img {
   margin: 0 auto;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) and (max-width: 1200px) {
   .container {
     width: 660px;
     padding: 0;
