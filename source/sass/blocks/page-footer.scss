@@ -39,19 +39,31 @@
 
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
-    width: 660px;
+    width: 620px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+    padding: 0 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer__wrapper {
-    width: 1200px;
+    width: 950px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: baseline;
+    padding: 50px;
+  }
+
+  .copyright {
+    width: 153px;
+  }
+
+  .copyright__text {
+    font-size: 18px;
   }
 }

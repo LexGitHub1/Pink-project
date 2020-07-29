@@ -4,25 +4,29 @@
   border: 2px solid gold;
 }
 
+.tarification__wrapper {
+  margin-top: 100px;
+}
+
+.tarification__list {
+  list-style: none;
+  display: flex;
+  width: 828px;
+  padding: 0;
+}
+
 .tarification__header {
   background: $menu-background;
   text-align: center;
+  height: 98px;
+  width: 280px;
+  margin: 0 20px;
 }
 
-.tarification__title {
-  font-weight: $font-bold;
-  font-size: 16px;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: $text-color;
-}
-
-.tarification__price {
-  font-weight: $font-light;
-  font-size: 18px;
-  line-height: 30px;
-  text-transform: uppercase;
-  color: $text-color;
+.tarification__content {
+  background-color: $main-background;
+  width: 280px;
+  margin-left: 20px;
 }
 
 .tarification__option {
@@ -31,6 +35,71 @@
   line-height: 30px;
   text-transform: uppercase;
   color: $special-text-color;
+
+  padding: 14px 0 14px 20px;
+  margin: 0;
+  border: 1px solid $border-color;
+}
+
+.tarification__toggles {
+  width: 60px;
+  margin-left: 130px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tarification__title {
+  font-weight: $font-bold;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $text-color;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.tarification__best-choice {
+  display: none;
+}
+
+@media (max-width: $mobile-width-only) {
+  .slider__item {
+    display: none;
+
+    &--current {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slider__list {
+    display: grid;
+    grid-template-columns: 156px 156px 156px;
+    gap: 5px;
+  }
+
+  .tarification__header {
+    width: 150px;
+    margin: 0;
+  }
+
+  .tarification__content {
+    display: none;
+
+    &--current {
+      display: block;
+      width: 156px;
+    }
+  }
+}
+
+.tarification__price {
+  font-weight: $font-light;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $text-color;
 }
 
 .tarification__text {

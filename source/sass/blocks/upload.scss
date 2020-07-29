@@ -16,6 +16,7 @@
 }
 
 .upload__button {
+  height: 55px;
   font-weight: $font-bold;
   font-size: 18px;
   line-height: 18px;
@@ -26,5 +27,128 @@
 
   &--cancel {
     color: $special-text-color;
+  }
+}
+
+.upload__image {
+  margin: 20px;
+}
+
+.upload__scale-image {
+  margin: 0 auto;
+  width: 240px;
+  padding: 34px 0;
+}
+
+.upload__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  width: 194px;
+
+  svg {
+    display: none;
+  }
+}
+
+.upload__button-wrapper {
+  margin: 0 auto;
+  padding: 38px 0 41px 0;
+  width: 280px;
+  height: 122px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .upload__description {
+    font-size: 18px;
+  }
+
+  .upload__form {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+      "img icons"
+      "img button";
+  }
+
+  .upload__image {
+    grid-area: img;
+    width: 300px;
+    height: 400px;
+    margin: 0;
+    padding: 20px 20px 50px 20px;
+  }
+
+  .upload__list {
+    grid-area: icons;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+  }
+
+  .upload__button-wrapper {
+    grid-area: button;
+    padding: 210px 20px 50px 20px;
+    margin: 0;
+  }
+
+  .upload__scale-image {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .upload {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .upload__form {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+      "img icons"
+      "img button";
+  }
+
+  .upload__image {
+    grid-area: img;
+    width: 300px;
+    height: 400px;
+    margin: 0;
+    padding: 57px 20px 57px 80px;
+  }
+
+  .upload__button {
+    width: 183px;
+  }
+
+  .upload__list {
+    grid-area: icons;
+    display: flex;
+    flex-direction: column;
+    padding-top: 55px;
+  }
+
+  .upload__button-wrapper {
+    grid-area: button;
+    width: 410px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 260px 0 50px 0;
+  }
+
+  .upload__scale-image {
+    display: none;
   }
 }
