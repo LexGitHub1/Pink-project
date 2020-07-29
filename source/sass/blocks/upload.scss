@@ -47,13 +47,14 @@
   display: flex;
   justify-content: space-between;
   width: 194px;
+
   svg {
     display: none;
   }
 }
 
 .upload__button-wrapper {
-  margin: 0px auto;
+  margin: 0 auto;
   padding: 38px 0 41px 0;
   width: 280px;
   height: 122px;

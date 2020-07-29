@@ -70,6 +70,7 @@
   width: 275px;
   height: 195px;
   margin: 0 auto;
+
   &::placeholder {
     font-weight: $font-normal;
     font-size: 18px;
@@ -147,6 +148,7 @@
     width: 490px;
     font-size: 18px;
     text-align: center;
+
     br {
       display: none;
     }
@@ -155,6 +157,7 @@
   .main-form__list {
     padding: 0;
     height: 350px;
+
     &--user {
       display: flex;
       flex-direction: column;
