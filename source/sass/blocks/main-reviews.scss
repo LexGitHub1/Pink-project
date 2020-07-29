@@ -5,6 +5,14 @@
   border: 2px solid sienna;
 }
 
+.main-reviews__about {
+  font-weight: $font-normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: $special-text-color;
+  margin: 0;
+}
+
 .main-reviews__title {
   font-weight: $font-bold;
   font-size: 18px;
@@ -16,4 +24,50 @@
   font-size: 14px;
   line-height: 30px;
   color: $special-text-color;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-reviews__about {
+    display: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-reviews__content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .main-reviews__title {
+    margin: 50px 0 0 0;
+    font-size: 20px;
+  }
+
+  .main-reviews__description {
+    font-size: 18px;
+    text-align: center;
+    br {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-reviews__description {
+    width: 688px;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: center;
+    br {
+      display: none;
+    }
+  }
+
+  .main-reviews__title {
+    font-size: 24px;
+  }
+
+  .main-reviews__about {
+    font-size: 18px;
+  }
 }

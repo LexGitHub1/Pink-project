@@ -53,13 +53,13 @@
 
     <section class="main-form">
       <h2 class="visually-hidden">Форма пользователя</h2>
-      <p class="main-form__description">Поделитесь своей историей и получите<br>шанс выиграть ценный приз — 1000<br>миль
-        на вашу бонусную карту!</p>
+      <p class="main-form__description">Поделитесь своей историей и получите<br>шанс выиграть ценный приз — 1000<br>миль на вашу бонусную карту!</p>
+      <p class="main-form__fill-form">Пожалуйста, заполните форму ниже:</p>
 
       <form class="main-form__form" action="https://echo.htmlacademy.ru/" method="GET">
         <fieldset class="main-form__user-name">
           <legend class="visually-hidden">ФИО пользователя</legend>
-          <ul class="main-form__list">
+          <ul class="main-form__list main-form__list--user">
             <li class="main-form__list-item">
               <label class="main-form__label" for="person-surname">Фамилия:</label>
               <input class="main-form__field" type="text" id="person-surname" placeholder="Укажите фамилию *">
@@ -139,12 +139,14 @@
 
         <fieldset class="main-form__user-comment">
           <legend class="main-form__legend">Опишите свои эмоции</legend>
-          <textarea class="main-form__text-field" cols="30" rows="15" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <textarea class="main-form__text-field"
+            placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
         </fieldset>
 
-        <button class="main-form__button button" type="submit">Отправить форму</button>
-
-        <p class="main-form__note"><span class="main-form__star">*</span> — обязательные поля</p>
+        <div class="main-form__button-wrapper">
+          <button class="main-form__button button" type="submit">Отправить форму</button>
+          <p class="main-form__note"><span class="main-form__star">*</span> — обязательные поля</p>
+        </div>
       </form>
     </section>
   </main>

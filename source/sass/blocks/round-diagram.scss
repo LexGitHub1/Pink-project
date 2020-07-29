@@ -21,7 +21,6 @@
   grid-area: slogan;
   margin-bottom: 3px;
   margin-left: 72px;
-  width: 168px;
 
   font-weight: $font-bold;
   font-size: 30px;
@@ -63,22 +62,23 @@
   .round-diagram__timer {
     width: 298px;
   }
-}
 
-@media (min-width: $desktop-width) {
   .round-diagram__slogan {
     line-height: 30px;
+    br {
+      display: none;
+    }
   }
-}
 
-@media (min-width: $desktop-width) {
   .round-diagram__text {
+    width: 520px;
     font-size: 18px;
     line-height: 30px;
+    br {
+      display: none;
+    }
   }
-}
 
-@media (min-width: $desktop-width) {
   .round-diagram__more-about {
     font-size: 18px;
     line-height: 30px;

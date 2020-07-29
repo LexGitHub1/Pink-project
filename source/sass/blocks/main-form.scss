@@ -10,6 +10,20 @@
   color: $special-text-color;
 }
 
+.main-form__fill-form {
+  font-weight: $font-normal;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: $special-text-color;
+  margin: 0;
+  margin-bottom: 82px;
+}
+
+.main-form__list {
+  list-style: none;
+}
+
 .main-form__label {
   font-weight: $font-normal;
   font-size: 14px;
@@ -53,6 +67,9 @@
 }
 
 .main-form__text-field {
+  width: 275px;
+  height: 195px;
+  margin: 0 auto;
   &::placeholder {
     font-weight: $font-normal;
     font-size: 18px;
@@ -61,7 +78,17 @@
   }
 }
 
+.main-form__button-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 120px;
+  margin: 52px 20px 26px 20px;
+}
+
 .main-form__button {
+  width: 276px;
+  height: 59px;
   font-weight: $font-bold;
   font-size: 18px;
   line-height: 30px;
@@ -74,6 +101,7 @@
   font-weight: $font-normal;
   font-size: 14px;
   line-height: 30px;
+  text-align: center;
   text-transform: uppercase;
   color: $special-text-color;
 }
@@ -83,19 +111,111 @@
 }
 
 @media (min-width: $tablet-width) {
-  .competition__slogan {
-    width: 660px;
-    font-size: 50px;
-    line-height: 68px;
+  .main-form__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-form__form fieldset:nth-child(1) {
+    order: 1;
+  }
+
+  .main-form__form fieldset:nth-child(2) {
+    order: 4;
+    background: $main-background;
+  }
+
+  .main-form__form fieldset:nth-child(3) {
+    order: 3;
+  }
+
+  .main-form__form fieldset:nth-child(4) {
+    order: 2;
+    background: $main-background;
+  }
+
+  .main-form__form fieldset:nth-child(5) {
+    order: 5;
+  }
+
+  .main-form__form div:nth-child(6) {
+    order: 6;
+  }
+
+  .main-form__description {
+    margin: 100px auto 0 auto;
+    width: 490px;
+    font-size: 18px;
+    text-align: center;
+    br {
+      display: none;
+    }
+  }
+
+  .main-form__list {
+    padding: 0;
+    height: 350px;
+    &--user {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  .main-form__field {
+    padding: 15px;
+    width: 80%;
+    margin: 0;
+  }
+
+  .main-form__text-field {
+    width: 496px;
+  }
+
+  .main-form__button-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 50px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .competition__slogan {
-    width: 1200px;
-    display: flex;
-    justify-content: space-around;
-    font-size: 50px;
-    line-height: 68px;
+  .main-form__form {
+    margin: 0 auto;
+    width: 936px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "user app"
+      "contacts contacts"
+      "achiv achiv"
+      "comment comment"
+      "button button";
+  }
+
+  .main-form__user-name {
+    grid-area: user;
+  }
+
+  .main-form__user-achievement {
+    grid-area: achiv;
+  }
+
+  .main-form__user-contacts {
+    grid-area: contacts;
+  }
+
+  .main-form__user-app-choice {
+    grid-area: app;
+  }
+
+  .main-form__user-comment {
+    grid-area: comment;
+  }
+
+  .main-form__button-wrapper {
+    grid-area: button;
   }
 }
