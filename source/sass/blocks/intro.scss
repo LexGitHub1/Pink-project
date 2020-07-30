@@ -2,14 +2,6 @@
   font-weight: $font-light;
   color: $text-color;
   text-align: center;
-
-  border: 2px solid blue;
-}
-
-.intro__wrapper {
-  background-image: $top-background;
-  background-repeat: no-repeat;
-  background-size: 100%;
 }
 
 .intro__slogan {
@@ -18,6 +10,11 @@
   line-height: 29px;
   margin: 0;
   padding: 29px 0 34px 0;
+}
+
+.intro__image {
+  margin-bottom: -3px;
+  margin-right: 58px;
 }
 
 .intro__app-wrapper {
@@ -30,6 +27,10 @@
   font-size: 18px;
   line-height: 18px;
   color: $text-color;
+  padding: 21px 38px;
+  border-radius: 29px;
+  background-color: $app-background;
+  border: 3px solid $main-background;
 }
 
 .intro__OS-info {
@@ -41,15 +42,22 @@
 .logo-list {
   display: flex;
   list-style: none;
-  margin: auto;
-  padding: 0;
+  margin: 0 auto;
+  padding: 32px 0 28px 0;
   align-items: baseline;
   justify-content: space-between;
   max-width: 204px;
 }
 
+@media (max-width: $mobile-width-only) {
+  .intro__wrapper {
+    background-image: $top-background;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .intro__wrapper {
+    background-image: $topper-background;
     display: grid;
     width: 660px;
     grid-template-columns: repeat(2, auto);
@@ -100,6 +108,7 @@
 
 @media (min-width: $desktop-width) {
   .intro__wrapper {
+    background-image: $toppest-background;
     display: grid;
     width: 1200px;
     grid-template-columns: repeat(2, auto);

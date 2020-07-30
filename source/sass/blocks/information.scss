@@ -6,21 +6,25 @@
 }
 
 .information__slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 134px;
   font-weight: $font-light;
   font-size: 24px;
   line-height: 29px;
   color: $special-text-color;
   background-color: $main-background;
   margin: 0;
-  padding: 46px 0 70px 0;
+  padding: 46px 0 36px 0;
 }
 
 .information__list {
   display: flex;
   flex-direction: column;
-
   list-style: none;
   padding: 0;
+  margin-top: 35px;
 }
 
 .information__title {
