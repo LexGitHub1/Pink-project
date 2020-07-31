@@ -1,5 +1,4 @@
 .page-header {
-  background-color: $menu-background;
   color: $text-color;
   font-weight: $font-bold;
   font-size: 18px;
@@ -7,6 +6,18 @@
   align-items: center;
   text-transform: uppercase;
   height: 66px;
+}
+
+.page-header__top-bg {
+  background-color: rgba(0, 0, 0, 1);
+  opacity: 0.3;
+  position: relative;
+  top: 66px;
+  height: 66px;
+}
+
+.page-header__logo img {
+  margin: 23px 0 23px 20px;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -24,6 +35,14 @@
     height: 110px;
   }
 
+  .page-header__top-bg {
+    background-color: rgba(0, 0, 0, 1);
+    opacity: 0.3;
+    position: relative;
+    top: 110px;
+    height: 110px;
+  }
+
   .page-header__mobile-logo {
     display: none;
   }
@@ -35,46 +54,44 @@
   .page-header__desktop-logo {
     display: none;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .page-header__mobile-logo {
-    display: none;
-  }
-
-  .page-header__tablet-logo {
-    display: none;
-  }
-
-  .page-header__desktop-logo {
-    display: block;
-  }
-}
-
-.page-header__logo img {
-  margin: 23px 0 23px 20px;
-}
-
-@media (min-width: $tablet-width) {
   .page-header__logo img {
     margin: 27px 0 42px 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .page-header__top-bg {
+    background-color: rgba(0, 0, 0, 1);
+    opacity: 0.3;
+    position: relative;
+    top: 110px;
+    height: 110px;
+  }
+
+  .page-header__mobile-logo {
+    display: none;
+  }
+
+  .page-header__tablet-logo {
+    display: none;
+  }
+
+  .page-header__desktop-logo {
+    display: block;
+  }
+
+  // .page-header {
+  //   display: flex;
+  //   flex-direction: row;
+  //   height: 110px;
+  //   font-weight: $font-normal;
+  //   font-size: 18px;
+  //   line-height: 18px;
+  //   text-transform: none;
+  // }
+
   .page-header__logo img {
     margin: 27px 0 43px 130px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-header {
-    display: flex;
-    flex-direction: row;
-    height: 110px;
-    font-weight: $font-normal;
-    font-size: 18px;
-    line-height: 18px;
-    text-transform: none;
   }
 }

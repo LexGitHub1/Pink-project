@@ -1,8 +1,6 @@
 .information {
   background: $special-background;
   text-align: center;
-
-  border: 2px solid purple;
 }
 
 .information__slogan {
@@ -42,55 +40,80 @@
 
 @media (min-width: $tablet-width) {
   .information {
-    display: grid;
-    width: 660px;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas:
-      "title title"
-      "img item"
-      "img item"
-      "img item";
+    &--screen {
+      background-image: $screen-background;
+      background-repeat: no-repeat;
+      background-position: 5% bottom;
+    }
   }
 
-  .information__slogan {
-    grid-area: title;
-  }
-
-  .information__image-wrapper {
-    grid-area: img;
+  .information__list {
+    align-items: flex-end;
+    text-align: left;
+    margin-top: 0;
+    padding-bottom: 35px;
+    margin-bottom: 0;
   }
 
   .information__item {
-    grid-area: item;
     width: 310px;
-    margin-left: 42px;
+  }
+
+  .information__slogan {
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  .information__top-slogan {
+    br {
+      display: none;
+    }
+  }
+
+  .information__screen {
+    display: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .information {
-    display: grid;
-    width: 1200px;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas:
-      "title title title"
-      "img img img"
-      "item item item";
+    &--screen {
+      background-image: unset;
+      background-repeat: no-repeat;
+      background-position: 5% bottom;
+    }
   }
 
-  .information__slogan {
-    grid-area: title;
-  }
-
-  .information__image-wrapper {
-    grid-area: img;
+  .information__triangle {
+    margin-top: -1px;
   }
 
   .information__list {
-    grid-area: item;
+    width: 940px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 35px;
+  }
+
+  .information__item {
+    width: 252px;
+  }
+
+  .information__slogan {
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  .information__top-slogan {
+    br {
+      display: none;
+    }
+  }
+
+  .information__screen {
+    display: none;
   }
 }
