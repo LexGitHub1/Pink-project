@@ -6,21 +6,35 @@
     "img slogan"
     "img read"
     "img about";
-
-  border: 2px solid darkgreen;
+  margin-top: 76px;
+  margin-bottom: 109px;
 }
 
-.round-diagram__timer {
+.round-diagram__timer-image {
   grid-area: img;
-  margin-top: 17px;
-  margin-bottom: 3px;
   width: 238px;
+  height: 276px;
+  box-sizing: border-box;
+  padding: 68px 64px 51px;
+  background-image: url("../../img/diagram-fill.svg"), url("../../img/icon-timer.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 202px 202px, 238px 276px;
+  background-position: 19px 55px, 0 0;
+  margin: auto;
+}
+
+.round-diagram__timer-text {
+  font-size: 96px;
+  font-weight: $font-bold;
+  line-height: 163px;
+  color: $happy-text-color;
 }
 
 .round-diagram__slogan {
   grid-area: slogan;
-  margin-bottom: 3px;
+  margin-bottom: 0;
   margin-left: 72px;
+  margin-top: 38px;
 
   font-weight: $font-bold;
   font-size: 30px;
@@ -30,7 +44,7 @@
 .round-diagram__text {
   grid-area: read;
   margin-top: 24px;
-  margin-bottom: 3px;
+  margin-bottom: 0;
   margin-left: 72px;
 
   font-weight: $font-normal;
@@ -42,7 +56,7 @@
 .round-diagram__more-about {
   grid-area: about;
   margin-top: 24px;
-  margin-bottom: 3px;
+  margin-bottom: 27px;
   margin-left: 72px;
 
   font-weight: $font-normal;
@@ -59,8 +73,18 @@
 }
 
 @media (min-width: $desktop-width) {
-  .round-diagram__timer {
+  .round-diagram {
+    margin-top: -1px;
+    padding: 50px 0 67px 0;
+    background-color: $special-background;
+  }
+
+  .round-diagram__timer-image {
+    padding: 94px 64px 64px 80px;
     width: 298px;
+    height: 345px;
+    background-size: 253px 253px, 298px 345px;
+    background-position: 22px 68px, 0 0;
   }
 
   .round-diagram__slogan {
@@ -84,5 +108,9 @@
   .round-diagram__more-about {
     font-size: 18px;
     line-height: 30px;
+  }
+
+  .round-diagram__timer-text {
+    font-size: 120px;
   }
 }

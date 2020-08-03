@@ -2,26 +2,39 @@
   background-image: $top-background;
   color: $text-color;
   text-align: center;
-
-  border: 2px solid brown;
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .photo__slogan {
   font-weight: $font-light;
   font-size: 24px;
   line-height: 33px;
+  margin: 0;
+  padding-top: 102px;
+  padding-bottom: 84px;
 }
 
 @media (min-width: $tablet-width) {
   .photo__slogan {
+    background-image: $topper-background;
+    background-repeat: no-repeat;
+    background-position: top center;
     font-size: 50px;
     line-height: 68px;
+    padding-top: 191px;
+    padding-bottom: 143px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .photo__slogan {
+    background-image: $toppest-background;
+    background-repeat: no-repeat;
+    background-position: top center;
     font-size: 50px;
     line-height: 68px;
+    padding-top: 184px;
+    padding-bottom: 104px;
   }
 }
