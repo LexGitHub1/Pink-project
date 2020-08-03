@@ -27,10 +27,20 @@
   font-size: 18px;
   line-height: 18px;
   color: $text-color;
-  padding: 21px 38px;
-  border-radius: 29px;
+  width: 280px;
+  height: 55px;
+  border-radius: 30px;
   background-color: $app-background;
   border: 3px solid $main-background;
+
+  &:hover {
+    background-color: $main-background;
+    color: $happy-text-color;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
 }
 
 .intro__OS-info {
@@ -94,8 +104,7 @@
 
   .intro__download {
     width: 300px;
-    background: none;
-    border-radius: 32px;
+    background-color: inherit;
   }
 
   .intro__app-wrapper {
@@ -154,12 +163,11 @@
   }
 
   .intro__download {
-    width: 320px;
-    background: none;
-    border-radius: 32px;
+    width: 300px;
     font-size: 21px;
-    padding: 20px 0;
-    margin-left: 120px;
+    background-color: inherit;
+    height: 56px;
+    margin-left: 130px;
   }
 
   .intro__app-wrapper {

@@ -1,7 +1,12 @@
 .main-nav {
   position: relative;
   width: auto;
-  min-height: 63px;
+  height: 69px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main-nav__logo img {
+  padding: 22px 0 21px 20px;
 }
 
 .main-nav--opened {
@@ -10,37 +15,39 @@
 
 .main-nav__toggle {
   position: absolute;
-  top: 10px;
-  right: 0;
+  top: 8px;
+  right: 10px;
   z-index: 2;
   display: block;
   width: 70px;
   height: 50px;
-  background-color: inherit;
+  background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
   border: none;
+  padding: 0;
 }
 
 .main-nav--closed .main-nav__toggle {
   &::before {
     content: "";
     position: absolute;
-    top: 15px;
-    left: 17px;
-    width: 36px;
-    height: 2px;
+    top: 13px;
+    left: 10px;
+    width: 50px;
+    height: 4px;
+    border-radius: 1px;
     background-color: $main-background;
-    box-shadow: 0 8px 0 0 $main-background, 0 16px 0 0 $main-background;
+    box-shadow: 0 10px 0 0 $main-background, 0 20px 0 0 $main-background;
   }
 
   &:hover::before {
     background-color: $happy-text-color;
-    box-shadow: 0 8px 0 0 $happy-text-color, 0 16px 0 0 $happy-text-color;
+    box-shadow: 0 10px 0 0 $happy-text-color, 0 20px 0 0 $happy-text-color;
   }
 
   &:active::before {
     background-color: $happy-text-color;
-    box-shadow: 0 8px 0 0 $happy-text-color, 0 16px 0 0 $happy-text-color;
+    box-shadow: 0 10px 0 0 $happy-text-color, 0 20px 0 0 $happy-text-color;
     opacity: 0.3;
   }
 }
@@ -52,7 +59,7 @@
 
   .main-nav--opened .main-nav__wrapper {
     position: absolute;
-    top: 66px;
+    top: 69px;
     right: 0;
     left: 0;
     z-index: 10;
@@ -80,6 +87,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    top: 30px;
+  }
+
+  .main-nav {
+    height: 110px;
+  }
+
   .main-nav--opened {
     background-color: $menu-background;
     height: 110px;
@@ -91,7 +106,7 @@
 
   .main-nav--opened .main-nav__wrapper {
     position: absolute;
-    top: 66px;
+    top: 110px;
     right: 0;
     left: 0;
     z-index: 10;
@@ -124,9 +139,9 @@
     content: "";
     position: absolute;
     top: 24px;
-    left: 18px;
-    width: 36px;
-    height: 2px;
+    left: 16px;
+    width: 38px;
+    height: 3px;
     background-color: $main-background;
   }
 
@@ -155,7 +170,6 @@
   position: relative;
   display: block;
   width: auto;
-  padding: 14px 0;
   font-size: 18px;
   line-height: 32px;
   color: $text-color;
@@ -165,6 +179,7 @@
   background-color: $menu-background;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   border-bottom: 1px solid $main-color;
+  padding: 15px 0;
 
   &:hover {
     color: $happy-text-color;
@@ -194,6 +209,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav__logo img {
+    padding: 27px 0 43px 130px;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+  }
+
   .site-list {
     width: 620px;
     display: flex;
@@ -201,8 +225,24 @@
     justify-content: space-between;
     list-style: none;
     text-align: center;
-    margin-left: 450px;
+    margin-left: 173px;
     padding: 0;
+  }
+
+  .site-list__item {
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        background: $main-background;
+      }
+    }
   }
 
   .site-list a {
@@ -215,6 +255,8 @@
     background-color: unset;
     border-top: unset;
     border-bottom: unset;
+    padding-top: 35px;
+    padding-bottom: 10px;
 
     &:hover {
       color: $happy-text-color;
@@ -228,8 +270,6 @@
 
   .main-nav--closed .site-list__item {
     display: block;
-    position: relative;
-    bottom: 80px;
   }
 
   .main-nav--nojs .main-nav__toggle {

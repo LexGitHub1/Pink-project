@@ -11,12 +11,13 @@
 
 <body class="page-body">
   <header class="page-header container">
-    <div class="page-header__top-bg"></div>
     <nav class="main-nav main-nav--closed main-nav--nojs">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__mobile-logo" src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Pink">
-        <img class="page-header__tablet-logo" src="img/logo-pink-white-tablet.svg" width="145" height="40" alt="Логотип Pink">
-        <img class="page-header__desktop-logo" src="img/logo-pink-white-desktop.svg" width="147" height="40" alt="Логотип Pink">
+      <a class="main-nav__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-pink-white-tablet.svg">
+          <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Pink">
+        </picture>
       </a>
 
       <button class="main-nav__toggle" type="button">
@@ -164,18 +165,18 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="https://twitter.com//htmlacademy">
-              <img src="img/icon-twitter.svg" width="18" height="14" alt="Иконка Twitter">
+            <a class="social__link" href="https://twitter.com/htmlacademy">
+              <img class="social__icon" src="img/icon-twitter.svg" width="18" height="14" alt="Иконка Twitter">
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">
-              <img src="img/icon-facebook.svg" width="9" height="18" alt="Иконка Facebook">
+            <a class="social__link" href="https://www.facebook.com/htmlacademy">
+              <img class="social__icon" src="img/icon-facebook.svg" width="9" height="18" alt="Иконка Facebook">
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">
-              <img src="img/icon-youtube.svg" width="15" height="13" alt="Иконка Youtube">
+            <a class="social__link" href="https://www.youtube.com/htmlacademy">
+              <img class="social__icon" src="img/icon-youtube.svg" width="15" height="13" alt="Иконка Youtube">
             </a>
           </li>
         </ul>
@@ -205,6 +206,22 @@
     <button class="page-modal__button" type="button">Oк</button>
   </section>
 
+  <script>
+    var navMain = document.querySelector('.main-nav');
+    var navToggle = document.querySelector('.main-nav__toggle');
+
+    navMain.classList.remove('main-nav--nojs');
+
+    navToggle.addEventListener('click', function () {
+      if (navMain.classList.contains('main-nav--closed')) {
+        navMain.classList.remove('main-nav--closed');
+        navMain.classList.add('main-nav--opened');
+      } else {
+        navMain.classList.add('main-nav--closed');
+        navMain.classList.remove('main-nav--opened');
+      }
+    });
+  </script>
 </body>
 
 </html>
