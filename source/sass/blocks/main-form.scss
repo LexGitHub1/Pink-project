@@ -132,8 +132,8 @@
       transform: rotate(-45deg);
       width: 21px;
       height: 10px;
-      border-left: 2px solid #d22856;
-      border-bottom: 2px solid #d22856;
+      border-left: 2px solid $happy-text-color;
+      border-bottom: 2px solid $happy-text-color;
     }
   }
 
@@ -157,9 +157,9 @@
       height: 35px;
       border-width: 2px;
       border-style: solid;
-      border-color: #e5e5e5;
+      border-color: $border-color;
       border-radius: 50%;
-      background-color: #fff;
+      background-color: $main-background;
     }
 
     &::after {
@@ -171,7 +171,7 @@
       height: 14px;
       transform: translateY(-50%);
       border-radius: 50%;
-      background-color: #d22856;
+      background-color: $happy-text-color;
     }
   }
 }
