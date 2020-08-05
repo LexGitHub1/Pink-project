@@ -1,8 +1,15 @@
 .main-reviews {
-  background: $main-background;
+  padding-top: 29px;
+  padding-bottom: 29px;
   text-align: center;
+}
 
-  border: 2px solid sienna;
+.main-reviews__wrapper {
+  box-sizing: border-box;
+  min-width: 320px;
+  max-width: 940px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .main-reviews__about {
@@ -24,6 +31,34 @@
   font-size: 14px;
   line-height: 30px;
   color: $special-text-color;
+}
+
+.main-reviews__toggles {
+  margin-top: 33px;
+  margin-bottom: 13px;
+}
+
+.slider__toggles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12px;
+}
+
+.slider__toggle {
+  &--current {
+    box-shadow: 0 0 0 3px $special-text-color;
+    background-color: transparent;
+  }
+
+  margin-left: 9px;
+  margin-right: 10px;
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  border: 0;
+  border-radius: 50%;
+  background-color: rgba(40, 54, 69, 0.3);
 }
 
 @media (max-width: $mobile-width-only) {

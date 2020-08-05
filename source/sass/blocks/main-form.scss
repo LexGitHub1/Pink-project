@@ -1,7 +1,3 @@
-.main-form {
-  border: 2px solid blue;
-}
-
 .main-form__description {
   font-weight: $font-normal;
   font-size: 14px;
@@ -20,8 +16,45 @@
   margin-bottom: 82px;
 }
 
+.main-form__fieldset {
+  border: 2px solid $border-color;
+  border-radius: 1px;
+  padding: 0 20px;
+  margin: 0;
+}
+
+.main-form__name-wrapper {
+  padding: 40px 0;
+}
+
+.main-form__achievement-wrapper {
+  background: $special-background;
+  padding-top: 42px;
+  padding-bottom: 20px;
+}
+
+.main-form__contacts-wrapper {
+  padding: 40px 0;
+}
+
+.main-form__app-choice-wrapper {
+  background: $special-background;
+  padding-top: 42px;
+  padding-bottom: 20px;
+}
+
+.main-form__comment-wrapper {
+  padding: 40px 0;
+}
+
 .main-form__list {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-form__list-item {
+  padding-bottom: 29px;
 }
 
 .main-form__label {
@@ -30,6 +63,7 @@
   line-height: 30px;
   text-transform: uppercase;
   color: $happy-text-color;
+  padding-left: 20px;
 }
 
 .main-form__field {
@@ -40,6 +74,15 @@
   &::placeholder {
     color: $special-text-color;
   }
+
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding-left: 20px;
+  min-height: 59px;
+  border: 2px solid $border-color;
+  border-radius: 1px;
+  margin-top: 5px;
 }
 
 .main-form__legend {
@@ -49,10 +92,7 @@
   text-align: center;
   text-transform: uppercase;
   color: $happy-text-color;
-}
-
-.main-form__user-achievement {
-  background: $special-background;
+  padding-bottom: 22px;
 }
 
 .main-form__option {
@@ -60,16 +100,92 @@
   font-size: 18px;
   line-height: 30px;
   color: $special-text-color;
+
+  &--checkbox {
+    position: relative;
+    display: block;
+    padding-left: 69px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    font-size: 18px;
+    line-height: 30px;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 35px;
+      height: 35px;
+      border: 2px solid $border-color;
+      border-radius: 1px;
+      background-color: $main-background;
+    }
+
+    &::after {
+      content: none;
+      position: absolute;
+      left: 8px;
+      top: 11px;
+      transform: rotate(-45deg);
+      width: 21px;
+      height: 10px;
+      border-left: 2px solid #d22856;
+      border-bottom: 2px solid #d22856;
+    }
+  }
+
+  &--radio {
+    position: relative;
+    display: block;
+    padding-left: 69px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    font-size: 18px;
+    line-height: 30px;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 35px;
+      height: 35px;
+      border-width: 2px;
+      border-style: solid;
+      border-color: #e5e5e5;
+      border-radius: 50%;
+      background-color: #fff;
+    }
+
+    &::after {
+      content: none;
+      position: absolute;
+      left: 13px;
+      top: 50%;
+      width: 14px;
+      height: 14px;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      background-color: #d22856;
+    }
+  }
 }
 
-.main-form__user-app-choice {
-  background: $special-background;
+.main-form__checkbox:checked + .main-form__option::after {
+  content: "";
+}
+
+.main-form__radio:checked + .main-form__option::after {
+  content: "";
 }
 
 .main-form__text-field {
-  width: 275px;
-  height: 195px;
-  margin: 0 auto;
+  padding: 14px 19px;
 
   &::placeholder {
     font-weight: $font-normal;
@@ -77,6 +193,17 @@
     line-height: 30px;
     color: $special-text-color;
   }
+}
+
+.main-form__field-input {
+  display: block;
+  padding: 14px 20px 15px;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 200px;
+  border: 2px solid $border-color;
+  border-radius: 1px;
+  resize: vertical;
 }
 
 .main-form__button-wrapper {
@@ -88,14 +215,17 @@
 }
 
 .main-form__button {
-  width: 276px;
-  height: 59px;
   font-weight: $font-bold;
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
   color: $text-color;
   background-color: $button-background;
+
+  padding: 16px 15px;
+  width: 276px;
+  border: 2px solid $button-background;
+  border-radius: 1px;
 }
 
 .main-form__note {
@@ -111,31 +241,45 @@
   color: $happy-text-color;
 }
 
+@media (max-width: $mobile-width-only) {
+  .main-form__fill-form {
+    display: none;
+  }
+
+  .main-form__fieldset {
+    border: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .main-form__form {
     display: flex;
     flex-direction: column;
   }
 
-  .main-form__form fieldset:nth-child(1) {
+  .main-form__user-name {
+    border: none;
+  }
+
+  .main-form__form div:nth-child(1) {
     order: 1;
   }
 
-  .main-form__form fieldset:nth-child(2) {
+  .main-form__form div:nth-child(2) {
     order: 4;
     background: $main-background;
   }
 
-  .main-form__form fieldset:nth-child(3) {
+  .main-form__form div:nth-child(3) {
     order: 3;
   }
 
-  .main-form__form fieldset:nth-child(4) {
+  .main-form__form div:nth-child(4) {
     order: 2;
     background: $main-background;
   }
 
-  .main-form__form fieldset:nth-child(5) {
+  .main-form__form div:nth-child(5) {
     order: 5;
   }
 
@@ -144,7 +288,7 @@
   }
 
   .main-form__description {
-    margin: 100px auto 0 auto;
+    margin: 100px auto 82px auto;
     width: 490px;
     font-size: 18px;
     text-align: center;
@@ -181,6 +325,10 @@
     align-items: center;
     margin-bottom: 50px;
   }
+
+  .main-form__button {
+    width: 296px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -198,27 +346,37 @@
       "button button";
   }
 
-  .main-form__user-name {
+  .main-form__name-wrapper {
     grid-area: user;
   }
 
-  .main-form__user-achievement {
+  .main-form__achievement-wrapper {
     grid-area: achiv;
   }
 
-  .main-form__user-contacts {
+  .main-form__contacts-wrapper {
     grid-area: contacts;
   }
 
-  .main-form__user-app-choice {
+  .main-form__app-choice-wrapper {
     grid-area: app;
   }
 
-  .main-form__user-comment {
+  .main-form__comment-wrapper {
     grid-area: comment;
   }
 
   .main-form__button-wrapper {
     grid-area: button;
+  }
+
+  .main-form__description {
+    font-size: 18px;
+    margin: 100px auto 70px auto;
+    width: 756px;
+  }
+
+  .main-form__button {
+    width: 296px;
   }
 }
