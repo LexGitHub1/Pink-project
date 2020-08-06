@@ -67,16 +67,16 @@
         <div class="main-form__name-wrapper">
           <fieldset class="main-form__fieldset main-form__user-name">
             <legend class="visually-hidden">ФИО пользователя</legend>
-            <ul class="main-form__list main-form__list--user">
-              <li class="main-form__list-item">
+            <ul class="main-form__list main-form__list--name">
+              <li class="main-form__list-item main-form__list-item--name">
                 <label class="main-form__label" for="person-surname">Фамилия:</label>
                 <input class="main-form__field" type="text" id="person-surname" placeholder="Укажите фамилию *" required>
               </li>
-              <li class="main-form__list-item">
+              <li class="main-form__list-item main-form__list-item--name">
                 <label class="main-form__label" for="person-name">Имя:</label>
                 <input class="main-form__field" type="text" id="person-name" placeholder="Введите ваше имя *" required>
               </li>
-              <li class="main-form__list-item">
+              <li class="main-form__list-item main-form__list-item--name">
                 <label class="main-form__label" for="person-middle-name">Отчество:</label>
                 <input class="main-form__field" type="text" id="person-middle-name" placeholder="Ну и отчество тоже">
               </li>
@@ -87,7 +87,7 @@
         <div class="main-form__achievement-wrapper">
           <fieldset class="main-form__fieldset main-form__user-achievement">
             <legend class="main-form__legend">Ваши безбашенные<br>достижения в путешествии</legend>
-            <ul class="main-form__list">
+            <ul class="main-form__list main-form__list--achievement">
               <li class="main-form__list-item">
                 <input class="main-form__checkbox visually-hidden" type="checkbox" id="selfie-shark" checked>
                 <label class="main-form__option main-form__option--checkbox" for="selfie-shark">Сделал селфи с акулой</label>
@@ -118,13 +118,13 @@
 
         <div class="main-form__contacts-wrapper">
           <fieldset class="main-form__fieldset main-form__user-contacts">
-            <legend class="visually-hidden">Контакты пользователя</legend>
-            <ul class="main-form__list">
-              <li class="main-form__list-item">
+            <legend class="main-form__legend main-form__legend--contacts-hide">Контактная информация</legend>
+            <ul class="main-form__list main-form__list--contacts">
+              <li class="main-form__list-item main-form__list-item--contacts main-form__list-item--telephone">
                 <label class="main-form__label" for="person-telephone">Номер телефона</label>
                 <input class="main-form__field" type="text" id="person-telephone" placeholder="Номер, пожалуйста">
               </li>
-              <li class="main-form__list-item">
+              <li class="main-form__list-item main-form__list-item--contacts main-form__list-item--email">
                 <label class="main-form__label" for="person-email">Адрес почты</label>
                 <input class="main-form__field" type="text" id="person-email" placeholder="Введите почту *">
               </li>

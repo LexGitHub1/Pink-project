@@ -79,7 +79,7 @@
   box-sizing: border-box;
   width: 100%;
   padding-left: 20px;
-  min-height: 59px;
+  height: 59px;
   border: 2px solid $border-color;
   border-radius: 1px;
   margin-top: 5px;
@@ -249,6 +249,12 @@
   .main-form__fieldset {
     border: none;
   }
+
+  .main-form__legend {
+    &--contacts-hide {
+      display: none;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -259,6 +265,18 @@
 
   .main-form__user-name {
     border: none;
+  }
+
+  .main-form__user-achievement {
+    min-height: 480px;
+  }
+
+  .main-form__user-contacts {
+    min-height: 300px;
+  }
+
+  .main-form__user-app-choice {
+    min-height: 290px;
   }
 
   .main-form__form div:nth-child(1) {
@@ -300,23 +318,67 @@
 
   .main-form__list {
     padding: 0;
-    height: 350px;
 
-    &--user {
+    &--name {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+    }
+
+    &--contacts {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &--achievement {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      height: 50px;
+    }
+  }
+
+  .main-form__list-item {
+    &--name {
+      display: flex;
+      align-items: center;
+    }
+
+    &--contacts {
+      display: flex;
+      flex-direction: column-reverse;
+
+      &::after {
+        content: "";
+        position: relative;
+        top: 59px;
+        left: 556px;
+        width: 59px;
+        height: 59px;
+        background-color: $border-color;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    &--telephone::after {
+      background-image: url("../../img/icon-phone.svg");
+    }
+
+    &--email::after {
+      background-image: url("../../img/icon-mail.svg");
     }
   }
 
   .main-form__field {
     padding: 15px;
-    width: 80%;
+    width: 100%;
     margin: 0;
   }
 
   .main-form__text-field {
     width: 496px;
+    margin: 20px auto 53px;
   }
 
   .main-form__button-wrapper {
@@ -378,5 +440,58 @@
 
   .main-form__button {
     width: 296px;
+  }
+
+  .main-form__list {
+    &--contacts {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 816px;
+      margin: 0 auto;
+    }
+  }
+
+  .main-form__list-item {
+    &--contacts {
+      display: flex;
+      flex-direction: column-reverse;
+
+      &::after {
+        content: "";
+        position: relative;
+        top: 59px;
+        left: 310px;
+        width: 59px;
+        height: 59px;
+        background-color: $border-color;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+
+  .main-form__field {
+    padding: 15px;
+    width: 371px;
+    margin: 0;
+  }
+
+  .main-form__text-field {
+    width: 816px;
+    margin: 20px auto 45px;
+  }
+
+  .main-form__field-input {
+    min-height: 124px;
+  }
+
+  .main-form__user-contacts {
+    min-height: 156px;
+  }
+
+  .main-form__user-app-choice {
+    min-height: 297px;
+    padding: 49px 100px 24px 74px;
   }
 }
