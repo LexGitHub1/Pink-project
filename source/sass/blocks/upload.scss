@@ -83,17 +83,17 @@
   background-position: center;
 
   &--first {
-    background-image: url("../../img/icon-editor-crop.svg");
+    background-image: url("../img/icon-editor-crop.svg");
     background-size: 44px 44px;
   }
 
   &--second {
-    background-image: url("../../img/icon-editor-fill.svg");
+    background-image: url("../img/icon-editor-fill.svg");
     background-size: 48px 43px;
   }
 
   &--third {
-    background-image: url("../../img/icon-editor-contrast.svg");
+    background-image: url("../img/icon-editor-contrast.svg");
     background-size: 32px 32px;
   }
 }

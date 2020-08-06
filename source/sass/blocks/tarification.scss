@@ -2,7 +2,7 @@
   padding-top: 91px;
   padding-bottom: 32px;
   background-color: $special-background;
-  background-image: url("../../img/bg-triangle-white.svg");
+  background-image: url("../img/bg-triangle-white.svg");
   background-size: 100%;
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -90,18 +90,18 @@
   }
 
   &--hit {
-    background-image: url("../../img/bg-hit.svg");
+    background-image: url("../img/bg-hit.svg");
     background-size: 25%;
     background-position: 0 0;
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
-      background-image: url("../../img/bg-hit-tablet.svg");
+      background-image: url("../img/bg-hit-tablet.svg");
       background-size: 35%;
     }
 
     @media (min-width: $desktop-width) {
-      background-image: url("../../img/bg-hit.svg");
+      background-image: url("../img/bg-hit.svg");
       background-size: 25%;
     }
   }
@@ -228,12 +228,12 @@
   &--true {
     width: 31px;
     height: 23px;
-    background-image: url("../../img/icon-yes.svg");
+    background-image: url("../img/icon-yes.svg");
   }
 
   &--false {
     width: 27px;
     height: 27px;
-    background-image: url("../../img/icon-no.svg");
+    background-image: url("../img/icon-no.svg");
   }
 }
