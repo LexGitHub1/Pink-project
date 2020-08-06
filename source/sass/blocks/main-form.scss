@@ -361,11 +361,11 @@
       }
     }
 
-    &--telephone::after {
+    &--telephone-img::after {
       background-image: url("../../img/icon-phone.svg");
     }
 
-    &--email::after {
+    &--email-img::after {
       background-image: url("../../img/icon-mail.svg");
     }
   }
