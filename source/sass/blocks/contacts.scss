@@ -38,6 +38,7 @@
 .contacts__map {
   position: relative;
   overflow: hidden;
+  height: 200px;
 
   &::before {
     content: "";
@@ -45,9 +46,9 @@
     z-index: 100;
     left: 0;
     right: 0;
-    height: 35px;
+    height: 33px;
     background-image: url("../img/bg-triangle-white-footer.svg");
-    background-size: 100% 35px;
+    background-size: 100% 33px;
     background-position: 50% 0;
     background-repeat: no-repeat;
   }
@@ -55,9 +56,11 @@
 
 @media (min-width: $tablet-width) {
   .contacts__map {
+    height: 374px;
+
     &::before {
-      height: 90px;
-      background-size: 100% 90px;
+      height: 67px;
+      background-size: 100% 67px;
     }
   }
 
@@ -84,9 +87,11 @@
 
 @media (min-width: $desktop-width) {
   .contacts__map {
+    height: 502px;
+
     &::before {
-      height: 130px;
-      background-size: 100% 130px;
+      height: 123px;
+      background-size: 100% 123px;
     }
   }
 

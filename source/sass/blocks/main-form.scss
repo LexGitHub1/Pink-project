@@ -64,6 +64,7 @@
   text-transform: uppercase;
   color: $happy-text-color;
   padding-left: 20px;
+  padding-right: 20px;
 }
 
 .main-form__field {
@@ -275,9 +276,9 @@
     min-height: 300px;
   }
 
-  .main-form__user-app-choice {
-    min-height: 290px;
-  }
+  // .main-form__user-app-choice {
+  //   min-height: 290px;
+  // }
 
   .main-form__form div:nth-child(1) {
     order: 1;
@@ -410,6 +411,8 @@
 
   .main-form__name-wrapper {
     grid-area: user;
+    padding-bottom: 0;
+    padding-top: 0;
   }
 
   .main-form__achievement-wrapper {
@@ -422,6 +425,7 @@
 
   .main-form__app-choice-wrapper {
     grid-area: app;
+    padding: 0;
   }
 
   .main-form__comment-wrapper {
@@ -443,6 +447,12 @@
   }
 
   .main-form__list {
+    &--name {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
     &--contacts {
       display: flex;
       flex-direction: row;
@@ -453,6 +463,10 @@
   }
 
   .main-form__list-item {
+    &--name {
+      margin-top: 27px;
+    }
+
     &--contacts {
       display: flex;
       flex-direction: column-reverse;
@@ -491,7 +505,16 @@
   }
 
   .main-form__user-app-choice {
-    min-height: 297px;
     padding: 49px 100px 24px 74px;
+  }
+
+  .main-form__legend {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+
+    br {
+      display: none;
+    }
   }
 }

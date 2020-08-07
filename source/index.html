@@ -27,7 +27,7 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a href="#">Главная</a>
+            <a>Главная</a>
           </li>
           <li class="site-list__item">
             <a href="photo.html">Фотографии</a>
@@ -122,7 +122,7 @@
     <section class="main-reviews">
       <h2 class="visually-hidden">Отзывы на главной странице</h2>
       <div class="main-reviews__wrapper slider">
-        <div class="main-reviews__content">
+        <div class="main-reviews__content main-reviews__content--first">
           <p class="main-reviews__about">25 лет, водитель трамвая</p>
           <p class="main-reviews__title">Николай Петров</p>
           <p class="main-reviews__description">&laquo;Это приложение перевернуло мой мир <br>и позволило по-новому
@@ -131,7 +131,21 @@
             выложенной <br>фотографии!&raquo;</p>
         </div>
 
-        <p class="main-reviews__toggles slider__toggles">
+        <div class="main-reviews__content main-reviews__content--second">
+          <p class="main-reviews__about">35, дизайнер</p>
+          <p class="main-reviews__title">Маргарита Красильникова</p>
+          <p class="main-reviews__description">&laquo;Отличный инструмент, который теперь постоянно применяю в
+            повседневной работе. Современно, стильно, не тривиально.&raquo;</p>
+        </div>
+
+        <div class="main-reviews__content main-reviews__content--third">
+          <p class="main-reviews__about">30 лет, строитель</p>
+          <p class="main-reviews__title">Александр Плотников</p>
+          <p class="main-reviews__description">&laquo;Забавно наблюдать как из миксера подаётся розовый бетон))&raquo;
+          </p>
+        </div>
+
+        <div class="main-reviews__toggles slider__toggles">
           <button class="slider__toggle slider__toggle--current" type="button">
             <span class="visually-hidden">Кнопка слайдера 1</span>
           </button>
@@ -141,7 +155,12 @@
           <button class="slider__toggle" type="button">
             <span class="visually-hidden">Кнопка слайдера 3</span>
           </button>
-        </p>
+        </div>
+
+        <div class="main-reviews__slider-nav slider-nav">
+          <button class="slider-nav__slider-button slider-nav__slider-button--prev" type="button" aria-label="Назад"></button>
+          <button class="slider-nav__slider-button slider-nav__slider-button--next" type="button" aria-label="Вперёд"></button>
+        </div>
       </div>
     </section>
 
@@ -259,10 +278,15 @@
         </li>
       </ul>
 
-      <a class="contacts__map" href="blank.html">
-        <img class="contacts__map-image" src="img/bg-map-mobile@1x.png" width="320" height="200"
-          alt="Как до нас добраться">
-      </a>
+      <div class="contacts__map">
+        <a href="blank.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg">
+            <img src="img/bg-map-mobile@1x.png" alt="Логотип Pink" alt="Как до нас добраться">
+          </picture>
+        </a>
+      </div>
     </section>
   </main>
 

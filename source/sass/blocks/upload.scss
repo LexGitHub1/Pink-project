@@ -61,20 +61,162 @@
   margin: 20px;
 }
 
+.upload__controls {
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    width: 275px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+    width: 410px;
+  }
+}
+
+.upload__filters {
+  padding: 42px 20px 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 0;
+  }
+}
+
+.upload__filters-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 240px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.upload__icon-wrapper {
+  display: block;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    width: 27px;
+    height: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 48px;
+    height: 48px;
+  }
+
+  & .upload__icon {
+    fill: pink;
+  }
+}
+
+.upload__filter-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0;
+  width: 48px;
+  height: 48px;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  // &:focus {
+  //   outline: 1px dashed pink;
+  // }
+
+  // &:not(&--current):hover {
+  //   & .form-photo__icon {
+  //     fill: fade(red, 50%);
+  //   }
+  // }
+}
+
+.upload__filter {
+  position: relative;
+  display: none;
+  align-items: center;
+  height: 72px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -40px;
+    bottom: 0;
+    width: "calc(100% + 40px * 2)";
+    height: 1px;
+    background-color: rgba(40, 54, 69, 0.1);
+
+    @media (min-width: $tablet-width) {
+      left: 0;
+      width: 100%;
+    }
+  }
+
+  &--current {
+    display: flex;
+  }
+}
+
+.upload__filter-range {
+  margin-left: auto;
+  width: 100%;
+  height: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 18px;
+    width: 202px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 30px;
+    width: 288px;
+  }
+}
+
+.upload__buttons {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.upload__button {
+  margin-bottom: 13px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 26px;
+    width: 260px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    width: 45%;
+  }
+}
+
 .upload__scale-image {
   margin: 0 auto;
   width: 240px;
   padding: 34px 0;
-}
-
-.upload__list {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-
-  width: 194px;
 }
 
 .upload__list-item {
@@ -84,17 +226,20 @@
 
   &--first {
     background-image: url("../img/icon-editor-crop.svg");
-    background-size: 44px 44px;
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 
   &--second {
     background-image: url("../img/icon-editor-fill.svg");
-    background-size: 48px 43px;
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 
   &--third {
     background-image: url("../img/icon-editor-contrast.svg");
-    background-size: 32px 32px;
+    background-repeat: no-repeat;
+    background-size: 80%;
   }
 }
 
@@ -111,10 +256,6 @@
   margin: 0 auto;
   padding: 38px 0 41px 0;
   width: 280px;
-  height: 122px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 @media (min-width: $tablet-width) {
@@ -142,16 +283,13 @@
     padding: 20px 20px 50px 20px;
   }
 
-  .upload__list {
+  .form-photo__controls {
     grid-area: icons;
-    display: flex;
-    flex-direction: column;
-    padding-top: 30px;
   }
 
   .upload__button-wrapper {
     grid-area: button;
-    padding: 210px 20px 50px 20px;
+    padding: 0;
     margin: 0;
   }
 
@@ -185,7 +323,7 @@
     width: 300px;
     height: 400px;
     margin: 0;
-    padding: 57px 20px 57px 80px;
+    padding: 77px 20px 57px 80px;
   }
 
   .upload__button {
@@ -206,7 +344,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 260px 0 50px 0;
+    padding: 40px 0 50px 0;
   }
 
   .upload__scale-image {

@@ -198,23 +198,34 @@
           <img class="upload__image" src="img/photo-road-mobile@1x.jpg" alt="Фото для загрузки">
         </picture>
 
-        <ul class="upload__list">
-          <li class="upload__list-item upload__list-item--first">
-            <button class="upload__list-button upload__list-button--current" type="button" name="Обрезка"></button>
-          </li>
-          <li class="upload__list-item upload__list-item--second">
-            <button class="upload__list-button" type="button" name="Заливка"></button>
-          </li>
-          <li class="upload__list-item upload__list-item--third">
-            <button class="upload__list-button" type="button" name="Контрастность"></button>
-          </li>
-        </ul>
+        <div class="upload__controls">
+          <div class="upload__filters" id="photo-filters">
+            <div class="upload__filters-buttons">
+              <button class="upload__filter-button upload__filter-button--current upload__list-item--first" type="button" aria-label="Обрезка"></button>
+              <button class="upload__filter-button upload__list-item--second" type="button" aria-label="Заливка"></button>
+              <button class="upload__filter-button upload__list-item--third" type="button" aria-label="Контрастность"></button>
+            </div>
 
-        <p class="upload__scale-image">Slider-line</p>
+            <div class="upload__filter upload__filter--current">
+              <div class="upload__icon-wrapper upload__list-item upload__list-item--first"></div>
+              <input class="upload__filter-range" type="range" min="1" max="100" name="crop" value="85">
+            </div>
 
-        <div class="upload__button-wrapper">
-          <button class="upload__button upload__button--post button" type="submit">Запостить</button>
-          <button class="upload__button upload__button--cancel button" type="reset">Отмена</button>
+            <div class="upload__filter">
+              <div class="upload__icon-wrapper upload__list-item upload__list-item--second"></div>
+              <input class="upload__filter-range" type="range" min="1" max="100" name="fill" value="14">
+            </div>
+
+            <div class="upload__filter">
+              <div class="upload__icon-wrapper upload__list-item upload__list-item--third"></div>
+              <input class="upload__filter-range" type="range" min="1" max="100" name="contrast" value="51">
+            </div>
+          </div>
+
+          <div class="upload__button-wrapper">
+            <button class="upload__button upload__button--post button" type="submit">Запостить</button>
+            <button class="upload__button upload__button--cancel button" type="reset">Отмена</button>
+          </div>
         </div>
       </form>
     </section>
