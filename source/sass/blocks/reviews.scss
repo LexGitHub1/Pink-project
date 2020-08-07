@@ -1,7 +1,3 @@
-.reviews {
-  border: 2px solid teal;
-}
-
 .reviews__list {
   display: grid;
   grid-template-rows: 1fr;
@@ -48,7 +44,7 @@
 }
 
 .reviews__author-info {
-  padding: 25px 0 26px 17px;
+  padding: 23px 32px 24px 27px;
   background: $special-background;
 }
 
@@ -70,8 +66,10 @@
   font-weight: $font-normal;
   font-size: 14px;
   line-height: 24px;
+
   margin: 0;
-  padding-bottom: 20px;
+  margin-bottom: 12px;
+  min-height: 48px;
 }
 
 .reviews__likes {
@@ -81,14 +79,42 @@
   text-transform: uppercase;
   color: $happy-text-color;
   margin: 0;
+  display: flex;
+  align-items: baseline;
+}
+
+.reviews__likes-button {
+  display: block;
+  padding: 0;
+  width: 13px;
+  height: 12px;
+  border: 0;
+  background-color: transparent;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.reviews__likes-count {
+  margin-left: 18px;
 }
 
 @media (min-width: $tablet-width) {
-  .reviews__author-image {
+  .reviews__likes {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
     &--big {
-      width: 660px;
-      height: 509px;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-start;
     }
+  }
+
+  .reviews__likes-count {
+    margin-left: 0;
+    margin-right: 16px;
   }
 
   .reviews__description {
@@ -104,8 +130,8 @@
 
   .reviews__item {
     &--today {
-      width: 620px;
-      padding: 0 20px;
+      width: 660px;
+      padding: 0;
       grid-area: panorama;
     }
   }
@@ -126,27 +152,9 @@
       grid-area: comment;
     }
   }
-
-  .reviews__likes {
-    &--move {
-      grid-area: like;
-      margin-left: 300px;
-      margin-right: 0;
-    }
-  }
 }
 
 @media (min-width: $desktop-width) {
-  .reviews__author-image {
-    width: 300px;
-    height: 400px;
-
-    &--big {
-      width: 1200px;
-      height: 506px;
-    }
-  }
-
   .reviews__description {
     font-size: 18px;
   }

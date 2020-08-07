@@ -16,7 +16,7 @@
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-pink-white-tablet.svg">
-          <img src="img/logo-pink-white-mobile.svg" width="74" height="23" alt="Логотип Pink">
+          <img src="img/logo-pink-white-mobile.svg" alt="Логотип Pink">
         </picture>
       </a>
 
@@ -27,7 +27,7 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
-            <a href="#">Главная</a>
+            <a>Главная</a>
           </li>
           <li class="site-list__item">
             <a href="photo.html">Фотографии</a>
@@ -122,7 +122,7 @@
     <section class="main-reviews">
       <h2 class="visually-hidden">Отзывы на главной странице</h2>
       <div class="main-reviews__wrapper slider">
-        <div class="main-reviews__content">
+        <div class="main-reviews__content main-reviews__content--first">
           <p class="main-reviews__about">25 лет, водитель трамвая</p>
           <p class="main-reviews__title">Николай Петров</p>
           <p class="main-reviews__description">&laquo;Это приложение перевернуло мой мир <br>и позволило по-новому
@@ -131,7 +131,21 @@
             выложенной <br>фотографии!&raquo;</p>
         </div>
 
-        <p class="main-reviews__toggles slider__toggles">
+        <div class="main-reviews__content main-reviews__content--second">
+          <p class="main-reviews__about">35, дизайнер</p>
+          <p class="main-reviews__title">Маргарита Красильникова</p>
+          <p class="main-reviews__description">&laquo;Отличный инструмент, который теперь постоянно применяю в
+            повседневной работе. Современно, стильно, не тривиально.&raquo;</p>
+        </div>
+
+        <div class="main-reviews__content main-reviews__content--third">
+          <p class="main-reviews__about">30 лет, строитель</p>
+          <p class="main-reviews__title">Александр Плотников</p>
+          <p class="main-reviews__description">&laquo;Забавно наблюдать как из миксера подаётся розовый бетон))&raquo;
+          </p>
+        </div>
+
+        <div class="main-reviews__toggles slider__toggles">
           <button class="slider__toggle slider__toggle--current" type="button">
             <span class="visually-hidden">Кнопка слайдера 1</span>
           </button>
@@ -141,66 +155,102 @@
           <button class="slider__toggle" type="button">
             <span class="visually-hidden">Кнопка слайдера 3</span>
           </button>
-        </p>
+        </div>
+
+        <div class="main-reviews__slider-nav slider-nav">
+          <button class="slider-nav__slider-button slider-nav__slider-button--prev" type="button" aria-label="Назад"></button>
+          <button class="slider-nav__slider-button slider-nav__slider-button--next" type="button" aria-label="Вперёд"></button>
+        </div>
       </div>
     </section>
 
     <section class="tarification">
-      <h2 class="visually-hidden">Тарифные планы</h2>
-      <div class="tarification__wrapper slider">
-        <ul class="tarification__list slider__list">
-          <li class="tarification__item slider__item">
-            <header class="tarification__header">
-              <h3 class="tarification__title">База</h3>
-              <span class="tarification__price">1,99 USD</span>
-            </header>
-            <div class="tarification__content">
-              <p class="tarification__option tarification__option--have">Розовый фильтр</p>
-              <p class="tarification__option tarification__option--dont-have">Смайлики</p>
-              <p class="tarification__option tarification__option--dont-have">Комментарии</p>
-            </div>
-          </li>
+      <h2 class="visually-hidden">Стоимость приложения</h2>
 
-          <li class="tarification__item slider__item slider__item--current">
-            <header class="tarification__header">
-              <p class="tarification__best-choice">
-                <span class="tarification__text">ХИТ</span>
-                <svg></svg>
-              </p>
-              <h3 class="tarification__title">Стандарт</h3>
-              <span class="tarification__price">3,99 USD</span>
-            </header>
-            <div class="tarification__content tarification__content--current">
-              <p class="tarification__option tarification__option--have">Розовый фильтр</p>
-              <p class="tarification__option tarification__option--have">Смайлики</p>
-              <p class="tarification__option tarification__option--dont-have">Комментарии</p>
-            </div>
-          </li>
+      <div class="tarification__slider content-wrapper">
+        <table class="tarification__table table-price">
+          <thead>
+            <tr>
+              <th class="table-price__header"></th>
+              <th class="table-price__header"><span class="table-price__license-type">База</span><span
+                  class="table-price__license-price">1,99 USD</span></th>
+              <th class="table-price__header table-price__header--hit" data-hit-text="Хит"><span
+                  class="table-price__license-type">Стандарт</span><span class="table-price__license-price">3,99
+                  USD</span></th>
+              <th class="table-price__header"><span class="table-price__license-type">Анлим</span><span
+                  class="table-price__license-price">9,99 USD</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="table-price__cell">Розовый фильтр</td>
+              <td class="table-price__cell">
+                <div class="table-price__feature" data-feature-name="Розовый фильтр"><span
+                    class="table-price__feature-value table-price__feature-value--true"><span
+                      class="visually-hidden">Да</span></span></div>
+              </td>
+              <td class="table-price__cell">
+                <div class="table-price__feature" data-feature-name="Розовый фильтр"><span
+                    class="table-price__feature-value table-price__feature-value--true"><span
+                      class="visually-hidden">Да</span></span></div>
+              </td>
+              <td class="table-price__cell">
+                <div class="table-price__feature" data-feature-name="Розовый фильтр"><span
+                    class="table-price__feature-value table-price__feature-value--true"><span
+                      class="visually-hidden">Да</span></span></div>
+              </td>
+            </tr>
+            <tr>
+              <td class="table-price__cell">Смайлики</td>
+              <td class="table-price__cell">
+                <div class="table-price__feature" data-feature-name="Смайлики"><span
+                    class="table-price__feature-value table-price__feature-value--false"><span
+                      class="visually-hidden">Нет</span></span></div>
+              </td>
+              <td class="table-price__cell">
+                <div class="table-price__feature" data-feature-name="Смайлики"><span
+                    class="table-price__feature-value table-price__feature-value--true"><span
+                      class="visually-hidden">Да</span></span></div>
+              </td>
+              <td class="table-price__cell">
+                <div class="table-price__feature" data-feature-name="Смайлики"><span
+                    class="table-price__feature-value table-price__feature-value--true"><span
+                      class="visually-hidden">Да</span></span></div>
+              </td>
+            </tr>
+            <tr>
+              <td class="table-price__cell">Комментарии</td>
+              <td class="table-price__cell">
+                <div class="table-price__feature" data-feature-name="Комментарии"><span
+                    class="table-price__feature-value table-price__feature-value--false"><span
+                      class="visually-hidden">Нет</span></span></div>
+              </td>
+              <td class="table-price__cell">
+                <div class="table-price__feature" data-feature-name="Комментарии"><span
+                    class="table-price__feature-value table-price__feature-value--false"><span
+                      class="visually-hidden">Нет</span></span></div>
+              </td>
+              <td class="table-price__cell">
+                <div class="table-price__feature" data-feature-name="Комментарии"><span
+                    class="table-price__feature-value table-price__feature-value--true"><span
+                      class="visually-hidden">Да</span></span></div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-          <li class="tarification__item slider__item">
-            <header class="tarification__header">
-              <h3 class="tarification__title">Анлим</h3>
-              <span class="tarification__price">9,99 USD</span>
-            </header>
-            <div class="tarification__content">
-              <p class="tarification__option tarification__option--have">Розовый фильтр</p>
-              <p class="tarification__option tarification__option--have">Смайлики</p>
-              <p class="tarification__option tarification__option--have">Комментарии</p>
-            </div>
-          </li>
-        </ul>
-
-        <p class="tarification__toggles slider__toggles">
-          <button class="slider__toggle" type="button">
-            <span class="visually-hidden">Кнопка слайдера 1</span>
-          </button>
-          <button class="slider__toggle slider__toggle--current" type="button">
-            <span class="visually-hidden">Кнопка слайдера 2</span>
-          </button>
-          <button class="slider__toggle" type="button">
-            <span class="visually-hidden">Кнопка слайдера 3</span>
-          </button>
-        </p>
+      <p class="tarification__toggles slider__toggles">
+        <button class="slider__toggle" type="button">
+          <span class="visually-hidden">Кнопка слайдера 1</span>
+        </button>
+        <button class="slider__toggle slider__toggle--current" type="button">
+          <span class="visually-hidden">Кнопка слайдера 2</span>
+        </button>
+        <button class="slider__toggle" type="button">
+          <span class="visually-hidden">Кнопка слайдера 3</span>
+        </button>
+      </p>
       </div>
     </section>
 
@@ -228,11 +278,15 @@
         </li>
       </ul>
 
-      <a class="contacts__map" href="blank.html">
-        <svg></svg>
-        <img class="contacts__map-image" src="img/bg-map-mobile@1x.png" width="320" height="200"
-          alt="Как до нас добраться">
-      </a>
+      <div class="contacts__map">
+        <a href="blank.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg">
+            <img src="img/bg-map-mobile@1x.png" alt="Логотип Pink" alt="Как до нас добраться">
+          </picture>
+        </a>
+      </div>
     </section>
   </main>
 
@@ -242,8 +296,7 @@
       <a class="page-footer__logo">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
-          <img class="page-footer__mobile-logo" src="img/logo-pink-blue-mobile.svg" width="145" height="40"
-            alt="Логотип Pink">
+          <img class="page-footer__mobile-logo" src="img/logo-pink-blue-mobile.svg" alt="Логотип Pink">
         </picture>
       </a>
 
