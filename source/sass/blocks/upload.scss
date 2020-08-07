@@ -131,16 +131,6 @@
   border: 0;
   background-color: transparent;
   cursor: pointer;
-
-  // &:focus {
-  //   outline: 1px dashed pink;
-  // }
-
-  // &:not(&--current):hover {
-  //   & .form-photo__icon {
-  //     fill: fade(red, 50%);
-  //   }
-  // }
 }
 
 .upload__filter {
@@ -195,21 +185,6 @@
     justify-content: space-between;
     padding-left: 0;
     padding-right: 0;
-  }
-}
-
-.upload__button {
-  margin-bottom: 13px;
-  width: 100%;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 26px;
-    width: 260px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 0;
-    width: 45%;
   }
 }
 
