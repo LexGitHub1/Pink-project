@@ -277,4 +277,9 @@
   .main-nav__toggle {
     display: none;
   }
+
+  .main-nav--fix {
+    position: fixed;
+    width: 1200px;
+  }
 }
