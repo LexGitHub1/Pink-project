@@ -1,9 +1,14 @@
 .photo {
-  background-image: $top-background;
   color: $text-color;
   text-align: center;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .photo__slogan {
@@ -16,10 +21,18 @@
 }
 
 @media (min-width: $tablet-width) {
-  .photo__slogan {
-    background-image: $topper-background;
+  .photo {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: top center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
+  }
+
+  .photo__slogan {
     font-size: 50px;
     line-height: 68px;
     padding-top: 191px;
@@ -28,10 +41,18 @@
 }
 
 @media (min-width: $desktop-width) {
-  .photo__slogan {
-    background-image: $toppest-background;
+  .photo {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: top center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 2560px auto;
+    }
+  }
+
+  .photo__slogan {
     font-size: 50px;
     line-height: 68px;
     padding-top: 184px;

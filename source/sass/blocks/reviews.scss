@@ -152,6 +152,11 @@
       grid-area: comment;
     }
   }
+
+  .panorama {
+    right: 20px;
+    top: 95px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -199,5 +204,10 @@
       margin-left: 300px;
       margin-right: 0;
     }
+  }
+
+  .panorama {
+    right: 130px;
+    top: 95px;
   }
 }

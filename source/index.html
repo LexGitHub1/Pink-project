@@ -53,8 +53,9 @@
         <header class="intro__header">
           <h2 class="visually-hidden">Главная Pink</h2>
           <p class="intro__slogan">Взгляните на жизнь<br>иначе!</p>
-          <img class="intro__image" src="img/iphone-hand-mobile@1x.png" width="261" height="286"
-            alt="Изображение руки с телефоном">
+
+          <!-- сделал div так, потому что он мне нужен в мобильной flex-раскладке -->
+          <div class="intro__image"></div>
         </header>
 
         <div class="intro__app-wrapper">
@@ -158,8 +159,10 @@
         </div>
 
         <div class="main-reviews__slider-nav slider-nav">
-          <button class="slider-nav__slider-button slider-nav__slider-button--prev" type="button" aria-label="Назад"></button>
-          <button class="slider-nav__slider-button slider-nav__slider-button--next" type="button" aria-label="Вперёд"></button>
+          <button class="slider-nav__slider-button slider-nav__slider-button--prev" type="button"
+            aria-label="Назад"></button>
+          <button class="slider-nav__slider-button slider-nav__slider-button--next" type="button"
+            aria-label="Вперёд"></button>
         </div>
       </div>
     </section>
@@ -281,9 +284,9 @@
       <div class="contacts__map">
         <a href="blank.html">
           <picture>
-            <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg">
-            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg">
-            <img src="img/bg-map-mobile@1x.png" alt="Логотип Pink" alt="Как до нас добраться">
+            <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+            <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg" alt="Как до нас добраться">
           </picture>
         </a>
       </div>
