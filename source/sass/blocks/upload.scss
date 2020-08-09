@@ -58,7 +58,8 @@
 }
 
 .upload__image {
-  margin: 20px;
+  width: 280px;
+  padding-top: 20px;
 }
 
 .upload__controls {
@@ -253,7 +254,6 @@
   .upload__image {
     grid-area: img;
     width: 300px;
-    height: 400px;
     margin: 0;
     padding: 20px 20px 50px 20px;
   }
