@@ -66,15 +66,15 @@
     }
   }
 
-  .intro__image {
-    min-height: 283px;
+  .intro__header {
+    min-height: 461px;
     background-image: url("../img/iphone-hand-mobile@1x.png");
     background-repeat: no-repeat;
     background-position: bottom left;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/iphone-hand-mobile@2x.png");
-      background-size: 250px auto;
+      background-size: 256px auto;
     }
   }
 }
@@ -89,10 +89,6 @@
       background-image: url("../img/bg-back-tablet@2x.jpg");
       background-size: 1200px auto;
     }
-  }
-
-  .intro__image {
-    display: none;
   }
 
   .intro__header {
