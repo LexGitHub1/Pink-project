@@ -123,7 +123,6 @@ const build = gulp.series(
   copy,
   styles,
   sprite,
-  html
 );
 
 exports.build = build;
