@@ -215,12 +215,6 @@
   .main-nav {
     display: flex;
     flex-direction: row;
-
-    &--fix {
-      position: fixed;
-      right: 0;
-      left: 0;
-    }
   }
 
   .site-list {

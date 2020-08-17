@@ -11,6 +11,9 @@ const rename = require("gulp-rename");
 const imagemin = require("gulp-imagemin");
 const gulpWebp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
+const htmlmin = require("gulp-htmlmin");
+const uglify = require("gulp-uglify");
+const pipeline = require("readable-stream").pipeline;
 
 // Clean
 
@@ -90,6 +93,31 @@ const styles = () => {
 
 exports.styles = styles;
 
+// Html optimization
+
+const html = () => {
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({
+      collapseWhitespace: true,
+      removeComments: true
+    }))
+    .pipe(gulp.dest("build"));
+}
+
+exports.html = html;
+
+// JS optimization
+
+const js = () => {
+  return pipeline(
+    gulp.src("source/*.js"),
+      uglify(),
+      gulp.dest("build/js")
+  );
+}
+
+exports.js = js;
+
 // Server
 
 const server = (done) => {
@@ -119,7 +147,9 @@ const build = gulp.series(
   clean,
   copy,
   styles,
-  sprite
+  sprite,
+  html,
+  js
 );
 
 exports.build = build;
