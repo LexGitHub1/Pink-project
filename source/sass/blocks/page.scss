@@ -18,18 +18,21 @@ img {
 @font-face {
   font-family: "Open Sans";
   font-weight: 300;
+  font-display: swap;
   src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
 }
 
 @font-face {
   font-family: "Open Sans";
   font-weight: 400;
+  font-display: swap;
   src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
 }
 
 @font-face {
   font-family: "Open Sans";
   font-weight: 700;
+  font-display: swap;
   src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
 }
 
@@ -43,7 +46,7 @@ img {
   margin: 0 auto;
 }
 
-@media (min-width: $tablet-width) and (max-width: 1200px) {
+@media (min-width: $tablet-width) and (max-width: 960px) {
   .container {
     width: 660px;
     padding: 0;
@@ -53,7 +56,7 @@ img {
 
 @media (min-width: $desktop-width) {
   .container {
-    width: 1200px;
+    width: 960px;
     padding: 0;
     margin: 0 auto;
   }

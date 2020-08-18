@@ -5,17 +5,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Приложение "PINK"</title>
-  <link href="css/normalize.css" rel="stylesheet">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   <link href="css/styles.min.css" rel="stylesheet">
 </head>
 
 <body class="page-body">
   <header class="page-header container">
-    <nav class="main-nav main-nav--closed main-nav--nojs main-nav--fix">
+    <nav class="main-nav main-nav--closed main-nav--nojs">
       <a class="main-nav__logo" href="index.html">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-pink-white-tablet.svg">
+          <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
           <img src="img/logo-pink-white-mobile.svg" alt="Логотип Pink">
         </picture>
       </a>
@@ -172,7 +174,7 @@
 
       <a class="page-footer__logo">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+          <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
           <img class="page-footer__mobile-logo" src="img/logo-pink-blue-mobile.svg" alt="Логотип Pink">
         </picture>
       </a>
