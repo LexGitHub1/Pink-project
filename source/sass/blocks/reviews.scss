@@ -31,18 +31,6 @@
   background-color: $happy-text-color;
 }
 
-.panorama {
-  position: relative;
-  right: 20px;
-  bottom: -48px;
-  width: 140px;
-  height: 36px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-left: auto;
-}
-
 .reviews__author-info {
   padding: 23px 32px 24px 27px;
   background: $special-background;
@@ -55,7 +43,7 @@
   line-height: 24px;
 }
 
-.author-name__time {
+.reviews__author-name-time {
   font-weight: $font-light;
   font-size: 12px;
   line-height: 24px;
@@ -152,11 +140,6 @@
       grid-area: comment;
     }
   }
-
-  .panorama {
-    right: 20px;
-    top: 95px;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -204,10 +187,5 @@
       margin-left: 300px;
       margin-right: 0;
     }
-  }
-
-  .panorama {
-    right: 130px;
-    top: 95px;
   }
 }

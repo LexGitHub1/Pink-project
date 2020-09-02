@@ -53,7 +53,7 @@
 
       <header class="photo__header">
         <h2 class="visually-hidden">Фотографии Pink</h2>
-        <p class="photo__slogan">Фотографии<br>пользователей</p>
+        <p class="photo__slogan">Фотографии пользователей</p>
       </header>
     </section>
 
@@ -64,148 +64,184 @@
         ваших?</p>
 
       <div class="reviews__list">
-        <blockquote class="reviews__item reviews__item--today">
-          <p class="reviews__panorama panorama">Панорама дня</p>
+        <figure class="reviews__item reviews__item--today">
+          <a href="#">
+            <p class="reviews__panorama panorama">Панорама дня</p>
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img class="reviews__author-image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg"
+                alt="Фото панорамы дня">
+            </picture>
+          </a>
 
-          <picture>
-            <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-            <img class="reviews__author-image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg" alt="Фото панорамы дня">
-          </picture>
-
-          <div class="reviews__author-info reviews__author-info--post">
-            <cite class="reviews__author-name">Анна<span class="author-name__time"> (5 минут назад)</span></cite>
+          <figcaption class="reviews__author-info reviews__author-info--post">
+            <cite class="reviews__author-name">Анна<span class="reviews__author-name-time"> (5 минут назад)</span></cite>
             <p class="reviews__text reviews__text--text">Прыгать или нет? Напишите в комментарии свой совет и смотрите
               прямую трансляцию в перископе, задавайте свои вопросы!</p>
             <div class="reviews__likes reviews__likes--big">
               <button class="reviews__likes-button" type="button" name="Нравится"></button>
               <span class="reviews__likes-count">Нравится: 215</span>
             </div>
-          </div>
-        </blockquote>
+          </figcaption>
+        </figure>
 
-        <blockquote class="reviews__item">
-          <picture>
-            <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
-            <img class="reviews__author-image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg" alt="Фото автора">
-          </picture>
+        <figure class="reviews__item">
+          <a href="#">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+              <img class="reviews__author-image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg"
+                alt="Фото автора">
+            </picture>
+          </a>
 
-          <div class="reviews__author-info">
-            <cite class="reviews__author-name">Левон<span class="author-name__time"> (5 часов назад)</span></cite>
+          <figcaption class="reviews__author-info">
+            <cite class="reviews__author-name">Левон<span class="reviews__author-name-time"> (5 часов назад)</span></cite>
             <p class="reviews__text">Вчера он на луну летал, сегодня в<br>руки к нам попал.</p>
             <div class="reviews__likes">
               <button class="reviews__likes-button" type="button" name="Нравится"></button>
               <span class="reviews__likes-count">Нравится: 356</span>
             </div>
-          </div>
-        </blockquote>
+          </figcaption>
+        </figure>
 
-        <blockquote class="reviews__item">
+        <figure class="reviews__item">
           <picture>
-            <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
-            <img class="reviews__author-image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg" alt="Фото автора">
+            <source media="(min-width: 960px)"
+              srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)"
+              srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+            <img class="reviews__author-image" src="img/photo-drumset-mobile@1x.jpg"
+              srcset="img/photo-drumset-mobile@2x.jpg" alt="Фото автора">
           </picture>
 
-          <div class="reviews__author-info">
-            <cite class="reviews__author-name">Антон<span class="author-name__time"> (12 часов назад)</span></cite>
+          <figcaption class="reviews__author-info">
+            <cite class="reviews__author-name">Антон<span class="reviews__author-name-time"> (12 часов назад)</span></cite>
             <p class="reviews__text">Соседи будут рады!</p>
             <div class="reviews__likes">
               <button class="reviews__likes-button" type="button" name="Нравится"></button>
               <span class="reviews__likes-count">Нравится: 666</span>
             </div>
-          </div>
-        </blockquote>
+          </figcaption>
+        </figure>
 
-        <blockquote class="reviews__item">
-          <picture>
-            <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
-            <img class="reviews__author-image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg" alt="Фото автора">
-          </picture>
+        <figure class="reviews__item">
+          <a href="#">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+              <img class="reviews__author-image" src="img/photo-window-mobile@1x.jpg"
+                srcset="img/photo-window-mobile@2x.jpg" alt="Фото автора">
+            </picture>
+          </a>
 
-          <div class="reviews__author-info">
-            <cite class="reviews__author-name">Борис<span class="author-name__time"> (20 часов назад)</span></cite>
-            <p class="reviews__text">Здесь могла быть ваша цитата о<br>высоком и вечном.</p>
+          <figcaption class="reviews__author-info">
+            <cite class="reviews__author-name">Борис<span class="reviews__author-name-time"> (20 часов назад)</span></cite>
+            <p class="reviews__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <div class="reviews__likes">
               <button class="reviews__likes-button" type="button" name="Нравится"></button>
               <span class="reviews__likes-count">Нравится: 215</span>
             </div>
-          </div>
-        </blockquote>
+          </figcaption>
+        </figure>
 
-        <blockquote class="reviews__item">
-          <picture>
-            <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
-            <img class="reviews__author-image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg" alt="Фото автора">
-          </picture>
+        <figure class="reviews__item">
+          <a href="#">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+              <img class="reviews__author-image" src="img/photo-fair-mobile@1x.jpg"
+                srcset="img/photo-fair-mobile@2x.jpg" alt="Фото автора">
+            </picture>
+          </a>
 
-          <div class="reviews__author-info">
-            <cite class="reviews__author-name">Сергей<span class="author-name__time"> (25 часов назад)</span></cite>
+          <figcaption class="reviews__author-info">
+            <cite class="reviews__author-name">Сергей<span class="reviews__author-name-time"> (25 часов назад)</span></cite>
             <p class="reviews__text">Самая кубанская в мире!</p>
             <div class="reviews__likes">
               <button class="reviews__likes-button" type="button" name="Нравится"></button>
               <span class="reviews__likes-count">Нравится: 4</span>
             </div>
-          </div>
-        </blockquote>
+          </figcaption>
+        </figure>
 
-        <blockquote class="reviews__item">
-          <picture>
-            <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
-            <img class="reviews__author-image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg" alt="Фото автора">
-          </picture>
+        <figure class="reviews__item">
+          <a href="#">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+              <img class="reviews__author-image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg"
+                alt="Фото автора">
+            </picture>
+          </a>
 
-          <div class="reviews__author-info">
-            <cite class="reviews__author-name">Максим<span class="author-name__time"> (40 часов назад)</span></cite>
+          <figcaption class="reviews__author-info">
+            <cite class="reviews__author-name">Максим<span class="reviews__author-name-time"> (40 часов назад)</span></cite>
             <p class="reviews__text">Где снег-то?</p>
             <div class="reviews__likes">
               <button class="reviews__likes-button" type="button" name="Нравится"></button>
               <span class="reviews__likes-count">Нравится: 150</span>
             </div>
-          </div>
-        </blockquote>
+          </figcaption>
+        </figure>
 
-        <blockquote class="reviews__item">
-          <picture>
-            <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
-            <img class="reviews__author-image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg" alt="Фото автора">
-          </picture>
+        <figure class="reviews__item">
+          <a href="#">
+            <picture>
+              <source media="(min-width: 960px)"
+                srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+              <img class="reviews__author-image" src="img/photo-wing-mobile@1x.jpg"
+                srcset="img/photo-wing-mobile@2x.jpg" alt="Фото автора">
+            </picture>
+          </a>
 
-          <div class="reviews__author-info">
-            <cite class="reviews__author-name">Надежда<span class="author-name__time"> (45 часов назад)</span></cite>
+          <figcaption class="reviews__author-info">
+            <cite class="reviews__author-name">Надежда<span class="reviews__author-name-time"> (45 часов назад)</span></cite>
             <p class="reviews__text">Всем GM и взаимные лайки!</p>
             <div class="reviews__likes">
               <button class="reviews__likes-button" type="button" name="Нравится"></button>
               <span class="reviews__likes-count">Нравится: 2560</span>
             </div>
-          </div>
-        </blockquote>
+          </figcaption>
+        </figure>
       </div>
     </section>
 
     <section class="upload">
       <h2 class="visually-hidden">Загрузка фотографий</h2>
 
-      <p class="upload__description">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+      <p class="upload__description">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
 
       <form class="upload__form" action="https://echo.htmlacademy.ru/" method="GET">
         <picture>
-          <source media="(min-width: 1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+          <source media="(min-width: 1200px)"
+            srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
-          <img class="upload__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg" alt="Фото для загрузки">
+          <img class="upload__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg"
+            alt="Фото для загрузки">
         </picture>
 
         <div class="upload__controls">
           <div class="upload__filters" id="photo-filters">
             <div class="upload__filters-buttons">
-              <button class="upload__filter-button upload__filter-button--current upload__list-item--first" type="button" aria-label="Обрезка"></button>
-              <button class="upload__filter-button upload__list-item--second" type="button" aria-label="Заливка"></button>
-              <button class="upload__filter-button upload__list-item--third" type="button" aria-label="Контрастность"></button>
+              <button class="upload__filter-button upload__filter-button--current upload__list-item--first"
+                type="button" aria-label="Обрезка"></button>
+              <button class="upload__filter-button upload__list-item--second" type="button"
+                aria-label="Заливка"></button>
+              <button class="upload__filter-button upload__list-item--third" type="button"
+                aria-label="Контрастность"></button>
             </div>
 
             <div class="upload__filter upload__filter--current">

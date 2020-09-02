@@ -87,13 +87,13 @@
 }
 
 .main-form__legend {
+  position: absolute;
   font-weight: $font-normal;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
   color: $happy-text-color;
-  padding-bottom: 22px;
 }
 
 .main-form__option {
@@ -275,10 +275,6 @@
   .main-form__user-contacts {
     min-height: 300px;
   }
-
-  // .main-form__user-app-choice {
-  //   min-height: 290px;
-  // }
 
   .main-form__form div:nth-child(1) {
     order: 1;

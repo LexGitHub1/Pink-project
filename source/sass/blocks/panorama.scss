@@ -1,0 +1,25 @@
+.panorama {
+  position: relative;
+  right: 20px;
+  bottom: -48px;
+  width: 140px;
+  height: 36px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+}
+
+@media (min-width: $tablet-width) {
+  .panorama {
+    right: 20px;
+    top: 95px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .panorama {
+    right: 130px;
+    top: 95px;
+  }
+}
