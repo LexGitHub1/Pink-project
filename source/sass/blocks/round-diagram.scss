@@ -72,9 +72,17 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .round-diagram {
+    width: 640px;
+    margin: 54px auto 109px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .round-diagram {
     margin-top: -1px;
+    width: auto;
     padding: 50px 0 67px 0;
     background-color: $special-background;
   }

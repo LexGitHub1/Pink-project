@@ -46,7 +46,7 @@
     z-index: 100;
     left: 0;
     right: 0;
-    height: 33px;
+    height: 200px;
     background-image: url("../img/bg-triangle-white-footer.svg");
     background-size: 100% auto;
     background-position: 50% 0;
@@ -70,7 +70,7 @@
     height: 374px;
 
     &::before {
-      height: 67px;
+      height: 370px;
       background-size: 100% auto;
     }
   }
@@ -101,7 +101,7 @@
     height: 502px;
 
     &::before {
-      height: 123px;
+      height: 500px;
       background-size: 100% auto;
     }
   }

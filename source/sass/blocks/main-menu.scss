@@ -4,7 +4,7 @@
   margin: 0;
   background-color: $menu-background;
 
-  border-top: 1px solid black;
+  border-top: 1px solid $main-color;
   line-height: 32px;
 
   @media (min-width: $desktop-width) {
@@ -13,6 +13,7 @@
     width: 622px;
     border-top: 0;
     line-height: 18px;
+    background-color: transparent;
   }
 
   // &--closed {

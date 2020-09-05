@@ -7,3 +7,10 @@
   justify-content: space-between;
   max-width: 204px;
 }
+
+@media (min-width: $tablet-width) {
+  .logo-list {
+    margin: 0;
+    margin-left: 196px;
+  }
+}
