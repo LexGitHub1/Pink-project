@@ -1,0 +1,132 @@
+.store {
+  padding: 424px 20px 30px;
+  width: 280px;
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-position: 0 110px;
+  background-size: image-size("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+
+  // @media @retina {
+  //   background-image: url("../img/iphone-hand-mobile@2x.png");
+  // }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 93px;
+    padding-bottom: 110px;
+    width: 620px;
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-position: -20px 74px;
+    background-size: image-size("../img/iphone-hand-tablet@1x.png");
+
+    // @media @retina {
+    //   background-image: url("../img/iphone-hand-tablet@2x.png");
+    // }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 108px 10px 122px;
+    width: 940px;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-position: 26px 99px;
+    background-size: image-size("../img/iphone-hand-desktop@1x.png");
+
+    // @media @retina {
+    //   background-image: url("../img/iphone-hand-desktop@2x.png");
+    // }
+  }
+}
+
+.store__content {
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
+}
+
+.store__title {
+  font-weight: $font-light;
+  font-size: 24px;
+  line-height: 29px;
+  margin: 0;
+  margin-bottom: 430px;
+  // padding: 29px 20px 34px;
+  margin-top: -400px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 48px;
+    width: 240px;
+    text-align: center;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.store__button {
+  font-size: 18px;
+  line-height: 18px;
+  border: 3px solid $main-background;
+  padding: 12px 35px;
+  border-radius: 29px;
+  color: $text-color;
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+    padding: 12px 28px;
+  }
+
+  &:hover {
+    background-color: $main-background;
+    color: $happy-text-color;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+  }
+}
+
+.store__list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 32px;
+  margin-bottom: 23px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 45px;
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 67px;
+    margin-bottom: 56px;
+  }
+}
+
+.store__item {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.store__link {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 56px;
+  height: 56px;
+}
+
+.store__description {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 300;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+}

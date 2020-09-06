@@ -57,6 +57,20 @@
 .contacts__map-img {
   object-fit: cover;
   width: 100%;
+  margin-top: 1px;
+}
+
+.contacts__map-marker {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -45%);
+  width: 35px;
+  height: 35px;
+  background-image: url("../img/icon-map-marker.svg");
+  background-size: 35px 35px;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: $mobile-width-only) {

@@ -14,14 +14,14 @@
   background-color: $menu-background;
 
   @media (min-width: $desktop-width) {
-    position: absolute;
+    // position: absolute;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 130px;
-    padding-right: 130px;
-    width: 940px;
-    height: 110px;
+    padding-left: 10px;
+    padding-right: 10px;
+    // width: 940px;
+    // height: 110px;
     background-color: rgba(0, 0, 0, 0.3);
   }
 }
@@ -32,8 +32,8 @@
   padding: 21px 20px 21px;
 
   @media (min-width: $tablet-width) {
-    // padding-top: 35px;
-    padding-bottom: 35px;
+    padding-top: 27px;
+    padding-bottom: 43px;
   }
 
   @media (min-width: $desktop-width) {
