@@ -39,7 +39,7 @@
           <li class="main-menu__item">
             <a class="main-menu__link" href="photo.html">Фотографии</a>
           </li>
-          <li class="main-menu__item">
+          <li class="main-menu__item main-menu__item--active">
             <a class="main-menu__link" href="#">Конкурс</a>
           </li>
           <li class="main-menu__item">
@@ -164,7 +164,7 @@
         </div>
 
         <div class="main-form__button-wrapper">
-          <button class="main-form__button button" type="submit">Отправить форму</button>
+          <button class="main-form__button button button--squared button--green" type="submit">Отправить форму</button>
           <p class="main-form__note"><span class="main-form__star">*</span> — обязательные поля</p>
         </div>
       </form>
@@ -210,7 +210,33 @@
     </div>
   </footer>
 
-  <section class="page-modal success-submit">
+  <div class="modal-form modal-form--success">
+    <div class="modal-form__top">
+      <p class="modal-form__title">Ваша заявка отправлена</p>
+
+      <p class="modal-form__text modal-form__text--success">Спасибо за ваше участие, ваша заявка уже поступила к нам.
+        В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+    </div>
+
+    <div class="modal-form__bottom modal-form__bottom--success">
+      <button class="button button--squared button--green">Закрыть окно</button>
+    </div>
+  </div>
+
+  <div class="modal-form modal-form--failure">
+    <div class="modal-form__top modal-form__top--failure">
+      <p class="modal-form__title">Что-то пошло не&nbsp;так!</p>
+
+      <p class="modal-form__text modal-form__text--failure">Проверьте поля, выделенные красным, скорее
+        всего&nbsp;вы&nbsp;забыли их заполнить</p>
+    </div>
+
+    <div class="modal-form__bottom modal-form__bottom--failure">
+      <button class="button button--squared button--green">OK</button>
+    </div>
+  </div>
+
+  <!-- <section class="page-modal success-submit">
     <h3 class="page-modal__title">Ваша заявка отправлена</h3>
 
     <p class="page-modal__description">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время
@@ -225,7 +251,7 @@
 
     <p class="page-modal__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
     <button class="page-modal__button" type="button">Oк</button>
-  </section>
+  </section> -->
 
   <!-- <script src="js/burger-menu.js"></script> -->
 </body>

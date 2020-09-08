@@ -1,0 +1,76 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  border: none;
+  font: inherit;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+
+  &--rounded {
+    padding: 15px;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 30px;
+    line-height: 18px;
+    background-color: transparent;
+  }
+
+  &--squared {
+    padding: 16px 15px;
+    width: 100%;
+    border-radius: 1px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  &--red {
+    border-color: $happy-text-color;
+    color: $happy-text-color;
+  }
+
+  &--red:hover {
+    color: $main-background;
+    background-color: $happy-text-color;
+  }
+
+  &--red:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $happy-text-color;
+  }
+
+  &--gray {
+    border-color: rgba(40, 54, 69, 0.1);
+    color: $special-gray;
+  }
+
+  &--gray:hover {
+    border-color: rgba(40, 54, 69, 0.3);
+    color: rgba(40, 54, 69, 0.3);
+  }
+
+  &--gray:active {
+    border-color: rgba(40, 54, 69, 0);
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(40, 54, 69, 0.3);
+  }
+
+  &--green {
+    color: $main-background;
+    background-color: $button-background;
+  }
+
+  &--green:hover {
+    background-color: $button-special;
+  }
+
+  &--green:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--disabled {
+    background-color: $border-color;
+  }
+}

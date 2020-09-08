@@ -31,9 +31,15 @@
     margin: 10px 0;
     padding: 0;
     border: 0;
+
+    &--active {
+      position: relative;
+      border-bottom: 2px solid $text-color;
+      padding-bottom: 10px;
+    }
   }
 
-  &:not(:nth-child(4n+4)) {
+  &:not(:nth-child(4n + 4)) {
     @media (min-width: $desktop-width) {
       margin-right: 80px;
     }
