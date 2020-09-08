@@ -18,8 +18,9 @@
   line-height: 30px;
   text-align: center;
   color: $special-text-color;
-  margin: 0;
-  padding: 54px 20px 0 20px;
+  margin: 0 auto;
+  padding-top: 54px;
+  width: 250px;
 }
 
 .reviews__panorama {
@@ -107,6 +108,7 @@
 
   .reviews__description {
     font-size: 18px;
+    width: 550px;
   }
 
   .reviews__list {
@@ -145,6 +147,7 @@
 @media (min-width: $desktop-width) {
   .reviews__description {
     font-size: 18px;
+    width: 600px;
   }
 
   .reviews__list {

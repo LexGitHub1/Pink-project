@@ -1,26 +1,29 @@
 .store {
-  padding: 424px 20px 30px;
+  // padding: 424px 20px 30px;
+  padding-top: 20px;
   width: 280px;
   background-image: url("../img/iphone-hand-mobile@1x.png");
-  background-position: 0 110px;
-  background-size: image-size("../img/iphone-hand-mobile@1x.png");
+  background-position: center;
+  background-size: 100%;
   background-repeat: no-repeat;
 
-  // @media @retina {
-  //   background-image: url("../img/iphone-hand-mobile@2x.png");
-  // }
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/iphone-hand-mobile@2x.png");
+    background-size: 100%;
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 93px;
     padding-bottom: 110px;
     width: 620px;
     background-image: url("../img/iphone-hand-tablet@1x.png");
-    background-position: -20px 74px;
-    background-size: image-size("../img/iphone-hand-tablet@1x.png");
+    // background-position: -20px 74px;
+    // background-size: image-size("../img/iphone-hand-tablet@1x.png");
 
-    // @media @retina {
-    //   background-image: url("../img/iphone-hand-tablet@2x.png");
-    // }
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png");
+      background-position: bottom;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -30,15 +33,25 @@
     background-position: 26px 99px;
     background-size: image-size("../img/iphone-hand-desktop@1x.png");
 
-    // @media @retina {
-    //   background-image: url("../img/iphone-hand-desktop@2x.png");
-    // }
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+      // background-size: 100%;
+      background-position: bottom;
+    }
   }
 }
 
 .store__content {
+  display: flex;
+  flex-direction: column;
+  min-height: 660px;
+
   @media (min-width: $tablet-width) {
-    width: 300px;
+    min-height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 500px;
   }
 }
 
@@ -46,10 +59,7 @@
   font-weight: $font-light;
   font-size: 24px;
   line-height: 29px;
-  margin: 0;
-  margin-bottom: 430px;
-  // padding: 29px 20px 34px;
-  margin-top: -400px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
@@ -68,14 +78,23 @@
 .store__button {
   font-size: 18px;
   line-height: 18px;
+  text-align: center;
   border: 3px solid $main-background;
-  padding: 12px 35px;
+  // width: 280px;
+  padding: 15px;
   border-radius: 29px;
   color: $text-color;
+  margin-top: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    padding: 15px;
+  }
 
   @media (min-width: $desktop-width) {
     font-size: 21px;
-    padding: 12px 28px;
+    padding: 15px;
+    width: 300px;
   }
 
   &:hover {
@@ -91,9 +110,11 @@
 .store__list {
   display: flex;
   justify-content: center;
+  width: 250px;
   list-style: none;
   margin-top: 32px;
   margin-bottom: 23px;
+  margin-left: 36px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -121,12 +142,16 @@
 }
 
 .store__description {
+  font-weight: $font-light;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  width: 280px;
   margin-top: 0;
   margin-bottom: 0;
-  font-weight: 300;
-  text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
+    width: 300px;
   }
 }

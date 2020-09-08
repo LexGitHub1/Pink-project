@@ -1,14 +1,3 @@
-// .main-nav {
-//   position: relative;
-//   width: auto;
-//   height: 69px;
-//   background-color: rgba(0, 0, 0, 0.3);
-// }
-
-// .main-nav__logo img {
-//   padding: 22px 0 21px 20px;
-// }
-
 .main-nav {
   position: relative;
   background-color: $menu-background;
@@ -20,7 +9,7 @@
     align-items: center;
     padding-left: 10px;
     padding-right: 10px;
-    // width: 940px;
+    width: 940px;
     // height: 110px;
     background-color: rgba(0, 0, 0, 0.3);
   }
