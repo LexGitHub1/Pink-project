@@ -62,14 +62,14 @@
   }
 
   &[href]:hover {
-    color: pink;
+    color: $happy-text-color;
   }
 
   &[href]:active {
-    color: rgba(pink, 30%);
+    color: rgba(210, 40, 86, 0.3);
 
     @media (min-width: $desktop-width) {
-      color: rgba(white, 30%);
+      color: rgba(255, 255, 255, 0.3);
     }
   }
 
@@ -81,7 +81,7 @@
       left: 0;
       right: 0;
       height: 2px;
-      background-color: white;
+      background-color: $main-background;
     }
   }
 }
