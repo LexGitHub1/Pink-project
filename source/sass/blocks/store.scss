@@ -2,7 +2,7 @@
   padding-top: 20px;
   width: 280px;
   background-image: url("../img/iphone-hand-mobile@1x.png");
-  background-position: 0 110px;
+  background-position: 0 112px;
   background-size: 258px 286px;
   background-repeat: no-repeat;
 
@@ -15,7 +15,7 @@
     padding-bottom: 110px;
     width: 620px;
     background-image: url("../img/iphone-hand-tablet@1x.png");
-    background-position: -55px 74px;
+    background-position: -55px bottom;
     background-size: 700px 545px;
 
     @media (min-resolution: 2dppx) {
@@ -82,11 +82,12 @@
   padding: 15px;
   border-radius: 29px;
   color: $text-color;
-  margin-top: auto;
+  margin-top: 300px;
 
   @media (min-width: $tablet-width) {
     width: 300px;
     padding: 15px;
+    margin-top: 39px;
   }
 
   @media (min-width: $desktop-width) {
