@@ -12,7 +12,7 @@
     flex-wrap: wrap;
     width: 622px;
     border-top: 0;
-    line-height: 18px;
+
     background-color: transparent;
   }
 
@@ -57,7 +57,9 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
-    font-weight: 400;
+    line-height: 18px;
+    font-weight: $font-normal;
+    font-size: 18px;
     text-transform: none;
   }
 
