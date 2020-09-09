@@ -1,4 +1,9 @@
 .round-diagram {
+  margin-top: 76px;
+  margin-bottom: 109px;
+}
+
+.round-diagram__wrapper {
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(3, auto);
@@ -6,8 +11,6 @@
     "img slogan"
     "img read"
     "img about";
-  margin-top: 76px;
-  margin-bottom: 109px;
 }
 
 .round-diagram__timer-image {

@@ -1,15 +1,13 @@
 .store {
-  // padding: 424px 20px 30px;
   padding-top: 20px;
   width: 280px;
   background-image: url("../img/iphone-hand-mobile@1x.png");
-  background-position: center;
-  background-size: 100%;
+  background-position: 0 110px;
+  background-size: 258px 286px;
   background-repeat: no-repeat;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/iphone-hand-mobile@2x.png");
-    background-size: 100%;
   }
 
   @media (min-width: $tablet-width) {
@@ -17,12 +15,11 @@
     padding-bottom: 110px;
     width: 620px;
     background-image: url("../img/iphone-hand-tablet@1x.png");
-    // background-position: -20px 74px;
-    // background-size: image-size("../img/iphone-hand-tablet@1x.png");
+    background-position: -55px 74px;
+    background-size: 700px 545px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/iphone-hand-tablet@2x.png");
-      background-position: bottom;
     }
   }
 
@@ -31,7 +28,7 @@
     width: 940px;
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-position: 26px 99px;
-    background-size: image-size("../img/iphone-hand-desktop@1x.png");
+    background-size: 1050px 645px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/iphone-hand-desktop@2x.png");
