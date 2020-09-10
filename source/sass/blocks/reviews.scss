@@ -1,15 +1,17 @@
-.reviews__list {
+.reviews__list-wrapper {
   display: grid;
-  grid-template-rows: 1fr;
+  grid-template-columns: repeat(1, auto);
   row-gap: 20px;
 }
 
 .reviews__item {
   margin: 0 auto;
 
-  // &--today {
-
-  // }
+  &--today {
+    overflow: hidden;
+    max-width: 320px;
+    width: auto;
+  }
 }
 
 .reviews__author-image {
@@ -94,6 +96,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .reviews__list-wrapper {
+    grid-template-columns: repeat(2, auto);
+  }
+
   .reviews__likes {
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -115,18 +121,9 @@
     width: 550px;
   }
 
-  .reviews__list {
-    min-width: 660px;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-areas: "panorama panorama";
-  }
-
   .reviews__item {
     &--today {
-      width: 660px;
-      padding: 0;
-      grid-area: panorama;
+      max-width: 660px;
     }
   }
 
@@ -149,23 +146,19 @@
 }
 
 @media (min-width: $desktop-width) {
+  .reviews__list-wrapper {
+    grid-template-columns: repeat(3, auto);
+  }
+
   .reviews__description {
     font-size: 18px;
     width: 600px;
   }
 
-  .reviews__list {
-    min-width: 1200px;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-areas: "panorama panorama panorama";
-  }
-
   .reviews__item {
     &--today {
-      width: 1200px;
-      padding: 0 0;
-      grid-area: panorama;
+      max-width: 1200px;
+      padding: 0;
     }
   }
 
