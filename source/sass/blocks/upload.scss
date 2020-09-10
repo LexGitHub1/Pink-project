@@ -17,6 +17,56 @@
   background: $special-background;
 }
 
+.upload__filter-box {
+  width: 300px;
+  padding-top: 50px;
+  margin: 0 auto;
+}
+
+.upload__filter-range {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 240px;
+  // height: 14px;
+  padding: 20px 0;
+}
+
+.upload__filter-range-track {
+  box-sizing: border-box;
+  width: 100%;
+  height: 2px;
+  background-color: #283645;
+}
+
+.upload__filter-range-thumb {
+  position: absolute;
+  top: 50%;
+  left: 30%; /* значение задано только для того, чтобы показать положение кнопки*/
+  transform: translateY(-50%);
+  padding: 0;
+  box-sizing: border-box;
+  border: 2px solid #d22856;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.upload__filter-range-thumb:active {
+  background-color: #d22856;
+
+  @media (min-width: 660px) {
+    margin-right: 18px;
+    width: 200px;
+  }
+
+  @media (min-width: 960px) {
+    width: 290px;
+  }
+}
+
 .upload__button {
   width: 280px;
   height: 55px;
@@ -164,21 +214,21 @@
   }
 }
 
-.upload__filter-range {
-  margin-left: auto;
-  width: 100%;
-  height: 14px;
+// .upload__filter-range {
+//   margin-left: auto;
+//   width: 100%;
+//   height: 14px;
 
-  @media (min-width: $tablet-width) {
-    margin-right: 18px;
-    width: 202px;
-  }
+//   @media (min-width: $tablet-width) {
+//     margin-right: 18px;
+//     width: 202px;
+//   }
 
-  @media (min-width: $desktop-width) {
-    margin-right: 30px;
-    width: 288px;
-  }
-}
+//   @media (min-width: $desktop-width) {
+//     margin-right: 30px;
+//     width: 288px;
+//   }
+// }
 
 .upload__buttons {
   @media (min-width: $desktop-width) {
