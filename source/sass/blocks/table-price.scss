@@ -1,0 +1,191 @@
+.table-price {
+  width: 834px;
+  border-spacing: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.table-price__header {
+  position: relative;
+  padding-top: 17px;
+  padding-bottom: 21px;
+  border-right: 2px solid $special-background;
+  font-size: 18px;
+  color: $text-color;
+  background-color: $menu-background;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 10px;
+    padding-bottom: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 16px;
+    padding-bottom: 22px;
+  }
+
+  &:first-child {
+    display: none;
+    border-right: 0;
+    border-bottom: 2px solid $border-color;
+    background-color: transparent;
+
+    @media (min-width: $tablet-width) {
+      display: table-cell;
+    }
+  }
+
+  &:last-child {
+    border-right-color: $menu-background;
+  }
+
+  &--hit {
+    background-image: url("../img/bg-hit.svg");
+    background-size: 25%;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/bg-hit-tablet.svg");
+      background-size: 35%;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/bg-hit.svg");
+      background-size: 25%;
+    }
+  }
+
+  &--hit::before {
+    content: attr(data-hit-text);
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    transform: rotate(-45deg);
+    font-weight: $font-normal;
+    font-size: 14px;
+    line-height: 30px;
+    color: $text-color;
+
+    @media (min-width: $tablet-width) {
+      top: 5px;
+      left: 7px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 5px;
+      left: 9px;
+    }
+  }
+}
+
+.table-price__license-type,
+.table-price__license-price {
+  display: block;
+}
+
+.table-price__license-type {
+  font-weight: $font-bold;
+  font-size: 16px;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.table-price__license-price {
+  font-weight: $font-light;
+  font-size: 18px;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
+}
+
+.table-price__cell {
+  font-weight: $font-normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: $special-text-color;
+  padding: 15px 18px 14px 22px;
+  border-right: 2px solid $border-color;
+  border-bottom: 2px solid $border-color;
+  background-color: $main-background;
+
+  @media (min-width: $tablet-width) {
+    padding: 7px 20px 8px;
+    width: 25%;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 14px 20px 15px;
+    font-size: 18px;
+  }
+
+  &:first-child {
+    display: none;
+    border-left: 2px solid $border-color;
+
+    @media (min-width: $tablet-width) {
+      display: table-cell;
+      padding-left: 14px;
+      padding-right: 14px;
+      text-transform: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 21px;
+      padding-right: 21px;
+      font-size: 18px;
+    }
+  }
+}
+
+.table-price__feature {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: center;
+  }
+
+  &::before {
+    content: attr(data-feature-name);
+
+    @media (min-width: $tablet-width) {
+      content: "";
+    }
+  }
+}
+
+.table-price__feature-value {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  &--true {
+    width: 31px;
+    height: 23px;
+    background-image: url("../img/icon-yes.svg");
+  }
+
+  &--false {
+    width: 27px;
+    height: 27px;
+    background-image: url("../img/icon-no.svg");
+  }
+}

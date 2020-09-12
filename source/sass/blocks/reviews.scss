@@ -1,11 +1,17 @@
-.reviews__list {
+.reviews__list-wrapper {
   display: grid;
-  grid-template-rows: 1fr;
+  grid-template-columns: repeat(1, auto);
   row-gap: 20px;
 }
 
 .reviews__item {
   margin: 0 auto;
+
+  &--today {
+    overflow: hidden;
+    max-width: 320px;
+    width: auto;
+  }
 }
 
 .reviews__author-image {
@@ -18,8 +24,9 @@
   line-height: 30px;
   text-align: center;
   color: $special-text-color;
-  margin: 0;
-  padding: 54px 20px 0 20px;
+  margin: 0 auto;
+  padding-top: 54px;
+  width: 250px;
 }
 
 .reviews__panorama {
@@ -29,18 +36,6 @@
   text-transform: uppercase;
   color: $text-color;
   background-color: $happy-text-color;
-}
-
-.panorama {
-  position: relative;
-  right: 20px;
-  bottom: -48px;
-  width: 140px;
-  height: 36px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-left: auto;
 }
 
 .reviews__author-info {
@@ -55,7 +50,7 @@
   line-height: 24px;
 }
 
-.author-name__time {
+.reviews__author-name-time {
   font-weight: $font-light;
   font-size: 12px;
   line-height: 24px;
@@ -101,6 +96,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .reviews__list-wrapper {
+    grid-template-columns: repeat(2, auto);
+  }
+
   .reviews__likes {
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -119,20 +118,12 @@
 
   .reviews__description {
     font-size: 18px;
-  }
-
-  .reviews__list {
-    min-width: 660px;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-areas: "panorama panorama";
+    width: 550px;
   }
 
   .reviews__item {
     &--today {
-      width: 660px;
-      padding: 0;
-      grid-area: panorama;
+      max-width: 660px;
     }
   }
 
@@ -152,30 +143,22 @@
       grid-area: comment;
     }
   }
-
-  .panorama {
-    right: 20px;
-    top: 95px;
-  }
 }
 
 @media (min-width: $desktop-width) {
-  .reviews__description {
-    font-size: 18px;
+  .reviews__list-wrapper {
+    grid-template-columns: repeat(3, auto);
   }
 
-  .reviews__list {
-    min-width: 1200px;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-areas: "panorama panorama panorama";
+  .reviews__description {
+    font-size: 18px;
+    width: 600px;
   }
 
   .reviews__item {
     &--today {
-      width: 1200px;
-      padding: 0 0;
-      grid-area: panorama;
+      max-width: 1200px;
+      padding: 0;
     }
   }
 
@@ -204,10 +187,5 @@
       margin-left: 300px;
       margin-right: 0;
     }
-  }
-
-  .panorama {
-    right: 130px;
-    top: 95px;
   }
 }

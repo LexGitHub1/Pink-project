@@ -12,119 +12,124 @@
 </head>
 
 <body class="page-body">
-  <header class="page-header container">
-    <nav class="main-nav main-nav--closed main-nav--nojs">
-      <a class="main-nav__logo" href="#">
-        <picture>
-          <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-          <img src="img/logo-pink-white-mobile.svg" alt="Логотип Pink">
-        </picture>
-      </a>
-
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-          <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-          <li class="site-list__item">
-            <a href="https://htmlacademy.ru">HTML Academy</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  <main class="page-main container">
-    <h1 class="visually-hidden">Приложение Pink</h1>
-
-    <section class="intro">
-      <h2 class="visually-hidden">Скачать приложение</h2>
-
-      <div class="intro__wrapper intro__wrapper--hand">
-        <header class="intro__header">
-          <h2 class="visually-hidden">Главная Pink</h2>
-          <p class="intro__slogan">Взгляните на жизнь<br>иначе!</p>
-        </header>
-
-        <div class="intro__app-wrapper">
-          <a href="https://www.apple.com/ru/ios/app-store/">
-            <button class="intro__download" type="button">Скачать приложение</button>
+  <header class="page-header">
+    <div class="page-header__nav-wrapper">
+      <nav class="page-header__main-nav main-nav">
+        <div class="main-nav__logo-wrapper">
+          <a class="header-logo" aria-label="Логотип сайта Pink">
+            <svg class="header-logo__image header-logo__image--mobile" width="74" height="23">
+              <use xlink:href="img/sprite.svg#icon-logo-pink-white-mobile"></use>
+            </svg>
+            <svg class="header-logo__image header-logo__image--tablet" width="145" height="40">
+              <use xlink:href="img/sprite.svg#icon-logo-pink-white-tablet"></use>
+            </svg>
+            <svg class="header-logo__image header-logo__image--desktop" width="147" height="40">
+              <use xlink:href="img/sprite.svg#icon-logo-pink-white-desktop"></use>
+            </svg>
           </a>
 
-          <ul class="intro__list logo-list">
-            <li class="logo-list__item">
-              <a href="https://www.apple.com/ru/ios/app-store/">
-                <img src="img/logo-apple.svg" width="47" height="56" alt="Логотип Apple">
-              </a>
-            </li>
-            <li class="logo-list__item">
-              <a href="https://play.google.com/store">
-                <img src="img/logo-android.svg" width="43" height="47" alt="Логотип Android">
-              </a>
-            </li>
-            <li class="logo-list__item">
-              <a href="https://www.microsoft.com/ru-ru/store/apps/windows-phone">
-                <img src="img/logo-microsoft.svg" width="44" height="41" alt="Логотип Microsoft">
-              </a>
-            </li>
-          </ul>
-
-          <p class="intro__OS-info">Доступно для iPhone, iPad, Android,<br>Windows Phone, OS X, Windows 8</p>
+          <button class="main-nav__toggle main-nav__toggle--js main-nav__toggle--off" type="button" id="toggle-button"
+            aria-label="Меню"></button>
         </div>
-      </div>
-    </section>
 
-    <div class="information__slogan">
-      <p class="information__top-slogan">Устали от серости <br> мегаполиса?</p>
-      <p class="information__bottom-slogan">Нам есть, что вам <br> предложить!</p>
+        <ul class="main-menu main-menu--closed">
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Главная</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="https://htmlacademy.ru">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <h1 class="visually-hidden">Приложение Pink</h1>
+
+    <div class="page-header__store store">
+      <div class="store__content">
+        <p class="store__title">Взгляните на жизнь иначе!</p>
+
+        <a class="store__button button button--rounded" href="https://www.apple.com/ru/ios/app-store/">Скачать
+          приложение</a>
+
+        <ul class="store__list">
+          <li class="store__item">
+            <a class="store__link" href="https://www.apple.com/ru/ios/app-store/" aria-label="iOS">
+              <svg width="47" height="56">
+                <use xlink:href="img/sprite.svg#icon-logo-apple"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="store__item">
+            <a class="store__link" href="https://play.google.com/store" aria-label="Android">
+              <svg width="43" height="47">
+                <use xlink:href="img/sprite.svg#icon-logo-android"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="store__item">
+            <a class="store__link" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone" aria-label="Windows">
+              <svg width="44" height="41">
+                <use xlink:href="img/sprite.svg#icon-logo-microsoft"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <p class="store__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <div class="page-main__slogan">
+      <p class="page-main__top-slogan">Устали от серости мегаполиса?</p>
+      <p class="page-main__bottom-slogan">Нам есть, что вам <br> предложить!</p>
     </div>
 
     <section class="information">
       <h2 class="visually-hidden">О приложении</h2>
-      <ul class="information__list">
-        <li class="information__item information__item--first">
-          <h3 class="information__title">Поднимает настроение</h3>
-          <p class="information__discription">Приложение позволит вам победить <br> осеннюю хандру и депрессию <br>
-            буквально в
-            несколько кликов!</p>
-        </li>
-        <li class="information__item information__item--second">
-          <h3 class="information__title">Меняет мир вокруг</h3>
-          <p class="information__discription">Сделайте снимок и украсьте его <br> смайликом или текстовой подписью,
-            <br>
-            чтобы
-            усилить эффект</p>
-        </li>
-        <li class="information__item information__item--third">
-          <h3 class="information__title">Заводит новых друзей</h3>
-          <p class="information__discription">Ставьте лайки, комментируйте, <br> делитесь фотографиями с друзьями и
-            <br>
-            заводите
-            новых</p>
-        </li>
-      </ul>
+      <div class="container">
+        <ul class="information__list">
+          <li class="information__item information__item--first">
+            <h3 class="information__title">Поднимает настроение</h3>
+            <p class="information__discription">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+              несколько кликов!</p>
+          </li>
+          <li class="information__item information__item--second">
+            <h3 class="information__title">Меняет мир вокруг</h3>
+            <p class="information__discription">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+              усилить эффект</p>
+          </li>
+          <li class="information__item information__item--third">
+            <h3 class="information__title">Заводит новых друзей</h3>
+            <p class="information__discription">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
+              заводите
+              новых</p>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="round-diagram">
-      <h2 class="visually-hidden">Эффект от приложения</h2>
-      <div class="round-diagram__timer-image">
-        <span class="round-diagram__timer-text">24</span>
+      <div class="round-diagram__wrapper container">
+        <h2 class="visually-hidden">Эффект от приложения</h2>
+
+        <div class="round-diagram__timer-image">
+          <span class="round-diagram__timer-text">24</span>
+        </div>
+
+        <p class="round-diagram__slogan">Эффект на 24 часа!</p>
+        <p class="round-diagram__text">Британские ученые провели исследования и доказали, что положительный эффект от
+          использования приложения длится целые сутки!</p>
+        <a class="round-diagram__more-about" href="blank.html">Узнать больше об исследовании</a>
       </div>
-      <p class="round-diagram__slogan">Эффект <br>на 24 часа!</p>
-      <p class="round-diagram__text">Британские ученые провели исследования <br> и доказали, что положительный эффект
-        <br> от использования приложения длится <br> целые сутки!</p>
-      <a class="round-diagram__more-about" href="blank.html">Узнать больше об исследовании</a>
     </section>
 
     <section class="main-reviews">
@@ -133,10 +138,9 @@
         <div class="main-reviews__content main-reviews__content--first">
           <p class="main-reviews__about">25 лет, водитель трамвая</p>
           <p class="main-reviews__title">Николай Петров</p>
-          <p class="main-reviews__description">&laquo;Это приложение перевернуло мой мир <br>и позволило по-новому
-            взглянуть на <br>привычные серые вещи! А еще я <br>познакомился со своей будущей женой <br>в комментариях
-            к
-            выложенной <br>фотографии!&raquo;</p>
+          <p class="main-reviews__description">&laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть
+            на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной
+            фотографии!&raquo;</p>
         </div>
 
         <div class="main-reviews__content main-reviews__content--second">
@@ -177,7 +181,7 @@
     <section class="tarification">
       <h2 class="visually-hidden">Стоимость приложения</h2>
 
-      <div class="tarification__slider content-wrapper">
+      <div class="tarification__slider container">
         <table class="tarification__table table-price">
           <thead>
             <tr>
@@ -261,13 +265,12 @@
           <span class="visually-hidden">Кнопка слайдера 3</span>
         </button>
       </p>
-      </div>
     </section>
 
     <section class="contacts">
       <h2 class="visually-hidden">Наши контакты</h2>
 
-      <p class="contacts__slogan">Остались вопросы?<br>Свяжитесь с нами!</p>
+      <p class="contacts__slogan">Остались вопросы? Свяжитесь с нами!</p>
 
       <ul class="contacts__list">
         <li class="contacts__item">
@@ -284,18 +287,18 @@
         </li>
         <li class="contacts__item">
           <h3 class="contacts__title">Приезжайте в гости:</h3>
-          <p class="contacts__text">ул. Большая<br>Конюшенная, 19/8</p>
+          <p class="contacts__text">ул. Большая Конюшенная, 19/8</p>
         </li>
       </ul>
 
       <div class="contacts__map">
-        <a href="blank.html">
-          <picture>
-            <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
-            <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg" alt="Как до нас добраться">
-          </picture>
-        </a>
+        <picture>
+          <source media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+          <img class="contacts__map-img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg"
+            alt="Как до нас добраться">
+        </picture>
+        <div class="contacts__map-marker"></div>
       </div>
     </section>
   </main>
@@ -305,8 +308,8 @@
 
       <a class="page-footer__logo">
         <picture>
-          <source media="(min-width: 960px)" srcset="img/logo-pink-blue-desktop.svg">
-          <img class="page-footer__mobile-logo" src="img/logo-pink-blue-mobile.svg" alt="Логотип Pink">
+          <source media="(min-width: 960px)" srcset="img/icon-logo-pink-blue-desktop.svg">
+          <img class="page-footer__mobile-logo" src="img/icon-logo-pink-blue-mobile.svg" alt="Логотип Pink">
         </picture>
       </a>
 
@@ -333,28 +336,13 @@
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+          <img src="img/icon-logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
         </a>
       </div>
     </div>
   </footer>
 
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function () {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-  </script>
+  <!-- <script src="js/burger-menu.js"></script> -->
 </body>
 
 </html>
