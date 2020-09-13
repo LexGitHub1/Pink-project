@@ -50,6 +50,7 @@ const server = (done) => {
 exports.server = server;
 
 // Image Optimization
+
 const images = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
     .pipe(imagemin([
@@ -63,6 +64,7 @@ const images = () => {
 exports.images = images;
 
 // WebP
+
 const makewebp = () => {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp())
@@ -71,6 +73,7 @@ const makewebp = () => {
 exports.makewebp = makewebp;
 
 // SVG sprite
+
 const sprite = () => {
   return gulp.src("source/img/**/*.svg")
     .pipe(svgstore())
@@ -81,6 +84,7 @@ const sprite = () => {
 exports.sprite = sprite;
 
 // Copy
+
 const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
@@ -94,6 +98,7 @@ const copy = () => {
 exports.copy = copy;
 
 // Minify html
+
 const html = () => {
   return gulp.src([
     "source/*.html"
@@ -107,6 +112,7 @@ const html = () => {
 exports.html = html;
 
 // Minify js
+
 const js = () => {
   return gulp.src([
     "source/js/**"])
@@ -116,6 +122,7 @@ const js = () => {
 exports.js = js;
 
 // Delete
+
 const clean = () => {
   return del("build");
 };
