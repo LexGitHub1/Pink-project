@@ -1,0 +1,25 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  @include font(14px, 2.1, $normal);
+  position: relative;
+  color: $c_text-two;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  @include reset-list-style;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

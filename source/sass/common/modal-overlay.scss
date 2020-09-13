@@ -1,0 +1,21 @@
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100px;
+  background-color: white;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 1px;
+  transform: translateX(-50%);
+
+  @include tablet {
+    width: 460px;
+  }
+
+  @include desktop {
+    width: 780px;
+  }
+}

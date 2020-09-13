@@ -1,0 +1,155 @@
+.features {
+  position: relative;
+  margin-bottom: -73px;
+  padding-top: 65px;
+  background-color: $c_bg;
+  z-index: -1;
+
+  @include tablet {
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding-top: 55px;
+    padding-bottom: 13px;
+  }
+
+  @include desktop {
+    margin-top: 55px;
+    margin-bottom: 0;
+    padding-top: 0;
+  }
+}
+
+.features::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  height: 120px;
+  z-index: 10;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: 100%;
+
+  @include tablet {
+    background-position: 50% 0;
+    /*transform: translateY(-20px);*/
+  }
+}
+
+.features__list {
+  text-align: center;
+
+  @include desktop {
+    @include flex(row);
+  }
+}
+
+.features__item {
+  margin-bottom: 30px;
+  text-align: center;
+
+  @include tablet {
+    max-width: 310px;
+    margin-bottom: 33px;
+    margin-left: auto;
+    text-align: left;
+  }
+
+  @media (min-width: 690px) {
+    margin-right: 4%;
+  }
+
+  @media (min-width: 750px) {
+    margin-right: 8%;
+  }
+
+  @media (min-width: 850px) {
+    margin-right: 11%;
+  }
+
+  @include desktop {
+    position: relative;
+    width: 300px;
+    margin: 0;
+    padding-top: 330px;
+    text-align: center;
+  }
+}
+
+.features__item-title {
+  @include font(18px, 1.5, $bold);
+  margin-bottom: 10px;
+  color: black;
+
+  @include desktop {
+    display: block;
+    max-width: 252px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    line-height: 1;
+  }
+}
+
+.features__text {
+  @include font(14px, 1.72, $normal);
+  display: block;
+  max-width: 450px;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include desktop {
+    max-width: 245px;
+    font-size: 18px;
+    line-height: 1.7;
+  }
+}
+
+.features__img {
+  display: block;
+  width: 157px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 43px;
+
+  @include tablet {
+    position: absolute;
+    bottom: -40px;
+    left: 3%;
+    width: auto;
+    height: 480px;
+    z-index: 20;
+  }
+
+  @media (min-width: 690px) {
+    left: 6%;
+  }
+
+  @media (min-width: 750px) {
+    left: 9%;
+  }
+
+  @include desktop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+.features__img--no-display {
+  display: none;
+
+  @include desktop {
+    display: block;
+  }
+}

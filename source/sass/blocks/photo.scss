@@ -1,61 +1,107 @@
 .photo {
-  color: $text-color;
-  text-align: center;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
+  @include reset;
+  position: relative;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include tablet {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  @include desktop {
+    margin-bottom: 55px;
+  }
+}
+
+.photo__image {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  @include tablet {
+    width: 300px;
+  }
+}
+
+.photo__info {
+  display: block;
+  width: 100%;
+  min-height: 121px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  padding-left: 17px;
+  padding-right: 17px;
+  background-color: $c_bg;
+
+  @include tablet {
+    @include flex(column);
+    min-height: 150px;
+    margin-bottom: 5px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.photo__author {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.photo__author-name {
+  @include font(14px, 2, $bold);
+}
+
+.photo__date {
+  @include font(14px, 2, $light);
+}
+
+.photo__text {
+  @include font(14px, 1.65, $normal);
+  margin-top: 0;
+  margin-bottom: 15px;
+  letter-spacing: 0.1px;
+}
+
+.photo__likes {
+  @include font(12px, 1.6, $light);
+  @include caps;
+  color: $c_theme-main;
+
+  @include tablet {
+    @include flex(row);
+    margin-top: auto;
+  }
+}
+
+.photo__like-button {
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px;
+  height: 13px;
+  background-color: transparent;
+  background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
-  background-position: top center;
+  background-size: 13px 12px;
+  background-position: 0 0;
+  border: 0 none;
+  z-index: 10;
 
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-size: 100%;
+  @include tablet {
+    order: 2;
+    margin-left: auto;
   }
 }
 
-.photo__slogan {
-  font-weight: $font-light;
-  font-size: 24px;
-  line-height: 33px;
-  margin: 0;
-  padding-top: 102px;
-  padding-bottom: 84px;
-}
+.photo__like-count {
+  margin-left: 13px;
 
-@media (min-width: $tablet-width) {
-  .photo {
-    background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: top center;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/bg-back-tablet@2x.jpg");
-      background-size: 1200px auto;
-    }
-  }
-
-  .photo__slogan {
-    font-size: 50px;
-    line-height: 68px;
-    padding-top: 191px;
-    padding-bottom: 143px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .photo {
-    background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: top center;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/bg-back-desktop@2x.jpg");
-      background-size: 2560px auto;
-    }
-  }
-
-  .photo__slogan {
-    font-size: 50px;
-    line-height: 68px;
-    padding-top: 184px;
-    padding-bottom: 104px;
+  @include tablet {
+    order: 1;
+    margin-left: 0;
   }
 }

@@ -1,0 +1,385 @@
+.editor {
+  margin-top: 23px;
+
+  @include tablet {
+    margin-top: 68px;
+  }
+
+  @include desktop {
+    margin-top: 62px;
+  }
+}
+
+.editor__container {
+  @include tablet {
+    @include flex(row);
+  }
+
+  @include desktop {
+    min-width: 300px;
+    width: auto;
+    padding-left: 450px;
+    padding-right: 90px;
+  }
+}
+
+.editor__form {
+  @include section-bg($c_bg);
+  position: relative;
+  padding-top: 20px;
+
+  @include tablet {
+    min-height: 510px;
+    margin-bottom: -15px;
+    padding-top: 56px;
+    padding-bottom: 20px;
+  }
+
+  @include desktop {
+    width: 940px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+}
+
+.editor__photo {
+  min-width: 280px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+
+  @include tablet {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 300px;
+    height: 400px;
+    margin-left: $tablet-pads;
+  }
+
+  @media (min-width: 750px) {
+    margin-left: 6%;
+  }
+
+  @media (min-width: 830px) {
+    margin-left: 8%;
+  }
+
+  @media (min-width: 900px) {
+    margin-left: 11%;
+  }
+
+  @include desktop {
+    margin-left: 8.5%;
+  }
+}
+
+.editor__controls-wrapper {
+  margin: 0 auto;
+  padding-bottom: 38px;
+  text-align: center;
+
+  @include tablet {
+    @include flex(row);
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-self: flex-start;
+    width: 45%;
+    max-width: 410px;
+    padding: 0;
+    margin-left: 330px;
+    margin-right: 0;
+    padding-right: 20px;
+  }
+
+  @media (min-width: 800px) {
+    padding-right: 8%;
+  }
+
+  @media (min-width: 900px) {
+    margin-right: 5%;
+  }
+
+  @include desktop {
+    width: 600px;
+    max-width: 600px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+  }
+}
+
+.editor__label {
+  display: inline-block;
+  vertical-align: middle;
+  width: 46px;
+  height: auto;
+  margin-left: 15px;
+  margin-right: 15px;
+
+  &:hover .editor__icon {
+    fill: rgba($c_theme-dark, 0.5);
+
+    @include desktop {
+      fill: $c_theme-main;
+    }
+  }
+
+  @include tablet {
+    width: 22%;
+    height: 22px;
+    margin: 0;
+    margin-top: 10px;
+  }
+
+  @include desktop {
+    height: 50px;
+    margin-top: 0;
+    margin-right: 20px;
+  }
+}
+
+.editor__icon {
+  align-self: center;
+  display: block;
+  margin: auto;
+  fill: rgba($c_theme-dark, 0.3);
+
+  @include tablet {
+    margin: auto;
+    margin-left: 5px;
+    fill: $c_theme-main;
+
+    &--crop {
+      width: 22px;
+      height: 22px;
+    }
+
+    &--fill {
+      width: 24px;
+      height: 22px;
+    }
+
+    &--contrast {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  @include desktop {
+    margin: auto;
+
+    &--crop {
+      width: 46px;
+      height: 46px;
+    }
+
+    &--fill {
+      width: 51px;
+      height: 46px;
+    }
+
+    &--contrast {
+      width: 34px;
+      height: 34px;
+    }
+  }
+}
+
+.editor__label--crop {
+  @include tablet {
+    order: 1;
+  }
+}
+
+.editor__label--fill {
+  @include tablet {
+    order: 3;
+  }
+}
+
+.editor__label--contrast {
+  @include tablet {
+    order: 5;
+  }
+}
+
+.editor__control {
+  @include visually-hidden;
+
+  &:checked + .editor__label {
+    & svg {
+      fill: $c_theme-main;
+    }
+  }
+}
+
+.editor__bar {
+  position: relative;
+  display: none;
+  width: 85%;
+  height: 2px;
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $c_theme-dark;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border: 2px solid $c_theme-main;
+    border-radius: 50%;
+    transform: translateY(-50%) translateX(-50%);
+  }
+
+  &:active::after {
+    background-color: $c_theme-main;
+  }
+
+  @include tablet {
+    display: block;
+    min-width: 130px;
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    flex-grow: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -30px;
+      right: 0;
+      display: block;
+      min-width: 200px;
+      width: 128%;
+      height: 1px;
+      background-color: rgba($c_theme-dark, 0.1);
+    }
+  }
+
+  @include desktop {
+    width: 268px;
+  }
+}
+
+.editor__bar--crop {
+  &::after {
+    left: 84%;
+
+    @include tablet {
+      left: 76%;
+    }
+
+    @include desktop {
+      left: 27%;
+    }
+  }
+
+  @include tablet {
+    order: 2;
+  }
+}
+
+.editor__bar--fill {
+  &::after {
+    left: 17%;
+
+    @include desktop {
+      left: 88%;
+    }
+  }
+
+  @include tablet {
+    order: 4;
+  }
+}
+
+.editor__bar--contrast {
+  &::after {
+    left: 51%;
+
+    @include desktop {
+      left: 58%;
+    }
+  }
+
+  @include tablet {
+    order: 6;
+  }
+}
+
+.editor__control--crop:checked ~ .editor__bar--crop,
+.editor__control--fill:checked ~ .editor__bar--fill,
+.editor__control--contrast:checked ~ .editor__bar--contrast {
+  display: block;
+}
+
+.editor__btns-wrapper {
+  width: 100%;
+  padding-top: 38px;
+  padding-bottom: 40px;
+  text-align: center;
+  border-top: 1px solid $c_border;
+
+  @include tablet {
+    width: 45%;
+    max-width: 410px;
+    margin-top: 52px;
+    margin-right: 2%;
+    margin-left: auto;
+    padding-top: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 0 none;
+  }
+
+  @media (min-width: 800px) {
+    padding-right: 7%;
+  }
+
+  @media (min-width: 900px) {
+    margin-right: 7%;
+  }
+
+  @include desktop {
+    @include flex(row);
+    width: 940px;
+    max-width: none;
+    margin-top: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 470px;
+  }
+}
+
+.editor__btn {
+  width: auto;
+  min-width: 280px;
+  margin-bottom: 15px;
+  margin-left: $mobile-pads;
+  margin-right: $mobile-pads;
+
+  @include tablet {
+    width: 100%;
+    min-width: 200px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include desktop {
+    min-width: 100px;
+    width: 180px;
+    margin: 0;
+  }
+}

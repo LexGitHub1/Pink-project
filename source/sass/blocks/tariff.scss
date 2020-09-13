@@ -1,0 +1,49 @@
+.tariff {
+  position: relative;
+  padding-top: 104px;
+  background-color: $c_bg;
+  overflow: hidden;
+  z-index: 1;
+
+  @include tablet {
+    padding-top: 100px;
+    padding-bottom: 65px;
+  }
+
+  @include desktop {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    background-color: $c_border;
+  }
+}
+
+.tariff__container {
+  width: 100%;
+  padding: 0;
+
+  @include tablet {
+    padding: 0 $tablet-pads;
+  }
+
+  @include desktop {
+    padding: 0 $desktop-pads;
+  }
+}
+
+.tariff__table {
+  top: 0;
+  left: calc(-840px / 3 + #{$mobile-pads});
+  width: 840px;
+
+  @include tablet {
+    left: 0;
+    width: auto;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @include desktop {
+    width: 940px;
+    max-width: 940px;
+  }
+}

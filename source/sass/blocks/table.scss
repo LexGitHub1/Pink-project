@@ -1,0 +1,174 @@
+.table {
+  border-collapse: collapse;
+  position: relative;
+}
+
+.table__header {
+  position: relative;
+  width: 276px;
+  padding-top: 12px;
+  padding-bottom: 16px;
+  color: white;
+  background-color: $c_theme-dark;
+  border: 1px solid $c_bg;
+  border-bottom: 0 none;
+  overflow: hidden;
+
+  @include tablet {
+    padding-bottom: 0;
+    width: 25%;
+  }
+
+  @include desktop {
+    padding-top: 15px;
+  }
+
+  &--hidden {
+    display: none;
+
+    @include tablet {
+      display: table-cell;
+      visibility: hidden;
+    }
+  }
+}
+
+.table__title {
+  @include font(16px, 1.88, $bold);
+  margin-bottom: 0;
+  text-transform: uppercase;
+
+  @include desktop {
+    letter-spacing: 1px;
+  }
+}
+
+.table__price {
+  @include font(18px, 1.25, $light);
+  margin-top: 0;
+  text-transform: uppercase;
+
+  @include desktop {
+    font-size: 24px;
+  }
+}
+
+.table__diagonal-label {
+  @include font(14px, 1.5, $normal);
+  position: absolute;
+  top: 20px;
+  left: -33px;
+  display: block;
+  min-width: 120px;
+  min-height: 20px;
+  margin: 0;
+  text-transform: uppercase;
+  background-color: $c_theme-main;
+  z-index: 100;
+  transform: rotate(-45deg);
+
+  @include tablet {
+    top: 17px;
+    left: -40px;
+    min-height: 18px;
+    line-height: 1.3;
+  }
+}
+
+.table__cell {
+  width: 276px;
+  min-width: 276px;
+  max-width: 276px;
+  padding-top: 12px;
+  padding-bottom: 17px;
+  padding-left: 20px;
+  padding-right: 12px;
+  background-color: white;
+  border: 2px solid $c_border;
+  border-top: 0 none;
+
+  @include tablet {
+    position: relative;
+    width: 25%;
+    min-width: 153px;
+    padding-top: 6px;
+    padding-bottom: 9px;
+    padding-left: 15px;
+  }
+
+  @include desktop {
+    padding-top: 12px;
+    padding-bottom: 17px;
+    padding-left: 20px;
+  }
+
+  &--hidden {
+    display: none;
+
+    @include tablet {
+      display: table-cell;
+      margin-right: -2px;
+    }
+  }
+}
+
+.table__cell-content {
+  @include flex(row);
+  position: relative;
+  max-width: 100%;
+
+  @include tablet {
+    position: static;
+  }
+}
+
+.table__feature-title {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @include desktop {
+    @include font(18px, 1.7, $normal);
+  }
+}
+
+.table__feature-title-in-cell {
+  @include font(14px, 2.1, $normal);
+  margin-top: 0;
+  margin-bottom: 0;
+  text-transform: uppercase;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.table__feature {
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    display: block;
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+
+    @include tablet {
+      left: 0;
+      right: 0;
+    }
+  }
+
+  &--available::before {
+    background-size: 31px 21px;
+    background-image: url("../img/icon-yes-green.svg");
+  }
+
+  &--unavailable::before {
+    background-size: 27px 27px;
+    background-image: url("../img/icon-no.svg");
+  }
+}

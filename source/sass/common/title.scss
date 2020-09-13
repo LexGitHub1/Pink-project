@@ -1,0 +1,36 @@
+.title {
+  text-align: center;
+  color: white;
+
+  &--inner-page {
+    @include font(24px, 1.4, $light);
+    display: block;
+    max-width: 450px;
+    margin-top: 22px;
+    margin-bottom: 85px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include tablet {
+      @include font(50px, 1.32, $light);
+      max-width: 650px;
+      margin-top: 73px;
+      margin-bottom: 135px;
+    }
+
+    @include desktop {
+      @include font(50px, 1.35, $light);
+      max-width: 950px;
+      margin-top: 65px;
+      margin-bottom: 90px;
+    }
+  }
+
+  &--long {
+    margin-bottom: 50px;
+
+    @include tablet {
+      margin-bottom: 70px;
+    }
+  }
+}
