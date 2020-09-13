@@ -18,7 +18,7 @@
   display: none;
 }
 
-.main-footer {
+.main-footer .container {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -29,7 +29,7 @@
 }
 
 @media (min-width: $tablet-min-width) {
-  .main-footer {
+  .main-footer .container {
     flex-direction: row;
     align-items: center;
     padding-top: 31px;
@@ -51,7 +51,7 @@
     display: block;
   }
 
-  .main-footer {
+  .main-footer .container {
     min-height: 197px;
     padding-top: 63px;
     padding-bottom: 87px;
