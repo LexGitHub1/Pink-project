@@ -1,0 +1,249 @@
+.options {
+  padding: 140px 0 49px;
+  overflow: hidden;
+  background-color: $grey;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: 245%;
+}
+
+.options__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.options__table {
+  width: 840px;
+  background-color: $white;
+  border-collapse: collapse;
+}
+
+.options__table td {
+  width: 280px;
+  height: 60px;
+  padding: 8px 50px 10px 22px;
+  font-size: 14px;
+  line-height: 30px;
+  border: 2px solid $grey2;
+  color: $dark-blue;
+  text-transform: uppercase;
+}
+
+.options__name-and-price-header {
+  padding: 12px 10px 29px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: $dark-blue;
+  color: $white;
+  border: 1px solid $grey2;
+}
+
+.options__name-and-price-header--hit {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -1px;
+    left: -1px;
+    width: 74px;
+    height: 74px;
+    background-image: url("../img/bg-hit-my.svg");
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    position: absolute;
+    content: "Хит";
+    top: 15px;
+    left: -10px;
+    width: 74px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: $white;
+    transform: rotate(-45deg);
+  }
+}
+
+.options__option-name {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.options__option-price {
+  margin: 0;
+  margin-top: -3px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.options__element-display-none {
+  display: none;
+}
+
+.options__advantage-yes,
+.options__advantage-no {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: 19px;
+    top: 17px;
+    width: 31px;
+    height: 21px;
+    background-image: url("../img/icon-yes.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.options__advantage-no {
+  &::after {
+    width: 27px;
+    height: 27px;
+    background-image: url("../img/icon-no.svg");
+  }
+}
+
+.options__controls {
+  position: relative;
+  left: 50%;
+  display: flex;
+  justify-content: space-between;
+  width: 60px;
+  margin-top: 45px;
+  transform: translateX(-50%);
+}
+
+@media (min-width: $tablet-min-width) {
+  .options {
+    padding-top: 115px;
+    padding-bottom: 69px;
+    background-size: 125%;
+  }
+
+  .options__container {
+    width: $tablet-min-width;
+    padding: 0 22px;
+    margin: 0 auto;
+  }
+
+  .options__name-and-price-header--hit {
+    &::before {
+      width: 61px;
+      height: 61px;
+      background-image: url("../img/bg-hit-tablet-my.svg");
+    }
+
+    &::after {
+      top: 8px;
+      left: -18px;
+    }
+  }
+
+  .options__table {
+    width: 616px;
+  }
+
+  .options__table td {
+    width: 154px;
+    padding: 7px 13px 8px;
+    height: 47px;
+    text-transform: none;
+  }
+
+  .options__advantage-description {
+    display: table-cell;
+  }
+
+  .options__name-and-price-header {
+    padding-bottom: 8px;
+
+    &:first-child {
+      display: table-cell;
+      background-color: $grey;
+      border: none;
+    }
+  }
+
+  .options__advantage-yes,
+  .options__advantage-no {
+    &::after {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .options__description {
+    display: table-cell;
+  }
+
+  .options__advantage span {
+    display: none;
+  }
+
+  .options__controls {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .options {
+    margin-top: 40px;
+    padding-top: 148px;
+    padding-bottom: 96px;
+    background-size: 103%;
+  }
+
+  .options__name-and-price-header--hit {
+    &::before {
+      width: 74px;
+      height: 74px;
+      background-image: url("../img/bg-hit-my.svg");
+    }
+
+    &::after {
+      top: 14px;
+      left: -7px;
+    }
+  }
+
+  .options__container {
+    width: $desktop-min-width;
+    padding: 0 10px;
+  }
+
+  .options__table {
+    width: auto;
+  }
+
+  .options__table td {
+    width: 235px;
+    height: 61px;
+    padding-left: 21px;
+    font-size: 18px;
+  }
+
+  .options__name-and-price-header {
+    padding-top: 16px;
+    padding-bottom: 19px;
+  }
+
+  .options__option-name {
+    font-size: 18px;
+  }
+
+  .options__option-price {
+    margin-top: 1px;
+    font-size: 24px;
+  }
+}

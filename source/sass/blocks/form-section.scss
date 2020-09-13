@@ -1,0 +1,41 @@
+.form-section__pre-form-header {
+  margin-top: 44px;
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: $dark-blue;
+  text-align: center;
+}
+
+.form-section__pre-form-header span {
+  display: none;
+}
+
+.form-section__main-form {
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: $tablet-min-width) {
+  .form-section__pre-form-header {
+    margin: 91px auto 0;
+    width: 490px;
+    font-size: 18px;
+  }
+
+  .form-section__pre-form-header span {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .form-section__pre-form-header {
+    width: 756px;
+    margin-top: 93px;
+  }
+
+  .form-section__main-form {
+    margin-top: 10px;
+  }
+}

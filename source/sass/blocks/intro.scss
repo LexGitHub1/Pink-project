@@ -1,0 +1,135 @@
+.intro {
+  padding: 24px 0 0;
+  color: $white;
+}
+
+.intro__container-index-page {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -316px;
+    right: 0;
+    width: 320px;
+    height: 286px;
+    background-image: url("../img/iphone-hand-mobile@1x.png");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/iphone-hand-mobile@2x.png");
+      background-size: 258px auto;
+    }
+  }
+}
+
+.intro--photo-page {
+  padding-top: 28px;
+  padding-bottom: 78px;
+}
+
+.intro--contest-page {
+  padding-top: 28px;
+  padding-bottom: 44px;
+}
+
+.intro__header {
+  width: 280px;
+  margin: 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+}
+
+.intro__container-index-page .intro__header {
+  width: 280px;
+}
+
+.intro--contest-page .intro__header,
+.intro--photo-page .intro__header {
+  line-height: 33px;
+}
+
+@media (min-width: $tablet-min-width) {
+  .intro {
+    padding-top: 95px;
+  }
+
+  .intro__container-index-page {
+    &::after {
+      background-image: none;
+    }
+  }
+
+  .intro__container-index-page .intro__header {
+    width: 240px;
+    margin-left: 30px;
+  }
+
+  .intro__header {
+    margin-left: 10px;
+    font-size: 40px;
+  }
+
+  .intro--contest-page {
+    padding-top: 68px;
+    padding-bottom: 60px;
+  }
+
+  .intro--photo-page {
+    padding-top: 67px;
+    padding-bottom: 128px;
+  }
+
+  .intro--photo-page .intro__header,
+  .intro--contest-page .intro__header {
+    margin-left: 0;
+    width: auto;
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .intro {
+    padding-top: 99px;
+  }
+
+  .intro__container-index-page {
+    &::after {
+      right: 42px;
+      bottom: -440px;
+      width: 590px;
+      height: 645px;
+      background-image: url("../img/iphone-hand-desktop@1x.png");
+      background-position-x: -300px;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/iphone-hand-desktop@2x.png");
+        background-size: 1050px auto;
+      }
+    }
+  }
+
+  .intro__header {
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  .intro--photo-page .intro__header {
+    margin: 0 auto;
+    width: 380px;
+    text-align: center;
+  }
+
+  .intro--contest-page {
+    padding-top: 58px;
+    padding-bottom: 88px;
+  }
+
+  .intro--photo-page {
+    padding-top: 59px;
+    padding-bottom: 90px;
+  }
+}

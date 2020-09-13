@@ -1,0 +1,289 @@
+.main-header {
+  color: $white;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-color: $dark-blue;
+  background-position: 50% 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+}
+
+.main-header__tablet-logo,
+.main-header__desktop-logo {
+  display: none;
+}
+
+.main-header--index-page .intro {
+  min-height: 395px;
+}
+
+.main-header__nav {
+  background-color: rgba($black, 0.3);
+
+  &::before,
+  &::after {
+    content: "";
+    overflow: hidden;
+    display: block;
+  }
+}
+
+.main-header--opened .main-header__nav {
+  background-color: $dark-blue;
+}
+
+.main-header__logo {
+  display: block;
+  width: 150px;
+  margin: 23px 0 15px 20px;
+}
+
+.main-header__logo svg {
+  fill: $white;
+
+  &:hover {
+    fill: $light-red;
+  }
+
+  &:active {
+    fill: $white;
+    opacity: 0.3;
+  }
+}
+
+.main-header__button-toggle--hidden {
+  display: none;
+}
+
+.main-header__menu-with-toggle-button {
+  position: relative;
+}
+
+.main-header__button-toggle {
+  position: absolute;
+  top: -44px;
+  right: 21px;
+  content: "";
+  width: 50px;
+  height: 25px;
+  padding: 0;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background-color: $white;
+    border-radius: 4px;
+    color: $white;
+    box-shadow: 0 10px, 0 20px;
+  }
+
+  &:hover {
+    &::before,
+    &::after {
+      color: $light-red;
+      background-color: $light-red;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-header--opened .main-header__button-toggle {
+  top: -46px;
+  right: 22px;
+  width: 19px;
+  height: 23px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 4px;
+    box-shadow: none;
+    transform-origin: top left;
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 4px;
+    background-color: $white;
+    transform-origin: top right;
+    transform: rotate(-45deg);
+  }
+
+  &:hover {
+    &::before,
+    &::after {
+      color: $light-red;
+      background-color: $light-red;
+    }
+  }
+}
+
+.main-header__nav-menu {
+  flex-grow: 1;
+  display: none;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+
+.main-header--opened .main-header__nav-menu {
+  display: block;
+  background-color: $dark-blue;
+  box-shadow: 0 1px 0 $black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.main-header--opened .main-header__menu-link {
+  box-shadow: 0 -1px 0 $black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.main-header--opened {
+  background-position: 50% 258px;
+}
+
+@media (min-width: ($mobile-width + 1px)) {
+  .main-header {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
+  }
+}
+
+@media (max-width: ($tablet-min-width - 1px)) {
+  .main-header--opened .main-header__logo {
+    margin-bottom: 18px;
+  }
+}
+
+@media (min-width: $tablet-min-width) {
+  .main-header__mobile-logo {
+    display: none;
+  }
+
+  .main-header__tablet-logo {
+    display: block;
+  }
+
+  .main-header--index-page {
+    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+    background-position: 50% 100%, 50% 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
+      background-size: 700px auto, 1200px auto;
+    }
+  }
+
+  .main-header--index-page .intro {
+    min-height: auto;
+  }
+
+  .main-header__logo {
+    margin-top: 30px;
+    margin-bottom: 39px;
+  }
+
+  .main-header__button-toggle {
+    top: -66px;
+    right: 20px;
+  }
+
+  .main-header--opened .main-header__button-toggle {
+    top: -68px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .main-header {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 2560px auto;
+      background-position-y: 12px;
+    }
+  }
+
+  .main-header__tablet-logo {
+    display: none;
+  }
+
+  .main-header__desktop-logo {
+    display: block;
+  }
+
+  .main-header__container {
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-header--index-page {
+    background-size: cover;
+  }
+
+  .main-header__download-section {
+    padding-bottom: 125px;
+  }
+
+  .main-header__menu-with-toggle-button {
+    width: 620px;
+    margin-top: 10px;
+  }
+
+  .main-header__button-toggle {
+    display: none;
+  }
+
+  .main-header__logo {
+    margin-top: 26px;
+    margin-bottom: 43px;
+    margin-left: 2px;
+  }
+
+  .main-header__nav,
+  .main-header--opened .main-header__nav {
+    background-color: rgba($black, 0.3);
+  }
+
+  .main-header__nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: none;
+  }
+
+  .main-header--opened .main-header__nav-menu {
+    display: flex;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .main-header--opened .main-header__menu-link {
+    box-shadow: none;
+  }
+}

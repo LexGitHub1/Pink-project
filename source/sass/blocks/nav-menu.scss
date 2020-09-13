@@ -1,0 +1,37 @@
+.nav-menu__link {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: $white;
+
+  &:hover {
+    color: $light-red;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .nav-menu__link {
+    padding: 0;
+
+    &:active {
+      color: $white;
+    }
+  }
+
+  .nav-menu__link--active {
+    padding-bottom: 10px;
+    border-bottom: 2px solid $white;
+  }
+
+  .nav-menu {
+    display: flex;
+    background-color: transparent;
+    box-shadow: none;
+  }
+}

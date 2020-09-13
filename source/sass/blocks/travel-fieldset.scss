@@ -1,0 +1,26 @@
+.travel-fieldset {
+  padding: 39px 0 47px;
+  background-color: $grey;
+}
+
+@media (min-width: $desktop-min-width) {
+  .travel-fieldset__beach-label {
+    order: 4;
+  }
+
+  .travel-fieldset__chuck-label {
+    order: 2;
+  }
+
+  .travel-fieldset__shopping-label {
+    order: 5;
+  }
+
+  .travel-fieldset__tower-label {
+    order: 3;
+  }
+
+  .travel-fieldset__hotel-label {
+    order: 6;
+  }
+}

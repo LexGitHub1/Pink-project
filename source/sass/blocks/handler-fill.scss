@@ -1,0 +1,16 @@
+.handler-fill__toggle {
+  display: none;
+}
+
+@media (min-width: $tablet-min-width) {
+  .handler-fill__toggle {
+    left: 45px;
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .handler-fill__toggle {
+    left: 297px;
+  }
+}

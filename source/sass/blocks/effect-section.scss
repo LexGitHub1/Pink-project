@@ -1,0 +1,130 @@
+.effect-section {
+  display: none;
+  padding-top: 65px;
+  padding-bottom: 89px;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.effect-section .container {
+  padding-left: 330px;
+}
+
+.effect-section__header {
+  margin-bottom: 0;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.effect-section__paragraph {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.effect-section__link {
+  color: $light-red;
+}
+
+.effect-section__desktop-br {
+  display: none;
+}
+
+@media (min-width: $tablet-min-width) {
+  .effect-section {
+    display: block;
+  }
+
+  .effect-section .container {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "24";
+      top: 12px;
+      left: 37px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 202px;
+      height: 202px;
+      font-weight: bold;
+      font-size: 96px;
+      line-height: 163px;
+      text-align: center;
+      color: $light-red;
+      border: 16px solid $light-red;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: -42px;
+      left: 20px;
+      width: 238px;
+      height: 276px;
+      background-image: url("../img/icon-timer.svg");
+      background-size: contain;
+    }
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .effect-section {
+    padding-top: 89px;
+    padding-bottom: 111px;
+    background-color: $grey;
+  }
+
+  .effect-section .container {
+    padding-left: 381px;
+
+    &::before {
+      top: -27px;
+      left: 35px;
+      width: 252px;
+      height: 252px;
+      font-size: 120px;
+      line-height: 163px;
+      border-width: 18px;
+    }
+
+    &::after {
+      top: -97px;
+      left: 10px;
+      width: 298px;
+      height: 345px;
+    }
+  }
+
+  .effect-section__header {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 0;
+  }
+
+  .effect-section__header br {
+    display: none;
+  }
+
+  .effect-section__paragraph,
+  .effect-section__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .effect-section__paragraph {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    width: 554px;
+  }
+
+  .effect-section__paragraph br {
+    display: none;
+  }
+
+  .effect-section__paragraph .effect-section__desktop-br {
+    display: block;
+  }
+}

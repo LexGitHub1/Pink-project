@@ -1,0 +1,274 @@
+.photos {
+  padding-top: 43px;
+}
+
+.photos__header {
+  margin: 0;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: $dark-blue;
+  text-align: center;
+}
+
+.photos__first-photo-and-comment-section {
+  padding-top: 50px;
+}
+
+.photos__first-photo-and-comment-section img {
+  width: 100%;
+}
+
+.photos__link--panorama .container {
+  position: relative;
+}
+
+.photos__panorama-span {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 36px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  color: $white;
+  background-color: $light-red;
+  text-transform: uppercase;
+}
+
+.photos__review-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+  color: $dark-blue;
+}
+
+.photos__block {
+  margin: 0;
+  padding: 18px 10px 17px 18px;
+  background-color: $grey;
+}
+
+.photos__author {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.photos__time {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.photos__comment {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.photos__like {
+  position: relative;
+  margin: 12px 0 0;
+  padding-left: 30px;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $light-red;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 4px;
+    width: 13px;
+    height: 12px;
+    background-image: url("../img/icon-heart.svg");
+  }
+}
+
+.photos__like--top {
+  display: none;
+}
+
+.photos__link {
+  display: block;
+  line-height: 0;
+}
+
+.photos__photo-fair {
+  height: 180px;
+  object-fit: cover;
+}
+
+@media (min-width: $tablet-min-width) {
+  .photos {
+    padding-top: 92px;
+  }
+
+  .photos__review-list img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .photos__link--panorama {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .photos__link--panorama img {
+    min-width: 700px;
+    height: 509px;
+  }
+
+  .photos__panorama-span {
+    top: 57px;
+    font-style: normal;
+  }
+
+  .photos__header {
+    width: 555px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+  }
+
+  .photos__header br,
+  .photos__block br {
+    display: none;
+  }
+
+  .photos__block {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    min-height: 155px;
+    margin-bottom: 0;
+    padding: 23px 30px 25px 30px;
+  }
+
+  .photos__block--first {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .photos__first-photo-and-comment-section {
+    padding-top: 76px;
+    margin-bottom: 50px;
+  }
+
+  .photos__first-photo-and-comment-section .photos__block {
+    width: 620px;
+    min-height: auto;
+  }
+
+  .photos__like {
+    margin-top: auto;
+    padding-left: 0;
+
+    &::before {
+      right: 0;
+      left: auto;
+    }
+  }
+
+  .photos__first-photo-and-comment-section .photos__author {
+    order: -2;
+  }
+
+  .photos__like--bottom {
+    width: 118px;
+    order: -1;
+    margin-left: auto;
+  }
+
+  .photos__comment-first-comment {
+    margin-bottom: 0;
+  }
+
+  .photos__review-list li {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .photos {
+    padding-top: 91px;
+  }
+
+  .photos__block {
+    padding: 22px 27px 25px 27px;
+  }
+
+  .photos__review-list {
+    display: grid;
+    row-gap: 54px;
+    grid-template-columns: repeat(3, 300px);
+  }
+
+  .photos__review-list img {
+    height: 400px;
+  }
+
+  .photos__header {
+    width: 610px;
+  }
+
+  .photos__first-photo-and-comment-section {
+    padding-top: 88px;
+  }
+
+  .photos__link--panorama img {
+    min-width: 1200px;
+    height: 506px;
+  }
+
+  .photos__panorama-span {
+    top: 54px;
+    right: 10px;
+  }
+
+  .photos__first-photo-and-comment-section .photos__block {
+    width: auto;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .photos__like {
+    &::before {
+      right: 4px;
+    }
+  }
+
+  .photos__like--bottom {
+    width: 121px;
+  }
+
+  .photos__like--top {
+    padding-right: 33px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: $desktop-min-width - 1px) {
+  .photos__link--panorama picture {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .photos__link--panorama picture {
+    width: 100%;
+  }
+}
