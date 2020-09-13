@@ -1,0 +1,115 @@
+.advantages-list {
+  padding-top: 50px;
+  color: $dark-blue;
+  text-align: center;
+}
+
+.advantages-list__header {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: $black;
+}
+
+.advantages-list__paragraph {
+  margin-top: 13px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.advantages-list__paragraph br,
+.advantages-list__header br {
+  display: none;
+}
+
+@media (min-width: $tablet-min-width) {
+  .advantages-list {
+    padding-top: 11px;
+  }
+
+  .advantages-list__paragraph br {
+    display: inline;
+  }
+
+  .advantages-list__li {
+    text-align: start;
+  }
+
+  .advantages-list__header {
+    margin-top: 0;
+  }
+
+  .advantages-list__paragraph {
+    margin-top: 12px;
+    margin-bottom: 34px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .advantages-list__li {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 356px;
+    text-align: center;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 4px;
+      content: "";
+      width: 292px;
+      height: 382px;
+      background-image: url("../img/iphone-screen-1-desktop@1x.png");
+      background-repeat: no-repeat;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/iphone-screen-1-desktop@2x.png");
+        background-size: 292px auto;
+      }
+    }
+  }
+
+  .advantages-list__change-the-world-li::before {
+    left: 7px;
+    background-image: url("../img/iphone-screen-2-desktop@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/iphone-screen-2-desktop@2x.png");
+    }
+  }
+
+  .advantages-list__find-new-friends-li::before {
+    left: 10px;
+    background-image: url("../img/iphone-screen-3-desktop@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/iphone-screen-3-desktop@2x.png");
+    }
+  }
+
+  .advantages-list__header {
+    width: 240px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .advantages-list__header br {
+    display: inline;
+  }
+
+  .advantages-list__paragraph {
+    width: 248px;
+    margin-top: 23px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .advantages-list__paragraph br {
+    display: none;
+  }
+}

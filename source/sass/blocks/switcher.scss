@@ -1,0 +1,39 @@
+.switcher {
+  border: none;
+  background-color: transparent;
+  opacity: 0.3;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &--active,
+  &:active {
+    opacity: 1;
+  }
+}
+
+.switcher--active svg {
+  fill: $light-red;
+}
+
+@media (min-width: $tablet-min-width) {
+  .switcher {
+    width: 44px;
+    padding: 0;
+    opacity: 1;
+    cursor: default;
+    transform: scale(0.5);
+  }
+
+  .switcher svg {
+    fill: $light-red;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .switcher {
+    transform: none;
+  }
+}

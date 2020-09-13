@@ -1,0 +1,352 @@
+.main-form__legend {
+  width: 100%;
+  margin: 0 auto;
+  padding: 40px 50px 3px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  color: $light-red;
+  background-color: $grey;
+}
+
+.main-form__emotion-fieldset .main-form__legend {
+  background-color: $white;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.main-form__label-for-input-text {
+  display: block;
+  margin-top: 5px;
+  margin-left: 23px;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $light-red;
+}
+
+.main-form__input-text {
+  margin-top: 5px;
+  margin-bottom: 12px;
+  padding: 15px 20px 14px;
+  width: 100%;
+  font-size: 18px;
+  font-family: inherit;
+  line-height: 30px;
+  color: $dark-blue;
+  border: 2px solid $grey2;
+
+  &:hover {
+    border-color: $dark-blue;
+  }
+
+  &:active,
+  &:focus {
+    border-color: $light-red;
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $dark-blue;
+    opacity: 1;
+  }
+}
+
+.main-form__emotion-label {
+  margin-top: 32px;
+  margin-left: 0;
+  text-align: center;
+}
+
+.main-form__emotion-text-area {
+  margin-top: 17px;
+  margin-bottom: 0;
+  padding-top: 13px;
+  min-height: 201px;
+  resize: none;
+}
+
+.main-form__label-for-check-or-radio {
+  display: block;
+  margin-bottom: 52px;
+  font-size: 18px;
+  line-height: 30px;
+  color: $dark-blue;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.main-form__submit-button {
+  margin-top: 42px;
+  margin-bottom: 0;
+  min-height: 64px;
+  background-color: $dark-green;
+  color: $white;
+  text-transform: uppercase;
+  border-radius: 1px;
+
+  &:hover {
+    background-color: $green2;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
+
+  &:disabled {
+    background-color: $grey2;
+  }
+}
+
+.main-form__hint {
+  margin: 34px 0 0;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $dark-blue;
+}
+
+.main-form__hint .main-form__star {
+  color: $light-red;
+}
+
+.main-form__hint .main-form__extra-text {
+  display: none;
+}
+
+.main-form__travel-fieldset {
+  margin-top: 30px;
+}
+
+.main-form__contacts-fieldset .main-form__legend {
+  display: none;
+}
+
+.main-form__inner-container {
+  width: 320px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main-form__emotion-fieldset {
+  margin-top: 37px;
+}
+
+@media (min-width: $tablet-min-width) {
+  .main-form__inner-container {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-form__outer-container {
+    width: 660px;
+    margin: 64px auto 53px;
+    padding: 0 20px;
+  }
+
+  .main-form {
+    display: grid;
+  }
+
+  .main-form__label-and-input-div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+  }
+
+  .main-form__label-for-input-text {
+    display: inline-block;
+    margin: 0;
+    margin-right: 18px;
+  }
+
+  .main-form__input-text {
+    flex-grow: 1;
+    width: auto;
+  }
+
+  .main-form__emotion-fieldset {
+    margin-top: 58px;
+    padding: 20px 57px 46px;
+  }
+
+  .main-form__emotion-fieldset .main-form__legend {
+    padding: 0 40px;
+  }
+
+  .main-form__travel-fieldset {
+    margin-top: 57px;
+    padding: 48px 57px 53px;
+    background-color: $white;
+  }
+
+  .main-form__travel-fieldset .main-form__legend {
+    padding: 0 30px;
+  }
+
+  .main-form__emotion-text-area {
+    width: 500px;
+    min-height: 193px;
+  }
+
+  .main-form__submit-button {
+    width: 300px;
+  }
+
+  .main-form__submit-button-and-hint {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 23px;
+  }
+
+  .main-form__platform-type-fieldset {
+    grid-row: 2;
+    margin-top: 13px;
+    padding: 48px 57px 16px;
+  }
+
+  .main-form__platform-type-fieldset,
+  .main-form__travel-fieldset,
+  .main-form__contacts-fieldset,
+  .main-form__emotion-fieldset {
+    position: relative;
+    border: 2px solid $grey2;
+    border-radius: 1px;
+  }
+
+  .main-form__contacts-fieldset {
+    grid-row: 3;
+    margin-top: 59px;
+    padding: 38px 58px 58px;
+  }
+
+  .main-form__contacts-fieldset .main-form__inner-container {
+    display: grid;
+  }
+
+  .main-form__contacts-fieldset .main-form__legend {
+    display: block;
+    padding: 0 30px;
+  }
+
+  .main-form__contacts-fieldset .main-form__input-text {
+    margin-top: 28px;
+    margin-bottom: 10px;
+    width: 100%;
+    padding-right: 60px;
+  }
+
+  .main-form__legend {
+    width: auto;
+    padding: 0 25px;
+    background-color: $white;
+  }
+
+  .main-form__legend br {
+    display: none;
+  }
+
+  .main-form__emotion-label {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    width: 260px;
+    background-color: $white;
+    transform: translateX(-50%);
+  }
+
+  .main-form__hint {
+    margin-top: 47px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .main-form {
+    grid-template-columns: 433px 431px;
+    grid-auto-rows: min-content;
+    gap: 13px 74px;
+  }
+
+  .main-form__outer-container {
+    width: 960px;
+    margin-top: 72px;
+    margin-bottom: 4px;
+    padding: 0 10px;
+  }
+
+  .main-form__platform-type-fieldset {
+    grid-row: 1;
+    grid-column: 2;
+    margin-top: 0;
+    height: fit-content;
+  }
+
+  .main-form__platform-type-fieldset .main-form__inner-container {
+    padding: 0 43px;
+  }
+
+  .main-form__name-fieldset {
+    margin-top: 8px;
+  }
+
+  .main-form__contacts-fieldset {
+    grid-row: 2;
+    grid-column: 1/-1;
+    margin-top: 0;
+    min-height: min-content;
+  }
+
+  .main-form__travel-fieldset {
+    grid-row: 3;
+    grid-column: 1/-1;
+    margin-top: 46px;
+    padding-top: 47px;
+    padding-bottom: 8px;
+  }
+
+  .main-form__travel-fieldset .main-form__inner-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 56px;
+  }
+
+  .main-form__contacts-fieldset .main-form__inner-container {
+    grid-template-columns: repeat(2, auto);
+    column-gap: 70px;
+  }
+
+  .main-form__emotion-fieldset {
+    margin-top: 45px;
+    padding-top: 17px;
+    padding-bottom: 40px;
+  }
+
+  .main-form__emotion-text-area {
+    width: 822px;
+    min-height: 125px;
+    padding-top: 11px;
+    padding-left: 22px;
+  }
+
+  .main-form__submit-button-and-hint {
+    grid-column: 1/-1;
+    margin-top: 9px;
+  }
+
+  .main-form__hint {
+    margin-top: 43px;
+  }
+
+  .main-form__hint .main-form__extra-text {
+    display: inline;
+  }
+}

@@ -1,0 +1,297 @@
+.handle-form {
+  margin-bottom: 5px;
+  padding-top: 43px;
+  text-align: center;
+}
+
+.handle-form__header {
+  margin: 0;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  color: $dark-blue;
+}
+
+.handle-form__inner-container {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 320px;
+}
+
+.handle-form__form {
+  margin: 0;
+  padding: 20px 0 0;
+  background-color: $grey;
+}
+
+.handle-form__outer-container {
+  margin-top: 42px;
+}
+
+.handle-form__fieldsets-div {
+  margin-top: 34px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 208px;
+  margin-left: 29px;
+}
+
+.handle-form__scale {
+  display: none;
+  height: 2px;
+  width: 240px;
+  background-color: $dark-blue;
+}
+
+.handle-form__scale-and-toggle-div-for-mobile {
+  position: relative;
+  margin-top: 32px;
+}
+
+.handle-form__scale-and-toggle {
+  position: relative;
+}
+
+.handle-form__toggle {
+  position: absolute;
+  top: -5px;
+  left: 5px;
+  width: 14px;
+  height: 14px;
+  border: 2px solid $light-red;
+  background-color: $white;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:active {
+    background-color: $light-red;
+  }
+}
+
+.handle-form__scale-for-mobile {
+  display: block;
+  margin: 0 auto;
+}
+
+.handle-form__buttons-div {
+  margin-top: 34px;
+  padding: 39px 0 40px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -20px;
+    content: "";
+    height: 1px;
+    width: 320px;
+    background-color: rgba($dark-blue, 0.1);
+  }
+}
+
+.handle-form__submit-button,
+.handle-form__cancel-button {
+  background-color: inherit;
+  border: 3px solid $light-red;
+  color: $light-red;
+  border-radius: 30px;
+}
+
+.handle-form__cancel-button {
+  margin-top: 12px;
+  border-color: $dark-blue;
+  color: $dark-blue;
+  opacity: 0.1;
+  font-family: inherit;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    border: none;
+    color: rgba($white, 0.3);
+    background-color: $dark-blue;
+  }
+}
+
+.handle-form__submit-button {
+  &:hover {
+    background-color: $light-red;
+    color: $white;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
+}
+
+.handle-form__toggle-for-mobile {
+  display: block;
+  left: 213px;
+}
+
+@media (min-width: $tablet-min-width) {
+  .handle-form {
+    padding-top: 63px;
+  }
+
+  .handle-form__outer-container {
+    margin-top: 70px;
+  }
+
+  .handle-form__inner-container {
+    width: 660px;
+    display: grid;
+    grid-template-columns: 300px auto;
+    column-gap: 33px;
+    margin-bottom: 6px;
+    padding-top: 32px;
+    padding-bottom: 12px;
+  }
+
+  .handle-form__header {
+    font-size: 18px;
+  }
+
+  .handle-form__scale-and-toggle-div-for-mobile {
+    display: none;
+  }
+
+  .handle-form__scale {
+    display: block;
+    width: 202px;
+    margin-left: 20px;
+  }
+
+  .handle-form__picture {
+    grid-row: 1 / span 2;
+  }
+
+  .handle-form__img {
+    margin-top: 6px;
+    width: 300px;
+    height: 400px;
+  }
+
+  .handle-form__fieldsets-div {
+    flex-direction: column;
+    width: 270px;
+    margin-top: 0;
+    margin-left: 4px;
+  }
+
+  .handle-form__button-and-scale-with-toggle {
+    display: flex;
+    align-items: center;
+  }
+
+  .handle-form__buttons-div {
+    grid-column: 2;
+    margin-top: 27px;
+    margin-left: 14px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .handle-form__handler-crop,
+  .handle-form__handler-fill,
+  .handle-form__handler-contrast {
+    position: relative;
+    padding-bottom: 10px;
+    width: 270px;
+
+    &::after {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      content: "";
+      width: 275px;
+      height: 1px;
+      background-color: rgba($dark-blue, 0.1);
+    }
+  }
+
+  .handle-form__handler-fill {
+    margin-top: 12px;
+  }
+
+  .handle-form__handler-contrast {
+    margin-top: 17px;
+    padding-bottom: 18px;
+  }
+
+  .handle-form__cancel-button {
+    margin-top: 23px;
+  }
+
+  .handle-form__cancel-button,
+  .handle-form__submit-button {
+    width: 260px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .handle-form__outer-container {
+    width: 960px;
+    margin: 67px auto 0;
+    padding: 0 10px;
+  }
+
+  .handle-form {
+    margin-bottom: 36px;
+    padding-top: 57px;
+  }
+
+  .handle-form__form {
+    padding-top: 52px;
+    padding-bottom: 10px;
+  }
+
+  .handle-form__buttons-div {
+    display: flex;
+    margin-top: 106px;
+    margin-left: 16px;
+  }
+
+  .handle-form__submit-button,
+  .handle-form__cancel-button {
+    width: 183px;
+  }
+
+  .handle-form__cancel-button {
+    margin-top: 0;
+    margin-left: 43px;
+  }
+
+  .handle-form__scale {
+    width: 288px;
+    margin-left: 50px;
+  }
+
+  .handle-form__button-and-scale-with-toggle {
+    width: 380px;
+  }
+
+  .handle-form__inner-container {
+    width: auto;
+    padding: 0 60px 0 80px;
+    column-gap: 75px;
+  }
+
+  .handle-form__fieldsets-div {
+    width: 400px;
+  }
+
+  .handle-form__handler-crop::after,
+  .handle-form__handler-fill::after {
+    width: 410px;
+  }
+
+  .handle-form__handler-contrast::after {
+    display: none;
+  }
+}

@@ -1,0 +1,16 @@
+.handler-crop__toggle {
+  display: none;
+}
+
+@media (min-width: $tablet-min-width) {
+  .handler-crop__toggle {
+    left: 165px;
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .handler-crop__toggle {
+    left: 120px;
+  }
+}

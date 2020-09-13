@@ -1,0 +1,31 @@
+.slider-controls__item {
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: rgba($dark-blue, 0.3);
+  border-radius: 50%;
+
+  &:hover {
+    background-color: rgba($dark-blue, 0.6);
+  }
+
+  &:active {
+    background-color: rgba($dark-blue, 0.1);
+  }
+
+  &--active {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: -3px;
+      top: -3px;
+      width: 12px;
+      height: 12px;
+      border: 3px solid $dark-blue;
+      border-radius: 50%;
+      background-color: $white;
+    }
+  }
+}

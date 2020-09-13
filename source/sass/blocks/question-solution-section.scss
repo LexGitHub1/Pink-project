@@ -1,0 +1,51 @@
+.question-solution-section {
+  padding: 41px 0 0;
+  color: $dark-blue;
+}
+
+.question-solution-section__paragraph {
+  margin: 0;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+}
+
+.question-solution-section__paragraph:nth-of-type(2) {
+  margin-top: 31px;
+}
+
+@media (min-width: $tablet-min-width) {
+  .question-solution-section {
+    padding: 47px 0 10px;
+  }
+
+  .question-solution-section__paragraph {
+    font-size: 40px;
+    line-height: 54px;
+  }
+
+  .question-solution-section__paragraph:nth-of-type(2) {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .question-solution-section {
+    padding-top: 62px;
+  }
+
+  .question-solution-section__paragraph {
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  .question-solution-section__advantages-list {
+    padding-left: 0;
+    padding-top: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-gap: 20px;
+    text-align: center;
+  }
+}

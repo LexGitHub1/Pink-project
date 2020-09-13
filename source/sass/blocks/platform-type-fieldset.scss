@@ -1,0 +1,39 @@
+.platform-type-fieldset {
+  padding: 39px 0 47px;
+  background-color: $grey;
+}
+
+.platform-type-fieldset__legend {
+  padding-bottom: 0;
+}
+
+.platform-type-fieldset__radio {
+  margin-bottom: 44px;
+  padding-left: 70px;
+}
+
+@media (min-width: $tablet-min-width) {
+  .platform-type-fieldset {
+    padding: 48px 57px 59px;
+    background-color: $white;
+  }
+
+  .platform-type-fieldset__radio {
+    margin-bottom: 44px;
+    padding-left: 62px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .platform-type-fieldset {
+    padding: 46px 28px 60px;
+  }
+
+  .platform-type-fieldset__radio {
+    margin-bottom: 46px;
+  }
+
+  .platform-type-fieldset__radio:last-child {
+    margin-bottom: 0;
+  }
+}

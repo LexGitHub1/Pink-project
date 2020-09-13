@@ -1,0 +1,144 @@
+.popup {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 320px;
+  min-height: 298px;
+  padding-top: 47px;
+  text-align: center;
+  background-color: $white;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 1px;
+  transform: translate(-50%, -50%);
+}
+
+.popup__header {
+  margin: 0;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.popup__message {
+  margin: 25px auto 0;
+  width: 273px;
+  font-size: 14px;
+  line-height: 24px;
+  color: $dark-blue;
+}
+
+.popup__bottom-row-success {
+  margin-top: 35px;
+  padding: 51px 0;
+  background-color: $grey;
+}
+
+.popup__button {
+  margin-top: 41px;
+  padding: 10px 20px;
+  width: 279px;
+  min-height: 61px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: $white;
+  background: $dark-green;
+  border: 2px solid $dark-green;
+  border-radius: 1px;
+
+  &:hover {
+    background-color: $green2;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+  }
+}
+
+.popup__button-success {
+  margin-top: 0;
+}
+
+@media (min-width: $tablet-min-width) {
+  .popup {
+    width: 460px;
+    min-height: 372px;
+    border-radius: 5px;
+  }
+
+  .popup__header,
+  .popup__message {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .popup__message br {
+    display: none;
+  }
+
+  .popup__header {
+    width: 250px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .popup__message {
+    width: 320px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .popup__bottom-row-success {
+    margin-top: 30px;
+  }
+
+  .popup__button {
+    margin-top: 32px;
+    width: 296px;
+  }
+
+  .popup__button-success {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .popup {
+    width: 780px;
+    min-height: 377px;
+  }
+
+  .popup__header {
+    width: 400px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .popup__message {
+    width: 380px;
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .popup__bottom-row {
+    margin-top: 61px;
+    padding-top: 51px;
+    padding-bottom: 51px;
+    background-color: $grey;
+    border-radius: 0 0 5px 5px;
+  }
+
+  .popup__bottom-row-success {
+    margin-top: 38px;
+  }
+
+  .popup__button {
+    margin-top: 0;
+  }
+
+  .popup__button-success {
+    width: 456px;
+  }
+}
