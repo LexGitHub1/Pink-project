@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,379 +10,380 @@
   <link rel="preload" href="fonts/opensansbold.woff2" as="font">
   <link rel="preload" href="fonts/opensanslight.woff2" as="font">
 </head>
+
 <body>
-<header class="main-header main-header--opened">
-  <nav class="main-header__nav">
-    <div class="main-header__container">
-      <a class="main-header__logo" href="index.html" aria-label="Логотип - ссылка на главную">
-        <svg class="main-header__mobile-logo" viewBox="0 0 74.426 22.859" width="75" height="23">
-          <use xlink:href="img/svg-sprite.svg#logo-pink-white-mobile"></use>
-        </svg>
-        <svg class="main-header__tablet-logo" viewBox="0 0 146.3 40.375" width="147" height="41">
-          <use xlink:href="img/svg-sprite.svg#logo-pink-white-tablet"></use>
-        </svg>
-        <svg class="main-header__desktop-logo" viewBox="0 0 146.3 40.375" width="147" height="41">
-          <use xlink:href="img/svg-sprite.svg#logo-pink-white-desktop"></use>
-        </svg>
-      </a>
-      <div class="main-header__menu-with-toggle-button">
-        <button class="main-header__button-toggle button main-header__button-toggle--hidden" type="button"
-                aria-label="Открыть / закрыть меню"></button>
-        <ul class="main-header__nav-menu nav-menu reset-list">
-          <li>
-            <a class="nav-menu__link main-header__menu-link" href="index.html">Главная</a>
-          </li>
-          <li>
-            <a class="nav-menu__link nav-menu__link--active main-header__menu-link">Фотографии</a>
-          </li>
-          <li>
-            <a class="nav-menu__link main-header__menu-link" href="form.html">Конкурс</a>
-          </li>
-          <li>
-            <a class="nav-menu__link main-header__menu-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <section class="intro intro--photo-page">
-    <div class="container">
-      <h2 class="intro__header">
-        Фотографии пользователей
-      </h2>
-    </div>
-  </section>
-</header>
-<main>
-  <section class="photos">
-    <div class="container">
-      <h3 class="photos__header">
-        Взгляните на фотографии, которые выкладывают пользователи!&#32;<br>
-        Видите, как не хватает ваших?
-      </h3>
-    </div>
-    <section class="photos__first-photo-and-comment-section">
-      <a class="photos__link photos__link--panorama" href="#">
-        <div class="container">
-          <span class="photos__panorama-span">Панорама дня</span>
+  <header class="main-header main-header--opened">
+    <nav class="main-header__nav">
+      <div class="main-header__container">
+        <a class="main-header__logo" href="index.html" aria-label="Логотип - ссылка на главную">
+          <svg class="main-header__mobile-logo" viewBox="0 0 74.426 22.859" width="75" height="23">
+            <use xlink:href="img/svg-sprite.svg#logo-pink-white-mobile"></use>
+          </svg>
+          <svg class="main-header__tablet-logo" viewBox="0 0 146.3 40.375" width="147" height="41">
+            <use xlink:href="img/svg-sprite.svg#logo-pink-white-tablet"></use>
+          </svg>
+          <svg class="main-header__desktop-logo" viewBox="0 0 146.3 40.375" width="147" height="41">
+            <use xlink:href="img/svg-sprite.svg#logo-pink-white-desktop"></use>
+          </svg>
+        </a>
+        <div class="main-header__menu-with-toggle-button">
+          <button class="main-header__button-toggle button main-header__button-toggle--hidden" type="button"
+            aria-label="Открыть / закрыть меню"></button>
+          <ul class="main-header__nav-menu nav-menu reset-list">
+            <li>
+              <a class="nav-menu__link main-header__menu-link" href="index.html">Главная</a>
+            </li>
+            <li>
+              <a class="nav-menu__link nav-menu__link--active main-header__menu-link">Фотографии</a>
+            </li>
+            <li>
+              <a class="nav-menu__link main-header__menu-link" href="form.html">Конкурс</a>
+            </li>
+            <li>
+              <a class="nav-menu__link main-header__menu-link" href="https://htmlacademy.ru/intensive/adaptive">HTML
+                Academy</a>
+            </li>
+          </ul>
         </div>
-        <picture>
-          <source type="image/webp" media="(min-width: 960px)"
-                  srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 660px)"
-                  srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
-          <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-          <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-          <img
-            src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="панорама дня" width="320"
-            height="137">
-        </picture>
-      </a>
+      </div>
+    </nav>
+    <section class="intro intro--photo-page">
       <div class="container">
-        <blockquote class="photos__block photos__block--first">
-          <cite class="photos__author">
-            Анна
-            <span class="photos__time">(5 минут назад)</span>
-          </cite>
-          <p class="photos__comment photos__comment-first-comment">
-            Прыгать или нет? Напишите в комментарии свой совет и&#32;<br>
-            смотрите прямую трансляцию в перископе, задавайте свои вопросы!
-          </p>
-          <p class="photos__like photos__like--bottom">нравится: 215</p>
-        </blockquote>
+        <h2 class="intro__header">
+          Фотографии пользователей
+        </h2>
       </div>
     </section>
-    <ul class="photos__review-list reset-list container">
-      <li>
-        <a class="photos__link" href="#">
-          <picture>
-            <source type="image/webp" media="(min-width: 960px)"
-                    srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 660px)"
-                    srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
-            <source media="(min-width: 960px)"
-                    srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
-            <img
-              src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="фотка" width="280"
-              height="180">
-          </picture>
-        </a>
-        <blockquote class="photos__block">
-          <cite class="photos__author">
-            Левон
-            <span class="photos__time">(5 часов назад)</span>
-          </cite>
-          <p class="photos__comment">
-            Вчера он на луну летал, сегодня в руки к нам попал.
-          </p>
-          <p class="photos__like">нравится: 356</p>
-        </blockquote>
-      </li>
-      <li>
-        <a class="photos__link" href="#">
-          <picture>
-            <source type="image/webp" media="(min-width: 960px)"
-                    srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 660px)"
-                    srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
-            <source media="(min-width: 960px)"
-                    srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)"
-                    srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
-            <img
-              src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="фотка" width="280"
-              height="180">
-          </picture>
-        </a>
-        <blockquote class="photos__block">
-          <cite class="photos__author">
-            Антон
-            <span class="photos__time">(12 часов назад)</span>
-          </cite>
-          <p class="photos__comment">
-            Соседи будут рады!
-          </p>
-          <p class="photos__like">нравится: 666</p>
-        </blockquote>
-      </li>
-      <li>
-        <a class="photos__link" href="#">
-          <picture>
-            <source type="image/webp" media="(min-width: 960px)"
-                    srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 660px)"
-                    srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
-            <source media="(min-width: 960px)"
-                    srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)"
-                    srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
-            <img
-              src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="фотка" width="280"
-              height="180">
-          </picture>
-        </a>
-        <blockquote class="photos__block photos-block">
-          <cite class="photos__author">
-            Борис
-            <span class="photos__time">(20 часов назад)</span>
-          </cite>
-          <p class="photos__comment">
-            Здесь могла быть ваша цитата о высоком и вечном.
-          </p>
-          <p class="photos__like">нравится: 215</p>
-        </blockquote>
-      </li>
-      <li>
-        <a class="photos__link" href="#">
-          <picture>
-            <source type="image/webp" media="(min-width: 960px)"
-                    srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 660px)"
-                    srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
-            <source media="(min-width: 960px)"
-                    srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)"
-                    srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
-            <img
-              src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="фотка" width="280"
-              height="180">
-          </picture>
-        </a>
-        <blockquote class="photos__block">
-          <cite class="photos__author">
-            Сергей
-            <span class="photos__time">(25 часов назад)</span>
-          </cite>
-          <p class="photos__comment">
-            Самая кубанская в мире!
-          </p>
-          <p class="photos__like">нравится: 4</p>
-        </blockquote>
-      </li>
-      <li>
-        <a class="photos__link" href="#">
-          <picture>
-            <source type="image/webp" media="(min-width: 960px)"
-                    srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 660px)"
-                    srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
-            <source media="(min-width: 960px)"
-                    srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
-            <img
-              src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="фотка" width="280"
-              height="180">
-          </picture>
-        </a>
-        <blockquote class="photos__block">
-          <cite class="photos__author">
-            Максим
-            <span class="photos__time">(40 часов назад)</span>
-          </cite>
-          <p class="photos__comment">
-            Где снег-то?
-          </p>
-          <p class="photos__like">нравится: 150</p>
-        </blockquote>
-      </li>
-      <li>
-        <a class="photos__link" href="#">
-          <picture>
-            <source type="image/webp" media="(min-width: 960px)"
-                    srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 660px)"
-                    srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
-            <source media="(min-width: 960px)"
-                    srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)"
-                    srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
-            <img
-              src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="фотка" width="280"
-              height="180">
-          </picture>
-        </a>
-        <blockquote class="photos__block">
-          <cite class="photos__author">
-            Надежда
-            <span class="photos__time">(45 часов назад)</span>
-          </cite>
-          <p class="photos__comment">
-            Всем GM и взаимные лайки!
-          </p>
-          <p class="photos__like">нравится: 2560</p>
-        </blockquote>
-      </li>
-    </ul>
-  </section>
-  <section class="handle-form">
-    <div class="container">
-      <h3 class="handle-form__header">
-        Затмите их всех!<br>
-        Выкладывайте все, что накопилось в телефоне!
-      </h3>
-    </div>
-    <div class="handle-form__outer-container">
-      <form class="handle-form__form" method="get" action="#">
-        <div class="handle-form__inner-container">
-          <picture class="handle-form__picture">
-            <source type="image/webp" media="(min-width: 960px)"
-                    srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 660px)"
-                    srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
-            <source media="(min-width: 960px)"
-                    srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
-            <source media="(min-width: 660px)"
-                    srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
-            <img
-              class="handle-form__img" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x"
-              alt="фотка" width="280" height="374">
-          </picture>
-          <div class="handle-form__fieldsets-div">
-            <fieldset class="handle-form__handler-crop handler-crop reset-fieldset">
-              <div class="handle-form__button-and-scale-with-toggle">
-                <button class="handler-crop__switcher switcher switcher--active" type="button" aria-label="Инструмент - обрезки">
-                  <svg class="handler-crop__img" width="48" height="48" viewBox="0 0 48 48">
-                    <use xlink:href="img/svg-sprite.svg#icon-editor-crop"></use>
-                  </svg>
-                </button>
-                <div class="handle-form__scale-and-toggle">
-                  <div class="handler-crop__scale handle-form__scale"></div>
-                  <div class="handler-crop__toggle handle-form__toggle" aria-label="Процент обрезки"></div>
-                </div>
-              </div>
-            </fieldset>
-            <fieldset class="handle-form__handler-fill handler-fill reset-fieldset">
-              <div class="handle-form__button-and-scale-with-toggle">
-                <button class="handler-fill__switcher switcher" type="button" aria-label="Инструмент - заливки">
-                  <svg class="handler-fill__img" width="48" height="48" viewBox="0 0 48 48">
-                    <use xlink:href="img/svg-sprite.svg#icon-editor-fill"></use>
-                  </svg>
-                </button>
-                <div class="handle-form__scale-and-toggle">
-                  <div class="handler-fill__scale handle-form__scale"></div>
-                  <div class="handler-fill__toggle handle-form__toggle" aria-label="Процент заливки"></div>
-                </div>
-              </div>
-            </fieldset>
-            <fieldset class="handle-form__handler-contrast handler-contrast reset-fieldset">
-              <div class="handle-form__button-and-scale-with-toggle">
-                <button class="handler-contrast__switcher switcher" type="button" aria-label="Инструмент - контраста">
-                  <svg class="handler-contrast__img" width="32" height="32" viewBox="0 0 32 32">
-                    <use xlink:href="img/svg-sprite.svg#icon-editor-contrast"></use>
-                  </svg>
-                </button>
-                <div class="handle-form__scale-and-toggle">
-                  <div class="handler-contrast__scale handle-form__scale"></div>
-                  <div class="handler-contrast__toggle handle-form__toggle" aria-label="Процент контраста"></div>
-                </div>
-              </div>
-            </fieldset>
+  </header>
+  <main>
+    <section class="photos">
+      <div class="container">
+        <h3 class="photos__header">
+          Взгляните на фотографии, которые выкладывают пользователи!&#32;<br>
+          Видите, как не хватает ваших?
+        </h3>
+      </div>
+      <section class="photos__first-photo-and-comment-section">
+        <a class="photos__link photos__link--panorama" href="#">
+          <div class="container">
+            <span class="photos__panorama-span">Панорама дня</span>
           </div>
-          <div class="handle-form__scale-and-toggle-div-for-mobile">
-            <div class="handle-form__scale handle-form__scale-for-mobile"></div>
-            <div class="handle-form__toggle handle-form__toggle-for-mobile" aria-label="Процент выбранного инструмента"></div>
-          </div>
-          <div class="handle-form__buttons-div">
-            <button class="handle-form__submit-button button" type="submit">Запостить</button>
-            <button class="handle-form__cancel-button button" type="reset">Отмена</button>
-          </div>
+          <picture>
+            <source type="image/webp" media="(min-width: 960px)"
+              srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 660px)"
+              srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
+            <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="панорама дня" width="320"
+              height="137">
+          </picture>
+        </a>
+        <div class="container">
+          <blockquote class="photos__block photos__block--first">
+            <cite class="photos__author">
+              Анна
+              <span class="photos__time">(5 минут назад)</span>
+            </cite>
+            <p class="photos__comment photos__comment-first-comment">
+              Прыгать или нет? Напишите в комментарии свой совет и&#32;<br>
+              смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+            </p>
+            <p class="photos__like photos__like--bottom">нравится: 215</p>
+          </blockquote>
         </div>
-      </form>
-    </div>
-  </section>
-</main>
-<footer class="main-footer">
-  <div class="container">
-    <a class="main-footer__logo logo" href="index.html" aria-label="Логотип - ссылка на главную">
-      <svg class="main-footer__mobile-tablet-logo" width="147" height="41" viewBox="0 0 146.3 40.375">
-        <use xlink:href="img/svg-sprite.svg#logo-pink-blue-mobile"></use>
-      </svg>
-      <svg class="main-footer__desktop-logo" width="147" height="41" viewBox="0 0 146.3 40.375">
-        <use xlink:href="img/svg-sprite.svg#logo-pink-blue-desktop"></use>
-      </svg>
-    </a>
-    <ul class="main-footer__socials social-list reset-list">
-      <li>
-        <a href="#" class="social-list__link" aria-label="Ссылка на нас в Twitter">
-          <svg viewBox="0 0 17.5 14.663" width="18" height="15">
-            <use xlink:href="img/svg-sprite.svg#icon-twitter"></use>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="social-list__link" aria-label="Ссылка на нас в Facebook">
-          <svg viewBox="0 0 8.673 18.944" width="9" height="19">
-            <use xlink:href="img/svg-sprite.svg#icon-facebook"></use>
-          </svg>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="social-list__link" aria-label="Ссылка на нас в Youtube">
-          <svg viewBox="0 0 14.64 13.96" width="15" height="14">
-            <use xlink:href="img/svg-sprite.svg#icon-youtube"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-    <section class="main-footer__copyright copyright">
-      <p class="copyright__text">Разработано</p>
-      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на курс Академии">
-        <svg viewBox="0 0 26.943 34.09" width="27" height="35">
-          <use xlink:href="img/svg-sprite.svg#htmlacademy"></use>
+      </section>
+      <ul class="photos__review-list reset-list container">
+        <li>
+          <a class="photos__link" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 960px)"
+                srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
+              <source media="(min-width: 960px)"
+                srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
+              <img src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="фотка" width="280"
+                height="180">
+            </picture>
+          </a>
+          <blockquote class="photos__block">
+            <cite class="photos__author">
+              Левон
+              <span class="photos__time">(5 часов назад)</span>
+            </cite>
+            <p class="photos__comment">
+              Вчера он на луну летал, сегодня в руки к нам попал.
+            </p>
+            <p class="photos__like">нравится: 356</p>
+          </blockquote>
+        </li>
+        <li>
+          <a class="photos__link" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 960px)"
+                srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
+              <source type="image/webp"
+                srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
+              <source media="(min-width: 960px)"
+                srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
+              <img src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="фотка"
+                width="280" height="180">
+            </picture>
+          </a>
+          <blockquote class="photos__block">
+            <cite class="photos__author">
+              Антон
+              <span class="photos__time">(12 часов назад)</span>
+            </cite>
+            <p class="photos__comment">
+              Соседи будут рады!
+            </p>
+            <p class="photos__like">нравится: 666</p>
+          </blockquote>
+        </li>
+        <li>
+          <a class="photos__link" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 960px)"
+                srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
+              <source media="(min-width: 960px)"
+                srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+              <img src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="фотка"
+                width="280" height="180">
+            </picture>
+          </a>
+          <blockquote class="photos__block photos-block">
+            <cite class="photos__author">
+              Борис
+              <span class="photos__time">(20 часов назад)</span>
+            </cite>
+            <p class="photos__comment">
+              Здесь могла быть ваша цитата о высоком и вечном.
+            </p>
+            <p class="photos__like">нравится: 215</p>
+          </blockquote>
+        </li>
+        <li>
+          <a class="photos__link" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 960px)"
+                srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
+              <source media="(min-width: 960px)"
+                srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
+              <img src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="фотка" width="280"
+                height="180">
+            </picture>
+          </a>
+          <blockquote class="photos__block">
+            <cite class="photos__author">
+              Сергей
+              <span class="photos__time">(25 часов назад)</span>
+            </cite>
+            <p class="photos__comment">
+              Самая кубанская в мире!
+            </p>
+            <p class="photos__like">нравится: 4</p>
+          </blockquote>
+        </li>
+        <li>
+          <a class="photos__link" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 960px)"
+                srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
+              <source media="(min-width: 960px)"
+                srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
+              <img src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="фотка" width="280"
+                height="180">
+            </picture>
+          </a>
+          <blockquote class="photos__block">
+            <cite class="photos__author">
+              Максим
+              <span class="photos__time">(40 часов назад)</span>
+            </cite>
+            <p class="photos__comment">
+              Где снег-то?
+            </p>
+            <p class="photos__like">нравится: 150</p>
+          </blockquote>
+        </li>
+        <li>
+          <a class="photos__link" href="#">
+            <picture>
+              <source type="image/webp" media="(min-width: 960px)"
+                srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
+              <source media="(min-width: 960px)"
+                srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
+              <img src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="фотка" width="280"
+                height="180">
+            </picture>
+          </a>
+          <blockquote class="photos__block">
+            <cite class="photos__author">
+              Надежда
+              <span class="photos__time">(45 часов назад)</span>
+            </cite>
+            <p class="photos__comment">
+              Всем GM и взаимные лайки!
+            </p>
+            <p class="photos__like">нравится: 2560</p>
+          </blockquote>
+        </li>
+      </ul>
+    </section>
+    <section class="handle-form">
+      <div class="container">
+        <h3 class="handle-form__header">
+          Затмите их всех!<br>
+          Выкладывайте все, что накопилось в телефоне!
+        </h3>
+      </div>
+      <div class="handle-form__outer-container">
+        <form class="handle-form__form" method="get" action="#">
+          <div class="handle-form__inner-container">
+            <picture class="handle-form__picture">
+              <source type="image/webp" media="(min-width: 960px)"
+                srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)"
+                srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, img/photo-road-mobile@2x.webp 2x">
+              <source media="(min-width: 960px)"
+                srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)"
+                srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+              <img class="handle-form__img" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x"
+                alt="фотка" width="280" height="374">
+            </picture>
+            <div class="handle-form__fieldsets-div">
+              <fieldset class="handle-form__handler-crop handler-crop reset-fieldset">
+                <div class="handle-form__button-and-scale-with-toggle">
+                  <button class="handler-crop__switcher switcher switcher--active" type="button"
+                    aria-label="Инструмент - обрезки">
+                    <svg class="handler-crop__img" width="48" height="48" viewBox="0 0 48 48">
+                      <use xlink:href="img/svg-sprite.svg#icon-editor-crop"></use>
+                    </svg>
+                  </button>
+                  <div class="handle-form__scale-and-toggle">
+                    <div class="handler-crop__scale handle-form__scale"></div>
+                    <div class="handler-crop__toggle handle-form__toggle" aria-label="Процент обрезки"></div>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="handle-form__handler-fill handler-fill reset-fieldset">
+                <div class="handle-form__button-and-scale-with-toggle">
+                  <button class="handler-fill__switcher switcher" type="button" aria-label="Инструмент - заливки">
+                    <svg class="handler-fill__img" width="48" height="48" viewBox="0 0 48 48">
+                      <use xlink:href="img/svg-sprite.svg#icon-editor-fill"></use>
+                    </svg>
+                  </button>
+                  <div class="handle-form__scale-and-toggle">
+                    <div class="handler-fill__scale handle-form__scale"></div>
+                    <div class="handler-fill__toggle handle-form__toggle" aria-label="Процент заливки"></div>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="handle-form__handler-contrast handler-contrast reset-fieldset">
+                <div class="handle-form__button-and-scale-with-toggle">
+                  <button class="handler-contrast__switcher switcher" type="button" aria-label="Инструмент - контраста">
+                    <svg class="handler-contrast__img" width="32" height="32" viewBox="0 0 32 32">
+                      <use xlink:href="img/svg-sprite.svg#icon-editor-contrast"></use>
+                    </svg>
+                  </button>
+                  <div class="handle-form__scale-and-toggle">
+                    <div class="handler-contrast__scale handle-form__scale"></div>
+                    <div class="handler-contrast__toggle handle-form__toggle" aria-label="Процент контраста"></div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+            <div class="handle-form__scale-and-toggle-div-for-mobile">
+              <div class="handle-form__scale handle-form__scale-for-mobile"></div>
+              <div class="handle-form__toggle handle-form__toggle-for-mobile"
+                aria-label="Процент выбранного инструмента"></div>
+            </div>
+            <div class="handle-form__buttons-div">
+              <button class="handle-form__submit-button button" type="submit">Запостить</button>
+              <button class="handle-form__cancel-button button" type="reset">Отмена</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="container">
+      <a class="main-footer__logo logo" href="index.html" aria-label="Логотип - ссылка на главную">
+        <svg class="main-footer__mobile-tablet-logo" width="147" height="41" viewBox="0 0 146.3 40.375">
+          <use xlink:href="img/svg-sprite.svg#logo-pink-blue-mobile"></use>
+        </svg>
+        <svg class="main-footer__desktop-logo" width="147" height="41" viewBox="0 0 146.3 40.375">
+          <use xlink:href="img/svg-sprite.svg#logo-pink-blue-desktop"></use>
         </svg>
       </a>
-    </section>
-  </div>
-</footer>
-<script src="js/script-min.js"></script>
+      <ul class="main-footer__socials social-list reset-list">
+        <li>
+          <a href="#" class="social-list__link" aria-label="Ссылка на нас в Twitter">
+            <svg viewBox="0 0 17.5 14.663" width="18" height="15">
+              <use xlink:href="img/svg-sprite.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="social-list__link" aria-label="Ссылка на нас в Facebook">
+            <svg viewBox="0 0 8.673 18.944" width="9" height="19">
+              <use xlink:href="img/svg-sprite.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="social-list__link" aria-label="Ссылка на нас в Youtube">
+            <svg viewBox="0 0 14.64 13.96" width="15" height="14">
+              <use xlink:href="img/svg-sprite.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <section class="main-footer__copyright copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"
+          aria-label="Ссылка на курс Академии">
+          <svg viewBox="0 0 26.943 34.09" width="27" height="35">
+            <use xlink:href="img/svg-sprite.svg#htmlacademy"></use>
+          </svg>
+        </a>
+      </section>
+    </div>
+  </footer>
+  <script src="js/script-min.js"></script>
 </body>
+
 </html>
