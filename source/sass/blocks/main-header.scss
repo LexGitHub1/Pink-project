@@ -80,7 +80,7 @@
     height: 4px;
     background-color: $white;
     border-radius: 4px;
-    color: white;
+    color: $white;
     box-shadow: 0 10px, 0 20px;
   }
 
@@ -146,11 +146,11 @@
 .main-header--opened .main-header__nav-menu {
   display: block;
   background-color: $dark-blue;
-  box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  box-shadow: 0 1px 0 $black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 .main-header--opened .main-header__menu-link {
-  box-shadow: 0 -1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  box-shadow: 0 -1px 0 $black, inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 .main-header--opened {
