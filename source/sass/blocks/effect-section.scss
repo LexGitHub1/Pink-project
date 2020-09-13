@@ -2,12 +2,9 @@
   display: none;
   padding-top: 65px;
   padding-bottom: 89px;
+  padding-left: 330px;
   font-size: 14px;
   line-height: 24px;
-}
-
-.effect-section {
-  padding-left: 330px;
 }
 
 .effect-section__header {
@@ -32,9 +29,6 @@
 @media (min-width: $tablet-min-width) {
   .effect-section {
     display: block;
-  }
-
-  .effect-section {
     position: relative;
 
     &::before {
@@ -75,9 +69,6 @@
     padding-top: 89px;
     padding-bottom: 111px;
     background-color: $grey;
-  }
-
-  .effect-section {
     padding-left: 381px;
 
     &::before {
